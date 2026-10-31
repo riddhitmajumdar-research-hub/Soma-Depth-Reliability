@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "Certifying the Depth-Reliability Limits of Passive Acoustic Tissue-Stiffness Classification"
+abstract: "To what depth can passive acoustic sensing reliably distinguish healthy, fibrotic and cirrhotic tissue stiffness, and with what statistical confidence can that depth be stated? This repository estimates that depth and tests the estimate with shuffled-label controls, grouped train-test splits, sourced physical uncertainty, sensor-noise sweeps and a rebuilt simulator."
+authors:
+  - given-names: "Riddhit"
+    family-names: "Majumdar"
+repository-code: "https://github.com/riddhitmajumdar-research-hub/Soma-Depth-Reliability"
+license: PolyForm-Strict-1.0.0

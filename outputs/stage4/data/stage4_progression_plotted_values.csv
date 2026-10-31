@@ -1,0 +1,78 @@
+curve,depth_cm,accuracy
+"Baseline (hand-picked features), corrected-noise run",0.0,0.3838383838383838
+"Baseline (hand-picked features), corrected-noise run",0.5172413793103449,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",1.0344827586206897,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",1.5517241379310347,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",2.0689655172413794,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",2.586206896551724,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",3.1034482758620694,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",3.620689655172414,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",4.137931034482759,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",4.655172413793104,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",5.172413793103448,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",5.689655172413794,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",6.206896551724139,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",6.724137931034483,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",7.241379310344828,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",7.758620689655173,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",8.275862068965518,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",8.793103448275863,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",9.310344827586208,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",9.827586206896552,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",10.344827586206897,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",10.862068965517242,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",11.379310344827587,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",11.896551724137932,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",12.413793103448278,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",12.931034482758621,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",13.448275862068966,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",13.965517241379311,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",14.482758620689657,0.3333333333333333
+"Baseline (hand-picked features), corrected-noise run",15.0,0.3333333333333333
+"CNN (clean-trained only), one saved run",0.0,0.9
+"CNN (clean-trained only), one saved run",1.3636363636363635,0.8333333333333334
+"CNN (clean-trained only), one saved run",2.727272727272727,0.8
+"CNN (clean-trained only), one saved run",4.090909090909091,0.7166666666666667
+"CNN (clean-trained only), one saved run",4.3,0.7
+"CNN (clean-trained only), one saved run",4.5,0.6333333333333333
+"CNN (clean-trained only), one saved run",4.7,0.5333333333333333
+"CNN (clean-trained only), one saved run",4.9,0.5
+"CNN (clean-trained only), one saved run",5.1,0.48333333333333334
+"CNN (clean-trained only), one saved run",5.3,0.5333333333333333
+"CNN (clean-trained only), one saved run",5.454545454545454,0.43333333333333335
+"CNN (clean-trained only), one saved run",5.5,0.48333333333333334
+"CNN (clean-trained only), one saved run",5.7,0.48333333333333334
+"CNN (clean-trained only), one saved run",5.9,0.4
+"CNN (clean-trained only), one saved run",6.1,0.38333333333333336
+"CNN (clean-trained only), one saved run",6.3,0.38333333333333336
+"CNN (clean-trained only), one saved run",6.5,0.45
+"CNN (clean-trained only), one saved run",6.8181818181818175,0.3333333333333333
+"CNN (clean-trained only), one saved run",8.181818181818182,0.3333333333333333
+"CNN (clean-trained only), one saved run",9.545454545454545,0.3333333333333333
+"CNN (clean-trained only), one saved run",10.909090909090908,0.3333333333333333
+"CNN (clean-trained only), one saved run",12.272727272727272,0.3333333333333333
+"CNN (clean-trained only), one saved run",13.636363636363635,0.3333333333333333
+"CNN (clean-trained only), one saved run",15.0,0.3333333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",0.0,0.8833333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",1.3636,0.8333333333333334
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",2.7273,0.85
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",3.5,0.85
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",4.0,0.9166666666666666
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",4.0909,0.8666666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",4.3,0.9666666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",4.5,0.85
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",5.0,0.85
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",5.4545,0.8666666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",5.5,0.8666666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",6.0,0.7833333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",6.5,0.7833333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",6.8182,0.7166666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",7.0,0.7166666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",7.5,0.7
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",8.0,0.5333333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",8.1818,0.48333333333333334
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",9.5455,0.4166666666666667
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",10.9091,0.3333333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",12.2727,0.3333333333333333
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",13.6364,0.35
+"CNN (degradation-aware), one saved run, accuracy only (seed 42)",15.0,0.3333333333333333

@@ -1,0 +1,12 @@
+107 alt_set_old_lookup {'train_acc': 0.616, 'acc_d0.0': 0.643, 'acc_d6.5': 0.81, 'acc_d8.0': 0.687, 'acc_d10.0': 0.563}
+108 default_set {'train_acc': 0.661, 'acc_d0.0': 0.743, 'acc_d6.5': 0.8, 'acc_d8.0': 0.553, 'acc_d10.0': 0.383}
+108 alt_set_stage_eta {'train_acc': 0.6, 'acc_d0.0': 0.707, 'acc_d6.5': 0.597, 'acc_d8.0': 0.413, 'acc_d10.0': 0.35}
+108 alt_set_old_lookup {'train_acc': 0.664, 'acc_d0.0': 0.737, 'acc_d6.5': 0.77, 'acc_d8.0': 0.663, 'acc_d10.0': 0.603}
+
+Mean over 8 seeds
+  default_set          train_acc 0.651 acc_d0.0 0.775 acc_d6.5 0.701 acc_d8.0 0.477 acc_d10.0 0.364
+  alt_set_stage_eta    train_acc 0.564 acc_d0.0 0.652 acc_d6.5 0.595 acc_d8.0 0.433 acc_d10.0 0.355
+  alt_set_old_lookup   train_acc 0.655 acc_d0.0 0.692 acc_d6.5 0.788 acc_d8.0 0.688 acc_d10.0 0.552
+  paired alt_set_stage_eta - default_set: acc_d0.0 -0.122 (SD 0.067) acc_d6.5 -0.106 (SD 0.123) acc_d8.0 -0.044 (SD 0.070) acc_d10.0 -0.009 (SD 0.044)
+  paired alt_set_old_lookup - default_set: acc_d0.0 -0.083 (SD 0.061) acc_d6.5 +0.087 (SD 0.087) acc_d8.0 +0.210 (SD 0.067) acc_d10.0 +0.188 (SD 0.062)
+  paired alt_set_stage_eta - alt_set_old_lookup: acc_d0.0 -0.040 (SD 0.036) acc_d6.5 -0.193 (SD 0.109) acc_d8.0 -0.254 (SD 0.078) acc_d10.0 -0.197 (SD 0.052)

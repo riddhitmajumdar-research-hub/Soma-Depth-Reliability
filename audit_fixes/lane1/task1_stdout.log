@@ -1,0 +1,24 @@
+class                   f(Hz)    x=we/G   alpha_weak  alpha_exact    ratio       c0   c_exact
+healthy                    20    0.0419       2.2125       2.2100   1.0011   1.1896    1.1904
+healthy                   100    0.2094      55.3115      53.8456   1.0272   1.1896    1.2088
+healthy                   250    0.5236     345.6972     296.8477   1.1646   1.1896    1.3015
+healthy                   500    1.0472    1382.7886     863.1921   1.6019   1.1896    1.5569
+significant_fibrosis       20    0.0251       1.0283       1.0279   1.0004   1.5357    1.5361
+significant_fibrosis      100    0.1257      25.7065      25.4559   1.0098   1.5357    1.5448
+significant_fibrosis      250    0.3142     160.6655     151.4656   1.0607   1.5357    1.5907
+significant_fibrosis      500    0.6283     642.6621     521.0931   1.2333   1.5357    1.7368
+cirrhosis                  20    0.0556       1.7986       1.7951   1.0019   1.9426    1.9448
+cirrhosis                 100    0.2780      44.9641      42.9158   1.0477   1.9426    1.9974
+cirrhosis                 250    0.6951     281.0257     219.1321   1.2824   1.9426    2.2466
+cirrhosis                 500    1.3902    1124.1026     563.6607   1.9943   1.9426    2.8565
+
+Saved: <REPO_ROOT>/audit_fixes/lane1/table1_exact_vs_weak.csv
+
+--- CHECK VALUES ---
+healthy                f=100  ratio_weak_over_exact     expected=1.027      actual=1.02722      -> MATCH
+significant_fibrosis   f=100  ratio_weak_over_exact     expected=1.01       actual=1.00984      -> MATCH
+cirrhosis              f=100  ratio_weak_over_exact     expected=1.048      actual=1.04773      -> MATCH
+healthy                f=100  alpha_weak_per_m          expected=55.31      actual=55.31154     -> MATCH
+cirrhosis              f=100  alpha_weak_per_m          expected=44.96      actual=44.96410     -> MATCH
+cirrhosis            f=250  ratio_weak_over_exact     expected=1.28       actual=1.28245      -> MATCH
+cirrhosis            f=500  ratio_weak_over_exact     expected=1.99       actual=1.99429      -> MATCH

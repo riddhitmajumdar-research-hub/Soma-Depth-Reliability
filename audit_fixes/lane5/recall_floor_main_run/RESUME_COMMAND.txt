@@ -1,0 +1,33 @@
+Lane 5 -- resume command (NOT launched here; to be run manually
+from a normal Terminal window).
+
+WHY caffeinate -dimsu instead of -i: the previous run used `caffeinate -i`
+and still died silently after ~2h15m with no
+crash trace -- `-i` only blocks IDLE sleep, not a lid-close/display-sleep
+or a system sleep triggered some other way. `-dimsu` additionally blocks
+display sleep (d), disk idle sleep (m... actually disk is -m), system
+idle sleep (i), and user-active-assertion sleep (u), and (s) keeps the
+system awake even on AC vs. battery nuance -- the closest thing to "do
+not let this machine sleep at all" caffeinate offers. This is a stronger
+guard against a repeat of the same failure mode, not a protocol change.
+
+Resume the main 24-seed run (seed 103 onward -- 101/102 already done and
+verified untouched, seed 103's partial artifacts already quarantined to
+audit_fixes/lane5/quarantine_seed103_partial/):
+
+nohup caffeinate -dimsu python3 <REPO_ROOT>/audit_fixes/lane5/lane5_harness.py > <REPO_ROOT>/audit_fixes/lane5/logs/lane5_run_resume.log 2>&1 &
+
+After starting it, note the PID it prints (or `echo $!` immediately
+after), and you can check liveness any time with:
+
+<REPO_ROOT>/audit_fixes/lane5/check_alive.sh <pid>
+
+(or with no argument -- it will try to find the PID itself via pgrep).
+
+Once resumed, separately launch the chain runner (waits for all 24 seed
+rows in the results CSV, PID-independent -- see run_chain.py for why):
+
+nohup caffeinate -dimsu python3 <REPO_ROOT>/audit_fixes/lane5/run_chain.py > <REPO_ROOT>/audit_fixes/lane5/logs/lane5_chain_run_nohup.log 2>&1 &
+
+Both commands are safe to run independently and in either order -- the
+chain runner just polls the CSV and does nothing until it sees 24 rows.

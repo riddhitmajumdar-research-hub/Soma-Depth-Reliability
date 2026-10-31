@@ -1,0 +1,10 @@
+{
+  "bench_seed": 101,
+  "wall_clock_seconds": 410.42618012428284,
+  "train_seconds": 0.6504158973693848,
+  "controls_seconds": 142.18501806259155,
+  "eval_seconds": 267.2519791126251,
+  "naive_floor_cm_rf": 13.636363636363635,
+  "anomalous_recovery_rf": false,
+  "projected_24_seeds_seconds": 9850.228322982788
+}

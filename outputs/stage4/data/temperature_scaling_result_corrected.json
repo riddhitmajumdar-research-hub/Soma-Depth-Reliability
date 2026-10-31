@@ -1,0 +1,9 @@
+{
+  "T": 0.051795925397020146,
+  "fit_fraction": 0.5,
+  "seed": 42,
+  "n_fit": 690,
+  "n_held": 690,
+  "uce_before_heldout": 0.36005851612398365,
+  "uce_after_heldout": 0.03867817239938974
+}

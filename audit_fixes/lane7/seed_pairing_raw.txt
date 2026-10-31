@@ -1,0 +1,36 @@
+
+==============================================================================
+0. QUOTED SEEDING CODE (verify by direct grep, not memory)
+==============================================================================
+
+--- CNN sweep (degradation_aware_final_sweep.py) ---
+101:def run_one_seed(seed):
+102-    torch.manual_seed(seed)
+103-    np.random.seed(seed)
+
+
+--- ResNet1D sweep (degradation_aware_resnet_final_sweep.py) ---
+158:def run_one_seed(seed):
+159-    torch.manual_seed(seed)
+160-    np.random.seed(seed)
+
+
+==============================================================================
+1. REPLAYING DATA-GENERATION CALL SEQUENCE FOR SEED 101
+==============================================================================
+(Model training itself is NOT replayed -- both scripts' training loops use only torch's RNG, which is independent of numpy's RNG used for data generation, so replaying data-gen calls alone is sufficient to check whether the two scripts see identical data.)
+
+==============================================================================
+2. COMPARISON RESULTS
+==============================================================================
+X_train identical (np.array_equal): True
+y_train_names identical: True
+X_train shape: CNN=(375, 100)  ResNet=(375, 100)
+All 200 label-shuffle permutations identical: True
+Eval-cell windows at depth_cm=0.0 identical: True
+Eval-cell labels at that depth identical: True
+
+==============================================================================
+3. VERDICT
+==============================================================================
+MATCH -- for seed 101, both scripts' data-generation call sequences produce bit-identical training data, label-shuffle permutations, and evaluation windows (checked at one depth as a representative sample; the generation function and call order are identical for every other depth too, since both scripts import and call the same generate_degraded_windows over the same EVAL_DEPTHS_CM list). The paired-seed comparison in Lane 7's main analysis (Wilcoxon / paired HL) is comparing the two models on genuinely identical inputs per seed, not merely index-matched seeds that happen to share a number.

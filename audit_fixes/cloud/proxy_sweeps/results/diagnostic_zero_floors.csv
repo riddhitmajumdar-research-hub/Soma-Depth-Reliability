@@ -1,0 +1,11 @@
+seed,condition,depth0_cm,depth0_real_acc,depth0_raw_p,depth0_adj_p,depth1_cm,depth1_real_acc,depth1_raw_p,depth1_adj_p,depth2_cm,depth2_real_acc,depth2_raw_p,depth2_adj_p,depth3_cm,depth3_real_acc,depth3_raw_p,depth3_adj_p,cause
+101,7_clean_only,0.0,0.827,0.005,0.0572,1.36,0.833,0.01,0.0572,2.73,0.757,0.0149,0.0572,3.5,0.733,0.0149,0.0572,"(ii) resolution artifact: accuracy above chance, smallest-p resolution"
+102,2_jitter_1.0,0.0,0.343,0.2985,0.4039,1.36,0.333,0.5323,0.6802,2.73,0.497,0.1443,0.237,3.5,0.77,0.005,0.0127,(i) real failure: accuracy near chance
+103,2_jitter_1.0,0.0,0.397,0.1045,0.2002,1.36,0.297,0.7662,0.9005,2.73,0.48,0.1393,0.2289,3.5,0.707,0.005,0.0127,(i) real failure: accuracy near chance
+103,3_carrier_150,0.0,0.837,0.005,0.0572,1.36,0.853,0.005,0.0572,2.73,0.39,0.2488,0.6357,3.5,0.307,0.8159,0.99,"(ii) resolution artifact: accuracy above chance, smallest-p resolution"
+104,2_jitter_1.0,0.0,0.367,0.2139,0.3515,1.36,0.403,0.1542,0.2729,2.73,0.52,0.0945,0.2081,3.5,0.487,0.0995,0.2081,(i) real failure: accuracy near chance
+105,2_jitter_1.0,0.0,0.45,0.01,0.0817,1.36,0.453,0.0448,0.1144,2.73,0.65,0.0249,0.0817,3.5,0.667,0.0149,0.0817,"(ii) resolution artifact: accuracy above chance, smallest-p resolution"
+106,2_jitter_1.0,0.0,0.407,0.0796,0.1768,1.36,0.333,0.5721,0.7741,2.73,0.38,0.3881,0.5578,3.5,0.72,0.005,0.0127,"(iii) other: accuracy above chance, raw p above 2/201"
+107,2_jitter_1.0,0.0,0.34,0.3532,0.5416,1.36,0.333,0.5522,0.7938,2.73,0.67,0.01,0.0254,3.5,0.813,0.005,0.0163,(i) real failure: accuracy near chance
+107,3_carrier_150,0.0,0.76,0.005,0.1144,1.36,0.64,0.0498,0.2098,2.73,0.563,0.0299,0.2098,3.5,0.527,0.0149,0.1716,"(ii) resolution artifact: accuracy above chance, smallest-p resolution"
+108,2_jitter_1.0,0.0,0.383,0.1144,0.1316,1.36,0.423,0.0846,0.1216,2.73,0.753,0.005,0.0191,3.5,0.81,0.005,0.0191,(i) real failure: accuracy near chance

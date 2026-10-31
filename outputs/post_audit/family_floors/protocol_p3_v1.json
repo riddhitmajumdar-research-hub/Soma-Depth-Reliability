@@ -1,0 +1,103 @@
+{
+ "protocol_id": "p3_protocol_v1",
+ "status": "prespecified before any permutation run; no value changes afterwards; a change needs p3_protocol_v2 and a log note",
+ "depth_grid_cm": [
+  0.0,
+  1.3636363636,
+  2.7272727273,
+  3.5,
+  4.0,
+  4.0909090909,
+  4.3,
+  4.5,
+  5.0,
+  5.4545454545,
+  5.5,
+  6.0,
+  6.25,
+  6.5,
+  6.75,
+  7.0,
+  7.25,
+  7.5,
+  7.75,
+  8.0,
+  8.25,
+  8.5,
+  8.75,
+  9.0,
+  9.25,
+  9.5,
+  9.75,
+  10.0,
+  10.9090909091,
+  12.2727272727,
+  13.6363636364,
+  15.0,
+  16.3636363636,
+  17.7272727273,
+  19.0909090909,
+  20.0
+ ],
+ "m_depths": 36,
+ "eval_cell": {
+  "windows_per_class": 100,
+  "windows_total": 300,
+  "dataset_config": "p2_primary_v1 (hardware on, continuous stiffness, eta_by_stage on)",
+  "stream": "crc32(p3_protocol_v1|seed|cell_<depth:.4f>)",
+  "fixed_across_draws_within_seed": true
+ },
+ "real_models": "Phase 2 checkpoints (p2_primary_v1), seeds 101-124, unchanged",
+ "permutation": {
+  "control": "same architecture and training protocol as the real model, trained on the real model's training windows with labels randomly permuted (one permutation per control)",
+  "statistic": "accuracy of a model on the 300-window evaluation cell at a depth (stored as correct count out of 300)",
+  "p_value": "(count of controls with accuracy >= real accuracy + 1) / (B + 1)",
+  "rule_for_B": "B+1 >= 20*m, m=36, so B >= 719",
+  "pooled_null": "rejected: control accuracy spread depends on depth (data/null_depth_dependence_check.txt)",
+  "per_family": {
+   "cnn": {
+    "N": 24,
+    "seeds": "101-124",
+    "K": 10,
+    "B": 719
+   },
+   "rf": {
+    "N": 24,
+    "seeds": "101-124",
+    "K": 10,
+    "B": 719
+   },
+   "resnet": {
+    "N": 10,
+    "seeds": "101-110",
+    "K": 10,
+    "B": 199
+   }
+  },
+  "deviations": [
+   "ResNet1D N=10 instead of 24 (allowed by the brief)",
+   "ResNet1D B=199 instead of 719 (B+1=200 < 720); needed to keep the total at about 36 h; see PROTOCOL.md"
+  ]
+ },
+ "decision_rule": {
+  "multiplicity": "Benjamini-Hochberg at q=0.05 across the 36 depths of one evaluation",
+  "new_floor": "scan from 0 cm outward; the floor is the last depth before the first run of 2 consecutive non-significant depths; no such run => right-censored at 20 cm and flagged; if depth 0 starts the run the floor is set to 0.0 and flagged start_nonsignificant; no interpolation",
+  "old_rule": "first non-significant depth in the scan, or 20 cm (censored) if none; computed on the same p-values",
+  "classwise_safety_floor": "first depth at which any class recall of the real model is below 0.45 at that depth and the next depth; none => censored at 20 cm"
+ },
+ "summaries": {
+  "unit": "per-seed floor = median over K draws (a grid depth when K is even and the two middle values coincide, else the mean of the two middle grid depths, flagged); also pooled seed x draw values",
+  "percentiles": "linear interpolation (numpy default)",
+  "bootstrap": "resample seeds with replacement, 10000 replicates, percentile intervals",
+  "variance_decomposition": "one-way random effects F[seed,draw]: seed component, draw-within-seed component, plus a fixed grid-discretization component mean(step^2)/12 over consecutive grid steps; balanced ANOVA estimators, negatives set to 0 and reported, REML cross-check, bootstrap over seeds; with and without censored floors"
+ },
+ "rng": "every stream is zlib.crc32 of a string key; no Python hash()",
+ "run_order": [
+  "cnn",
+  "rf",
+  "resnet"
+ ],
+ "max_parallel_processes": 2,
+ "workers_per_process": 5,
+ "tost": "not used; parked"
+}

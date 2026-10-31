@@ -1,0 +1,10 @@
+{
+  "T": 0.05000662713858094,
+  "gate_cutoff_cm": 9.0,
+  "fit_fraction": 0.5,
+  "seed": 42,
+  "n_fit": 540,
+  "n_held": 540,
+  "uce_before_heldout": 0.38291579681745314,
+  "uce_after_heldout": 0.09274121491862852
+}

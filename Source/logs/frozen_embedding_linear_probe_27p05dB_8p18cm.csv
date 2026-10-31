@@ -1,0 +1,2 @@
+depth_cm,snr_db,n_samples_per_class,deployed_model_accuracy,frozen_probe_accuracy,chance_level,probe_minus_chance,probe_minus_deployed
+8.18,27.05,200,0.3333333333333333,0.7583333333333333,0.3333333333333333,0.425,0.425

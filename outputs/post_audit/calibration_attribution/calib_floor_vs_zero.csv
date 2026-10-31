@@ -1,0 +1,4 @@
+measure,mean_difference_floor_minus_0cm,ci_lo,ci_hi,wilcoxon_p_two_sided,n_nonzero_differences,seeds_with_floor_depth_0 (difference is 0 by construction)
+mean_max_softmax,-0.1987,-0.2246,-0.171,0.0,23,104
+mean_logit_gap,-0.6413,-0.734,-0.5449,0.0,23,104
+accuracy,-0.2178,-0.2535,-0.1793,3e-05,23,104

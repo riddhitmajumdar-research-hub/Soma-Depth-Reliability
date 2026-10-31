@@ -1,0 +1,44 @@
+{
+  "config_id": "p2_primary_v1",
+  "status": "prespecified; no value may change after the commit that adds this file",
+  "physics": {
+    "eta_by_stage": true,
+    "eta_per_stage_pa_s": {"healthy": 0.5, "significant_fibrosis": 0.5, "cirrhosis": 1.77},
+    "cirrhosis_eta_label": "placeholder: current single-value from Source/attenuation_model.py; multi-patient distribution stays off",
+    "frequency_hz": 100,
+    "class_nominal_kpa": {"healthy": 4.5, "significant_fibrosis": 7.5, "cirrhosis": 12.0},
+    "mu_mode": "range",
+    "stage_mu_range_kpa": {"healthy": [3.0, 6.0], "significant_fibrosis": [6.0, 9.0], "cirrhosis": [9.0, 15.0]},
+    "stage_mu_range_source": "outputs/phase1/code/p1_common.py STAGE_MU_RANGE_KPA, a Phase 1 assumption with no literature source",
+    "heart_rate_hz": 1.15,
+    "heart_rate_jitter_sd_hz": 0.03,
+    "sensor_snr_db": 27.05
+  },
+  "hardware": {
+    "timing_jitter_ms": 1.0,
+    "timing_jitter_distribution": "uniform on [-J, +J] per beat",
+    "noise_beta": 1.0,
+    "gain_range": [0.5, 1.5],
+    "source": "values from the docstring and Phase 1 example settings of Source/hardware_effects.py; the dataclass defaults themselves are all off"
+  },
+  "data": {
+    "train_depths_cm": [0, 3, 6, 9, 12],
+    "train_windows_per_depth_per_class": 25,
+    "validation_windows_per_depth_per_class": 25,
+    "validation_note": "independent records from a separate random stream, same depths and counts as training",
+    "eval_depths_cm": [0.0, 6.5, 8.0, 10.0],
+    "eval_windows_per_class_per_cell": 100,
+    "eval_clean_cell": {"depth_cm": 0.0, "snr_db": "infinite (noise-free)", "hardware": "off", "mu_mode": "range"},
+    "seeds": [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124],
+    "stream_seed_rule": "np.random.RandomState(zlib.crc32(f'{config_id}|{seed}|{stream}'.encode())) with stream in {train, val, eval_clean, eval_d0, eval_d6.5, eval_d8, eval_d10}",
+    "split_hash": "sha256 over float64 bytes of X and int64 bytes of y for train, validation and every eval cell, in that order"
+  },
+  "models": {
+    "cnn": {"class": "cnn_classifier.SimpleCNN", "train_fn": "degradation_aware_final_sweep.train_cnn", "epochs": 60, "optimizer": "Adam lr 0.001", "batch": "full batch", "torch_seed": "seed", "restart_on_collapse": false},
+    "resnet1d": {"class": "resnet_classifier.ResNet1D", "train_fn": "degradation_aware_resnet_final_sweep.train_resnet_with_retry", "epochs": 150, "optimizer": "Adam lr 0.001", "batch": "full batch", "collapse_threshold_train_acc": 0.5, "max_restarts": 5, "torch_seed": "seed"},
+    "random_forest": {"class": "sklearn.ensemble.RandomForestClassifier", "n_estimators": 300, "n_jobs": 2, "random_state": "seed", "other": "sklearn defaults"},
+    "logistic_regression": {"class": "sklearn.linear_model.LogisticRegression", "max_iter": 1000, "scaler": "RobustScaler fit on the training split only", "features": "timing-agnostic, see outputs/phase2/logreg_config.md"},
+    "known_budget_inequality": "CNN 60 epochs, ResNet1D 150 epochs, RF 300 trees; budgets are not matched"
+  },
+  "evaluation": {"scope": "sanity only: accuracy at the clean cell and at 0, 6.5, 8, 10 cm; no floors, p-value curves or permutation controls"}
+}

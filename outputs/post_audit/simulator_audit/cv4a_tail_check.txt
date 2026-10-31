@@ -1,0 +1,4 @@
+cirrhosis, eta_by_stage on (eta 1.77), kPa = 12*(1+cv*z), z~N(0,1) clipped at +/-2.5
+ cv=0.245: kPa range [4.65,19.35]; amplitude/noise at 15 cm: median 0.024, 95th pct 0.395, max 0.836; share of records with amplitude/noise > 0.5 at 15 cm: 0.0326; > 1: 0.0000
+ cv=0.15: kPa range [7.50,16.50]; amplitude/noise at 15 cm: median 0.027, 95th pct 0.174, max 0.343; share of records with amplitude/noise > 0.5 at 15 cm: 0.0000; > 1: 0.0000
+fibrosis class-exact (7.5 kPa, eta 0.5): amplitude/noise at 15 cm = 0.476

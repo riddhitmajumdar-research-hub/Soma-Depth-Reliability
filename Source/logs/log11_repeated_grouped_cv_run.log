@@ -1,0 +1,40 @@
+rep 1/15  baseline=0.7159 cnn=0.8278 resnet1d=0.9111
+rep 2/15  baseline=0.7160 cnn=0.8861 resnet1d=0.9167
+rep 3/15  baseline=0.7103 cnn=0.8750 resnet1d=0.9083
+rep 4/15  baseline=0.7047 cnn=0.8833 resnet1d=0.9056
+rep 5/15  baseline=0.6964 cnn=0.8556 resnet1d=0.8944
+rep 6/15  baseline=0.7048 cnn=0.8083 resnet1d=0.9056
+rep 7/15  baseline=0.7213 cnn=0.8389 resnet1d=0.8972
+rep 8/15  baseline=0.7188 cnn=0.8472 resnet1d=0.9139
+rep 9/15  baseline=0.7158 cnn=0.8583 resnet1d=0.9139
+rep 10/15  baseline=0.6938 cnn=0.8611 resnet1d=0.9083
+rep 11/15  baseline=0.7049 cnn=0.8278 resnet1d=0.8361
+rep 12/15  baseline=0.6989 cnn=0.8472 resnet1d=0.9000
+rep 13/15  baseline=0.7132 cnn=0.8278 resnet1d=0.8917
+rep 14/15  baseline=0.7048 cnn=0.8528 resnet1d=0.9083
+rep 15/15  baseline=0.7213 cnn=0.8944 resnet1d=0.9056
+
+======================================================================
+REPEATED GROUPED CV (15 reps x 5 folds = 75 paired diffs per comparison)
+Total ResNet1D restarts used across all fold trainings: 29
+======================================================================
+
+cnn_vs_baseline:
+  repeated-CV mean_diff=0.1434  95% bootstrap CI=[0.1235, 0.1639]
+  permutation p-value=0.0002
+  original single-split mean_diff=0.1675  original t-test p=0.0175
+  original directional conclusion holds: True
+
+resnet1d_vs_baseline:
+  repeated-CV mean_diff=0.1917  95% bootstrap CI=[0.1760, 0.2071]
+  permutation p-value=0.0002
+  original single-split mean_diff=0.1786  original t-test p=0.0078
+  original directional conclusion holds: True
+
+resnet1d_vs_cnn:
+  repeated-CV mean_diff=0.0483  95% bootstrap CI=[0.0291, 0.0665]
+  permutation p-value=0.0002
+  original single-split mean_diff=0.0111  original t-test p=0.2420
+  original directional conclusion holds: True
+
+Saved logs/log11_repeated_grouped_cv_raw.csv and logs/log11_repeated_grouped_cv_summary.csv

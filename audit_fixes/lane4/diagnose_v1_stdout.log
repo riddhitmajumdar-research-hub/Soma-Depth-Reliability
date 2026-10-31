@@ -1,0 +1,62 @@
+==============================================================================
+LANE 4 v2 STEP 1 -- v1 diagnostics (single grouped 5-fold split, rep_seed=1000)
+==============================================================================
+Classes: {0: np.str_('cirrhosis'), 1: np.str_('healthy'), 2: np.str_('significant_fibrosis')}
+
+Inner-CV grouping check: v1's svm_inner_cv_select / rf_inner_cv_select / gru_inner_cv_select (run_lane4_comparison.py) all call StratifiedKFold(...).split(X_train, y_train) with no `groups` argument -- inner CV is stratified by label only, NOT grouped by group_id. This can put windows from the same realization on both sides of an inner train/validation split during hyperparameter selection. The OUTER 5-fold split itself is correctly grouped (via grouped_kfold_indices).
+
+
+--- Fold 1 ---
+  train class hist: cirrhosis=84; healthy=100; significant_fibrosis=104
+  test  class counts (ground truth): cirrhosis=36; healthy=20; significant_fibrosis=16
+  train-majority class: significant_fibrosis  -> constant-predictor test accuracy = 0.2222
+  SVM   cfg={'C': 10.0, 'gamma': 0.01}  train_acc=0.5208  test_acc=0.5694
+        test predicted-class histogram: cirrhosis=27; healthy=21; significant_fibrosis=24
+  RF    cfg={'max_depth': 10, 'min_samples_leaf': 4}  train_acc=0.7882  test_acc=0.5417
+        test predicted-class histogram: cirrhosis=31; healthy=23; significant_fibrosis=18
+  GRU   cfg={'lr': 0.001, 'dropout': 0.0}  train_acc=0.3611  test_acc=0.2222
+        test predicted-class histogram: cirrhosis=0; healthy=0; significant_fibrosis=72
+
+--- Fold 2 ---
+  train class hist: cirrhosis=100; healthy=88; significant_fibrosis=100
+  test  class counts (ground truth): cirrhosis=20; healthy=32; significant_fibrosis=20
+  train-majority class: significant_fibrosis  -> constant-predictor test accuracy = 0.2778
+  SVM   cfg={'C': 10.0, 'gamma': 0.01}  train_acc=0.5694  test_acc=0.4583
+        test predicted-class histogram: cirrhosis=29; healthy=18; significant_fibrosis=25
+  RF    cfg={'max_depth': None, 'min_samples_leaf': 1}  train_acc=1.0000  test_acc=0.4583
+        test predicted-class histogram: cirrhosis=18; healthy=24; significant_fibrosis=30
+  GRU   cfg={'lr': 0.001, 'dropout': 0.0}  train_acc=0.3472  test_acc=0.2778
+        test predicted-class histogram: cirrhosis=72; healthy=0; significant_fibrosis=0
+
+--- Fold 3 ---
+  train class hist: cirrhosis=108; healthy=84; significant_fibrosis=96
+  test  class counts (ground truth): cirrhosis=12; healthy=36; significant_fibrosis=24
+  train-majority class: cirrhosis  -> constant-predictor test accuracy = 0.1667
+  SVM   cfg={'C': 10.0, 'gamma': 'scale'}  train_acc=0.5590  test_acc=0.4583
+        test predicted-class histogram: cirrhosis=28; healthy=15; significant_fibrosis=29
+  RF    cfg={'max_depth': None, 'min_samples_leaf': 4}  train_acc=0.8368  test_acc=0.4583
+        test predicted-class histogram: cirrhosis=26; healthy=21; significant_fibrosis=25
+  GRU   cfg={'lr': 0.001, 'dropout': 0.0}  train_acc=0.3750  test_acc=0.1667
+        test predicted-class histogram: cirrhosis=72; healthy=0; significant_fibrosis=0
+
+--- Fold 4 ---
+  train class hist: cirrhosis=96; healthy=108; significant_fibrosis=84
+  test  class counts (ground truth): cirrhosis=24; healthy=12; significant_fibrosis=36
+  train-majority class: healthy  -> constant-predictor test accuracy = 0.1667
+  SVM   cfg={'C': 1.0, 'gamma': 'scale'}  train_acc=0.5312  test_acc=0.4306
+        test predicted-class histogram: cirrhosis=36; healthy=24; significant_fibrosis=12
+  RF    cfg={'max_depth': 10, 'min_samples_leaf': 1}  train_acc=0.9896  test_acc=0.5417
+        test predicted-class histogram: cirrhosis=27; healthy=21; significant_fibrosis=24
+  GRU   cfg={'lr': 0.001, 'dropout': 0.0}  train_acc=0.3750  test_acc=0.1667
+        test predicted-class histogram: cirrhosis=0; healthy=72; significant_fibrosis=0
+
+--- Fold 5 ---
+  train class hist: cirrhosis=92; healthy=100; significant_fibrosis=96
+  test  class counts (ground truth): cirrhosis=28; healthy=20; significant_fibrosis=24
+  train-majority class: healthy  -> constant-predictor test accuracy = 0.2778
+  SVM   cfg={'C': 10.0, 'gamma': 'scale'}  train_acc=0.5347  test_acc=0.5139
+        test predicted-class histogram: cirrhosis=21; healthy=27; significant_fibrosis=24
+  RF    cfg={'max_depth': 10, 'min_samples_leaf': 1}  train_acc=0.9861  test_acc=0.4722
+        test predicted-class histogram: cirrhosis=27; healthy=21; significant_fibrosis=24
+  GRU   cfg={'lr': 0.001, 'dropout': 0.0}  train_acc=0.3472  test_acc=0.2778
+        test predicted-class histogram: cirrhosis=0; healthy=72; significant_fibrosis=0

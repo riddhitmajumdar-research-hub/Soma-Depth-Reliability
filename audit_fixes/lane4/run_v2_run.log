@@ -1,0 +1,108 @@
+Dataset: X_raw=(360, 100) X_v2feat=(360, 202) classes=[np.str_('cirrhosis'), np.str_('healthy'), np.str_('significant_fibrosis')] n_groups=90
+[single-split] fold 1:
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9861 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.3} restarts=5 train_acc=0.3611 test_acc=0.2222
+[single-split] fold 2:
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+[single-split] fold 3:
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+[single-split] fold 4:
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+[single-split] fold 5:
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+
+[v2 single-split summary] SVM=0.9056+-0.0495  RF=0.9111+-0.0288  GRU=0.2222+-0.0556  (total GRU restarts used: 25)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9861 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 1/15  svm=0.9056 rf=0.9111 gru=0.2222  (elapsed 993s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+rep 2/15  svm=0.9056 rf=0.9250 gru=0.2444  (elapsed 1464s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.3} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 3/15  svm=0.9056 rf=0.9250 gru=0.2778  (elapsed 1925s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8333 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9722 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9722 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8889 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 4/15  svm=0.9056 rf=0.9056 gru=0.2444  (elapsed 2393s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9583 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8333 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8333 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=0 train_acc=0.4722 test_acc=0.2917
+rep 5/15  svm=0.9056 rf=0.9111 gru=0.2472  (elapsed 2840s)
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9722 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9722 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8333 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.3} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8750 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.3} restarts=5 train_acc=0.3611 test_acc=0.2222
+rep 6/15  svm=0.9028 rf=0.9278 gru=0.2333  (elapsed 3286s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8611 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8472 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9861 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 7/15  svm=0.9056 rf=0.9222 gru=0.2667  (elapsed 3774s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8472 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8611 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3889 test_acc=0.1111
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8472 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9583 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 8/15  svm=0.9028 rf=0.9111 gru=0.2111  (elapsed 4231s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9583 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8194 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8750 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+rep 9/15  svm=0.9056 rf=0.9083 gru=0.2556  (elapsed 4654s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.001, 'dropout': 0.3} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+rep 10/15  svm=0.9083 rf=0.9306 gru=0.2222  (elapsed 5070s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9722 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8750 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3889 test_acc=0.1111
+rep 11/15  svm=0.9028 rf=0.9222 gru=0.2000  (elapsed 5491s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9722 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.9583 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8333 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8750 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8611 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+rep 12/15  svm=0.9056 rf=0.9111 gru=0.2333  (elapsed 5899s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.01, 'dropout': 0.3} restarts=0 train_acc=0.3958 test_acc=0.3194
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9306 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9306 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 13/15  svm=0.9056 rf=0.9222 gru=0.2528  (elapsed 6292s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9028 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9583 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9444 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9861 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8611 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8472 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 1.0, 'gamma': 'scale'} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8750 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=5 train_acc=0.3611 test_acc=0.2222
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9028 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3472 test_acc=0.2778
+rep 14/15  svm=0.9028 rf=0.9139 gru=0.2444  (elapsed 6706s)
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 1} acc=0.8889 | gru cfg={'lr': 0.001, 'dropout': 0.3} restarts=5 train_acc=0.3333 test_acc=0.3333
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=0 train_acc=0.3681 test_acc=0.3056
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.9167 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9167 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 0.01} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.9444 | gru cfg={'lr': 0.001, 'dropout': 0.0} restarts=5 train_acc=0.3750 test_acc=0.1667
+    svm cfg={'C': 10.0, 'gamma': 'scale'} acc=0.8889 | rf cfg={'max_depth': None, 'min_samples_leaf': 4} acc=0.8889 | gru cfg={'lr': 0.01, 'dropout': 0.0} restarts=0 train_acc=0.4896 test_acc=0.5000
+rep 15/15  svm=0.9056 rf=0.9111 gru=0.2944  (elapsed 7129s)
+
+[v2 15x-repeated summary, n=75 paired diffs] SVM=0.9050+-0.0381  RF=0.9172+-0.0332  GRU=0.2433+-0.0541  (total GRU restarts used: 355)
+
+Total runtime: 7129s
+Saved audit_fixes/lane4/lane4_v2_single_split.csv, lane4_v2_repeated_grouped_cv_raw.csv, and run_v2_stdout.log

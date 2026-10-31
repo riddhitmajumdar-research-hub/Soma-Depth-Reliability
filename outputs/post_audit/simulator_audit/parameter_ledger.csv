@@ -1,0 +1,43 @@
+constant,value_used,unit,file_and_line,source,target_tissue,sample_size,measurement_modality,unit_conversion_applied,status
+rho (tissue density),1060,kg/m^3,Source/physics_model.py:4,README Stage 1: 'standard soft-tissue density approximation'; no citation,soft tissue (generic),not stated in repo,not stated in repo,none,assumed
+rho uncertainty range,1060*0.92 to 1060*1.08,kg/m^3,Source/joint_uncertainty.py:18,README Log on joint uncertainty: 'a primary source' with up to 8% tolerance; source not named in repo,soft tissue (generic),not stated in repo,not stated in repo,none,unsourced
+E = 3G (incompressible solid),G = E/3,dimensionless,Source/physics_model.py:10; Source/attenuation_model.py:56,code comment only; no citation,soft tissue,not stated in repo,not stated in repo,kPa to Pa (x1000),assumed
+tracking distance,0.010,m,Source/physics_model.py:14,README Stage 1: 'representative of commercial 2D-SWE tracking geometry'; no citation,liver (device geometry),not stated in repo,2D-SWE (device geometry),none,assumed
+signal duration,3.0,s,Source/physics_model.py:23,none,n/a,n/a,n/a,none,unsourced
+heart rate (nominal),1.15,Hz (69 bpm),Source/physics_model.py:23; Source/degradation_aware_final_sweep.py:50,README: jitter 'physiologically realistic'; no source for the 1.15 centre,n/a,n/a,n/a,none,unsourced
+heart-rate jitter SD,0.03,Hz,Source/degradation_aware_final_sweep.py:47; Source/cnn_classifier.py:49,none; README calls it 'small random jitter',n/a,n/a,n/a,none,unsourced
+sample rate,500,Hz,Source/physics_model.py:23,none (upper edge of stated 20-500 Hz band),n/a,n/a,n/a,none,assumed
+pulse duration window,0.15,s,Source/physics_model.py:38,none,n/a,n/a,n/a,none,unsourced
+pulse envelope decay rate,15,1/s (exp(-15 t)),Source/physics_model.py:42,none,n/a,n/a,n/a,none,unsourced
+pulse carrier frequency,100 (hard-coded; does not follow the frequency_hz argument used for attenuation),Hz,Source/physics_model.py:42,none,n/a,n/a,n/a,none,unsourced
+window length,"100 samples (0.2 s at 500 Hz), aligned to cardiac beat time, not arrival time",samples,Source/cnn_classifier.py:18,code docstring explains the alignment choice; length itself has no source,n/a,n/a,n/a,none,unsourced
+"stiffness, healthy",4.5,kPa (Young's modulus),Source/physics_model.py:65,"code comment: original value kept, within ~15-20% of Zayadeen et al. F0-F1 = 5.39 +/- 0.62 kPa",human liver,n=95 (per code comment),not stated in repo,none (kPa),assumed
+"stiffness, significant fibrosis",7.5,kPa,Source/physics_model.py:66,"code comment: Zayadeen et al. F2 = 7.32 +/- 0.41, F3 = 8.46 +/- 0.33 kPa",human liver,n=95 (per code comment),not stated in repo,none (kPa),assumed
+"stiffness, cirrhosis",12.0,kPa,Source/physics_model.py:67,code comment: Zayadeen et al. F4 = 11.42 +/- 2.8 kPa,human liver,n=95 (per code comment),not stated in repo,none (kPa),assumed
+"viscosity eta, healthy",0.5,Pa.s,Source/attenuation_model.py:35,"README Stage 2: transient-elastography study 'Assessment of Liver Viscoelasticity for the Diagnosis of Early Stage Fatty Liver Disease Using Transient Elastography' (Kelvin-Voigt, 20-90 Hz); authors, year and value location not recorded in repo",human liver,not stated in repo,transient elastography,none,verified
+"viscosity eta, significant fibrosis",0.5,Pa.s,Source/attenuation_model.py:36,set equal to healthy because Reiter et al. 2021 report loss angle F1-F3 not different from F0 (p=0.21),human liver,"15 healthy + 37 CLD (Reiter, per code comment)","multifrequency MRE, 35-60 Hz",none,verified
+"viscosity eta, cirrhosis",1.77,Pa.s,Source/attenuation_model.py:37,"Upper bound of the same viscosity paper's 2%-fat vs 22%-fat liver comparison (fat-content axis, not fibrosis stage). Reiter gives direction only (phi 0.81 +/- 0.16 rad, p<0.001). Code and README both flag the magnitude as approximate. Researcher states it comes from one patient; the repo does not say so","human liver (fatty), not cirrhotic",not stated in repo,transient elastography (value); MRE (direction),none; phi-to-eta conversion not done (storage modulus not accessible),assumed
+default eta (off-class stiffness),0.5,Pa.s,Source/attenuation_model.py:39,none,n/a,n/a,n/a,none,assumed
+attenuation law,"alpha = w^2 eta / (2 G c), weak damping Kelvin-Voigt",1/m,Source/attenuation_model.py:59-60,"README Stage 2; derivation is in-repo (Source/weak_damping_error_bound.py, lane1 exact-attenuation comparison)",soft tissue,n/a,model,w = 2 pi f,assumed
+operating frequency (nominal),100,Hz,Source/constants.py:44,README: 'SOMA's stated 100Hz operating frequency'; stated band 20-500 Hz,n/a,n/a,n/a,none,assumed
+sensor SNR,27.05,dB,Source/constants.py:17,"Yang et al. 2022, Biosensors (PMC9312695), wearable skin-contact MEMS heart-sound sensor, 10-630 Hz (per constants.py comment)",human subject (heart sounds),not stated in repo,wearable MEMS heart-sound sensor,"noise SD = 10^(-SNR/20), applied to a signal of peak amplitude about 1 (assumption: SNR taken against unit peak, not RMS; see PARKED.md)",verified
+"sensor SNR, worst case",13.58,dB,Source/constants.py:26,weakest of 3 corroborating wearable MEMS heart-sound papers (constants.py comment; the other two papers are not named there),human subject (heart sounds),not stated in repo,wearable MEMS heart-sound sensor,same as above,verified
+noise model,"white Gaussian, i.i.d. per sample",unitless,Source/degradation_aware_final_sweep.py:53,none,n/a,n/a,n/a,none,assumed
+power-law exponent n,0.51,dimensionless,Source/attenuation_model_powerlaw.py:25,2025 Multi-Frequency Reverberant OCE study on ex vivo bovine liver (named in file comment; authors not recorded),ex vivo bovine liver,not stated in repo,reverberant OCE,none,verified
+power-law anchor frequency,20,Hz,Source/attenuation_model_powerlaw.py:24,rationale in file comment (weak-damping holds best at 20 Hz),n/a,n/a,n/a,none,assumed
+training depths,"[0, 3, 6, 9, 12]",cm,Source/constants.py:52; Source/degradation_aware_final_sweep.py:28,none,n/a,n/a,n/a,cm to m (/100) at use,assumed
+evaluation depth grid,"12 points linspace(0,15) + 11 densified 3.5-8.0 = 23 unique, max 15.0",cm,"Source/constants.py:58,65; Source/degradation_aware_final_sweep.py:32-34",Log 18 Fix #4 (densify where floor lands),n/a,n/a,n/a,cm to m (/100),assumed
+samples per training depth per class,25,windows,Source/degradation_aware_final_sweep.py:30,none,n/a,n/a,n/a,none,unsourced
+samples per eval cell,300 (100 per class),windows,Source/degradation_aware_final_sweep.py:36,file header: chosen to tighten per-depth margin to about 5.7 points,n/a,n/a,n/a,none,assumed
+shuffled-label controls,200,models,Source/degradation_aware_final_sweep.py:37,none,n/a,n/a,n/a,none,assumed
+FDR level,0.05,dimensionless,Source/degradation_aware_final_sweep.py:86,convention,n/a,n/a,n/a,none,assumed
+training epochs / lr,"60 full-batch epochs, Adam lr 0.001",epochs,"Source/degradation_aware_final_sweep.py:70,74","none (cloud battery log checked the loss curve, doc 12 item 3)",n/a,n/a,n/a,none,assumed
+default seed,42,n/a,Source/constants.py:38,constants.py: arbitrary,n/a,n/a,n/a,none,assumed
+certified sweep seeds,101-124,n/a,Source/degradation_aware_final_sweep.py:41,none,n/a,n/a,n/a,none,assumed
+depth safety gate,6.50,cm,Source/constants.py:91,10th percentile of the 24 per-seed floors (Source/logs/gate_statistic_verification.csv),n/a,n/a,n/a,none,verified
+"stiffness within-class CV, per class",0.115 / 0.056 / 0.245,fraction,,"Arithmetic from the Zayadeen SDs quoted in physics_model.py: 0.62/5.39, 0.41/7.32, 2.8/11.42. Derivation not stated in the config file; I inferred it from the numbers matching",human liver,n=95,not stated in repo,none,assumed
+"stiffness within-class CV, uniform",0.15,fraction,same file (4b),none,n/a,n/a,n/a,none,unsourced
+stiffness CV truncation,+/-2.5 sigma,sigma,,none,n/a,n/a,n/a,none,unsourced
+geometric spreading,"min(1,(x0/x)^p), x0 = 1 cm, p = 0.5 and 1.0",dimensionless,,"none in repo (sensitivity probe, not baseline)",n/a,n/a,n/a,none,unsourced
+amplitude gain,"U(0.5, 1.5) linear",dimensionless,,none in repo (sensitivity probe),n/a,n/a,n/a,none,unsourced
+Remenieras 2015 viscosity value,not used in code,Pa.s,not present in repo,Remenieras 2015 exists; value unchecked against the full text. Named by the researcher; no mention in the repo,not stated in repo,not stated in repo,not stated in repo,n/a,unsourced

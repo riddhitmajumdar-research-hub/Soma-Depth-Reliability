@@ -1,0 +1,61 @@
+where,measure,mean_over_seeds,ci_lo,ci_hi,n_seeds_defined
+0.0 cm,accuracy,0.6524,0.6303,0.6714,24
+0.0 cm,mean_max_softmax,0.5688,0.5465,0.5902,24
+0.0 cm,ECE,0.1205,0.1034,0.1381,24
+0.0 cm,binned_gap,0.1457,0.1281,0.1639,24
+0.0 cm,mean_max_softmax_T,0.6723,0.6422,0.6997,24
+0.0 cm,ECE_T,0.1029,0.0889,0.1185,24
+0.0 cm,binned_gap_T,0.1416,0.1211,0.1623,24
+0.0 cm,mean_logit_gap,0.735,0.6607,0.8125,24
+0.0 cm,AUROC_max_softmax,0.5886,0.5581,0.6174,24
+0.0 cm,AUROC_logit_gap,0.6166,0.5889,0.6416,24
+4.0 cm,accuracy,0.715,0.6899,0.7381,24
+4.0 cm,mean_max_softmax,0.3908,0.3839,0.398,24
+4.0 cm,ECE,0.3324,0.3127,0.3518,24
+4.0 cm,binned_gap,0.3523,0.3211,0.3817,24
+4.0 cm,mean_max_softmax_T,0.4274,0.4159,0.4386,24
+4.0 cm,ECE_T,0.3025,0.2829,0.3227,24
+4.0 cm,binned_gap_T,0.3278,0.2991,0.3561,24
+4.0 cm,mean_logit_gap,0.1636,0.1426,0.1852,24
+4.0 cm,AUROC_max_softmax,0.5642,0.525,0.6021,24
+4.0 cm,AUROC_logit_gap,0.6182,0.5869,0.6498,24
+6.5 cm,accuracy,0.5613,0.5254,0.5971,24
+6.5 cm,mean_max_softmax,0.3692,0.3652,0.3731,24
+6.5 cm,ECE,0.1981,0.1623,0.2355,24
+6.5 cm,binned_gap,0.2633,0.2278,0.2983,24
+6.5 cm,mean_max_softmax_T,0.3924,0.3849,0.4002,24
+6.5 cm,ECE_T,0.1862,0.1511,0.2216,24
+6.5 cm,binned_gap_T,0.2458,0.204,0.2852,24
+6.5 cm,mean_logit_gap,0.0916,0.0805,0.1025,24
+6.5 cm,AUROC_max_softmax,0.5938,0.5569,0.6304,24
+6.5 cm,AUROC_logit_gap,0.5856,0.5546,0.6149,24
+8.0 cm,accuracy,0.4636,0.436,0.4926,24
+8.0 cm,mean_max_softmax,0.3652,0.3612,0.3692,24
+8.0 cm,ECE,0.1093,0.0798,0.1394,24
+8.0 cm,binned_gap,0.1634,0.1198,0.2097,24
+8.0 cm,mean_max_softmax_T,0.3855,0.3781,0.3934,24
+8.0 cm,ECE_T,0.1197,0.0942,0.1461,24
+8.0 cm,binned_gap_T,0.201,0.1577,0.2445,24
+8.0 cm,mean_logit_gap,0.076,0.0655,0.0866,24
+8.0 cm,AUROC_max_softmax,0.6017,0.5719,0.6311,24
+8.0 cm,AUROC_logit_gap,0.5536,0.5258,0.5816,24
+10.0 cm,accuracy,0.3843,0.3675,0.4025,24
+10.0 cm,mean_max_softmax,0.3639,0.3594,0.3683,24
+10.0 cm,ECE,0.0476,0.0332,0.0629,24
+10.0 cm,binned_gap,0.113,0.0777,0.1494,24
+10.0 cm,mean_max_softmax_T,0.3832,0.3752,0.3919,24
+10.0 cm,ECE_T,0.0647,0.0493,0.0802,24
+10.0 cm,binned_gap_T,0.1384,0.1041,0.1737,24
+10.0 cm,mean_logit_gap,0.0677,0.0561,0.0796,24
+10.0 cm,AUROC_max_softmax,0.6066,0.5789,0.6329,24
+10.0 cm,AUROC_logit_gap,0.5338,0.5005,0.566,24
+each seed's floor depth,accuracy,0.4346,0.4119,0.4603,24
+each seed's floor depth,mean_max_softmax,0.37,0.3605,0.3841,24
+each seed's floor depth,ECE,0.0724,0.0517,0.0957,24
+each seed's floor depth,binned_gap,0.1188,0.0824,0.157,24
+each seed's floor depth,mean_max_softmax_T,0.3875,0.3781,0.3979,24
+each seed's floor depth,ECE_T,0.0649,0.0455,0.0868,24
+each seed's floor depth,binned_gap_T,0.1381,0.104,0.1745,24
+each seed's floor depth,mean_logit_gap,0.0937,0.0615,0.1455,24
+each seed's floor depth,AUROC_max_softmax,0.5746,0.5448,0.605,24
+each seed's floor depth,AUROC_logit_gap,0.5276,0.4914,0.5626,24

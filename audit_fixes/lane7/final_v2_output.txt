@@ -1,0 +1,58 @@
+
+==============================================================================
+0. STATUS CHECK (re-confirmed)
+==============================================================================
+CNN rows: 24  ResNet rows: 24
+MAX_VALID_DEPTH_CM = 6.5
+EVAL_DEPTHS_CM[-1] (grid max, imported) = 15.0
+
+==============================================================================
+1. CENSORING
+==============================================================================
+Quoted floor-assignment code:
+
+--- CNN sweep (degradation_aware_final_sweep.py) ---
+160-    if floor_depth is None:
+161:        floor_depth = EVAL_DEPTHS_CM[-1]
+162-
+163-    last_significant_depth = None
+
+--- ResNet1D sweep (degradation_aware_resnet_final_sweep.py) ---
+222-    if floor_depth is None:
+223:        floor_depth = EVAL_DEPTHS_CM[-1]
+224-
+225-    last_significant_depth = None
+
+CNN seeds with floor == grid max (15.0) [right-censored]: [] (0/24)
+ResNet1D seeds with floor == grid max (15.0) [right-censored]: [103] (1/24)
+
+Censoring present -- running Gehan-Wilcoxon and log-rank as specified.
+
+Gehan-Wilcoxon (hand-rolled, lifelines not installed): W(group0=CNN)=-293.0000, z=-3.0528, two-sided p=0.00226683
+Log-rank (unweighted, hand-rolled): O-E(group0=CNN)=9.1185, chi2=12.0477, p=0.00051855
+
+(For comparison, v1's uncensored Mann-Whitney U on the same floor values: see lane7_output_raw.txt section 2. Both versions reported here per the pre-registered plan; not reconciled.)
+
+==============================================================================
+2. SEEDS BELOW 6.50 cm GATE (full lists)
+==============================================================================
+CNN (n=24): 2 seeds below 6.5 cm: [102, 111]
+    seed 102: 5.500000 cm
+    seed 111: 5.454545 cm
+
+ResNet1D (n=24, PROVISIONAL): 3 seeds below 6.5 cm: [101, 110, 112]
+    seed 101: 6.000000 cm
+    seed 110: 1.363636 cm
+    seed 112: 4.000000 cm
+
+==============================================================================
+3. PAIRED SIGN-FLIP PERMUTATION TEST (matched seeds, zero diffs kept)
+==============================================================================
+n matched seeds = 24, n zero-differences kept in this test = 1
+Observed mean difference (ResNet1D - CNN) = 1.884470 cm
+Sign-flip permutation test (100000 flips): two-sided p = 0.029950
+(Compare to v1's Wilcoxon signed-rank p=0.03997423, which drops the 1 zero-difference pair -- see lane7_output_raw.txt section 4d. Both reported, not reconciled.)
+
+==============================================================================
+DONE
+==============================================================================

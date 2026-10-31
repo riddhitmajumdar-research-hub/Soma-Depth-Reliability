@@ -1,0 +1,4 @@
+V1 n_train=38016 (19256 lbl1) n_test=6912 (3520 lbl1)
+V1 seed=1 acc=0.6034 recall_lbl0=0.6925 recall_lbl1=0.5176
+V1 seed=2 acc=0.6036 recall_lbl0=0.5713 recall_lbl1=0.6347
+V1 seed=3 acc=0.6066 recall_lbl0=0.6315 recall_lbl1=0.5827

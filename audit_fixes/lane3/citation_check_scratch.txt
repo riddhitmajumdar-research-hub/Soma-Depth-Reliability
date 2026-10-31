@@ -1,0 +1,10 @@
+Commands run (read-only, from repo root):
+
+grep -rn "Chen" README.md Source/*.py SOMA_Consolidated_Methodology.py
+grep -rn "wearable" README.md Source/*.py SOMA_Consolidated_Methodology.py
+grep -rn "27.05" README.md Source/*.py SOMA_Consolidated_Methodology.py
+grep -rn "26.47" README.md Source/*.py SOMA_Consolidated_Methodology.py
+grep -rn "13.58" README.md Source/*.py SOMA_Consolidated_Methodology.py
+
+The full raw output is not preserved in this file.
+Summary extracted into FACTS.md, section "Citation check (Chen et al. / 26.47dB / 13.58dB sources)".

@@ -1,0 +1,87 @@
+==============================================================================
+Q9 (6c) -- SimpleCNN degradation-aware checkpoints, standard grid (100Hz, 27.05dB), accuracy by k=0 vs k>=1
+==============================================================================
+EVAL_DEPTHS_CM (23 depths): ['0.00', '1.36', '2.73', '3.50', '4.00', '4.09', '4.30', '4.50', '5.00', '5.45', '5.50', '6.00', '6.50', '6.82', '7.00', '7.50', '8.00', '8.18', '9.55', '10.91', '12.27', '13.64', '15.00']
+N_SAMPLES_PER_CELL=300, FREQ=100Hz
+
+Certified checkpoint: outputs/stage4/models/soma_certified_model_seed121_corrected_noise.pt
+
+--- seed121 (certified checkpoint) ---
+  depth=  0.00cm  k=0: n=  76 acc=77.6316%   k>=1: n= 224 acc=79.4643%
+  depth=  1.36cm  k=0: n=  75 acc=84.0000%   k>=1: n= 225 acc=80.8889%
+  depth=  2.73cm  k=0: n=  76 acc=85.5263%   k>=1: n= 224 acc=81.6964%
+  depth=  3.50cm  k=0: n=  76 acc=94.7368%   k>=1: n= 224 acc=87.9464%
+  depth=  4.00cm  k=0: n=  75 acc=96.0000%   k>=1: n= 225 acc=89.3333%
+  depth=  4.09cm  k=0: n=  75 acc=98.6667%   k>=1: n= 225 acc=88.4444%
+  depth=  4.30cm  k=0: n=  75 acc=97.3333%   k>=1: n= 225 acc=91.1111%
+  depth=  4.50cm  k=0: n=  75 acc=100.0000%   k>=1: n= 225 acc=88.0000%
+  depth=  5.00cm  k=0: n=  75 acc=98.6667%   k>=1: n= 225 acc=86.6667%
+  depth=  5.45cm  k=0: n=  75 acc=96.0000%   k>=1: n= 225 acc=88.4444%
+  depth=  5.50cm  k=0: n=  75 acc=90.6667%   k>=1: n= 225 acc=81.7778%
+  depth=  6.00cm  k=0: n=  75 acc=88.0000%   k>=1: n= 225 acc=81.3333%
+  depth=  6.50cm  k=0: n=  75 acc=81.3333%   k>=1: n= 225 acc=72.8889%
+  depth=  6.82cm  k=0: n=  75 acc=72.0000%   k>=1: n= 225 acc=72.4444%
+  depth=  7.00cm  k=0: n=  75 acc=68.0000%   k>=1: n= 225 acc=63.5556%
+  depth=  7.50cm  k=0: n=  75 acc=50.6667%   k>=1: n= 225 acc=57.7778%
+  depth=  8.00cm  k=0: n=  76 acc=46.0526%   k>=1: n= 224 acc=48.6607%
+  depth=  8.18cm  k=0: n=  75 acc=41.3333%   k>=1: n= 225 acc=45.3333%
+  depth=  9.55cm  k=0: n=  75 acc=41.3333%   k>=1: n= 225 acc=34.2222%
+  depth= 10.91cm  k=0: n=  75 acc=36.0000%   k>=1: n= 225 acc=33.3333%
+  depth= 12.27cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=33.3333%
+  depth= 13.64cm  k=0: n=  75 acc=34.6667%   k>=1: n= 225 acc=33.3333%
+  depth= 15.00cm  k=0: n=  77 acc=33.7662%   k>=1: n= 223 acc=32.2870%
+  POOLED: k=0 n=1731 acc=71.5194%   k>=1 n=5169 acc=67.4985%
+
+Lane 5 seeds completed so far (per lane5_run.log + file check): [101, 102]
+
+--- lane5 seed101 ---
+  depth=  0.00cm  k=0: n=  75 acc=69.3333%   k>=1: n= 225 acc=81.3333%
+  depth=  1.36cm  k=0: n=  76 acc=82.8947%   k>=1: n= 224 acc=79.9107%
+  depth=  2.73cm  k=0: n=  76 acc=90.7895%   k>=1: n= 224 acc=87.5000%
+  depth=  3.50cm  k=0: n=  75 acc=100.0000%   k>=1: n= 225 acc=89.7778%
+  depth=  4.00cm  k=0: n=  76 acc=96.0526%   k>=1: n= 224 acc=90.6250%
+  depth=  4.09cm  k=0: n=  75 acc=98.6667%   k>=1: n= 225 acc=88.0000%
+  depth=  4.30cm  k=0: n=  75 acc=97.3333%   k>=1: n= 225 acc=86.2222%
+  depth=  4.50cm  k=0: n=  75 acc=97.3333%   k>=1: n= 225 acc=83.5556%
+  depth=  5.00cm  k=0: n=  76 acc=97.3684%   k>=1: n= 224 acc=85.2679%
+  depth=  5.45cm  k=0: n=  75 acc=94.6667%   k>=1: n= 225 acc=84.4444%
+  depth=  5.50cm  k=0: n=  75 acc=96.0000%   k>=1: n= 225 acc=89.7778%
+  depth=  6.00cm  k=0: n=  75 acc=78.6667%   k>=1: n= 225 acc=74.6667%
+  depth=  6.50cm  k=0: n=  75 acc=80.0000%   k>=1: n= 225 acc=72.4444%
+  depth=  6.82cm  k=0: n=  75 acc=68.0000%   k>=1: n= 225 acc=69.3333%
+  depth=  7.00cm  k=0: n=  75 acc=62.6667%   k>=1: n= 225 acc=64.4444%
+  depth=  7.50cm  k=0: n=  75 acc=56.0000%   k>=1: n= 225 acc=64.0000%
+  depth=  8.00cm  k=0: n=  76 acc=50.0000%   k>=1: n= 224 acc=49.1071%
+  depth=  8.18cm  k=0: n=  75 acc=44.0000%   k>=1: n= 225 acc=51.1111%
+  depth=  9.55cm  k=0: n=  76 acc=40.7895%   k>=1: n= 224 acc=37.0536%
+  depth= 10.91cm  k=0: n=  75 acc=30.6667%   k>=1: n= 225 acc=32.4444%
+  depth= 12.27cm  k=0: n=  76 acc=39.4737%   k>=1: n= 224 acc=33.0357%
+  depth= 13.64cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=33.7778%
+  depth= 15.00cm  k=0: n=  75 acc=32.0000%   k>=1: n= 225 acc=32.4444%
+  POOLED: k=0 n=1732 acc=71.1316%   k>=1 n=5168 acc=67.8406%
+
+--- lane5 seed102 ---
+  depth=  0.00cm  k=0: n=  76 acc=67.1053%   k>=1: n= 224 acc=76.7857%
+  depth=  1.36cm  k=0: n=  75 acc=66.6667%   k>=1: n= 225 acc=81.3333%
+  depth=  2.73cm  k=0: n=  75 acc=68.0000%   k>=1: n= 225 acc=85.7778%
+  depth=  3.50cm  k=0: n=  75 acc=86.6667%   k>=1: n= 225 acc=88.4444%
+  depth=  4.00cm  k=0: n=  75 acc=92.0000%   k>=1: n= 225 acc=89.3333%
+  depth=  4.09cm  k=0: n=  75 acc=96.0000%   k>=1: n= 225 acc=90.2222%
+  depth=  4.30cm  k=0: n=  75 acc=100.0000%   k>=1: n= 225 acc=86.2222%
+  depth=  4.50cm  k=0: n=  77 acc=97.4026%   k>=1: n= 223 acc=84.7534%
+  depth=  5.00cm  k=0: n=  75 acc=77.3333%   k>=1: n= 225 acc=79.1111%
+  depth=  5.45cm  k=0: n=  76 acc=60.5263%   k>=1: n= 224 acc=68.7500%
+  depth=  5.50cm  k=0: n=  76 acc=61.8421%   k>=1: n= 224 acc=66.0714%
+  depth=  6.00cm  k=0: n=  75 acc=50.6667%   k>=1: n= 225 acc=56.4444%
+  depth=  6.50cm  k=0: n=  76 acc=38.1579%   k>=1: n= 224 acc=52.6786%
+  depth=  6.82cm  k=0: n=  75 acc=37.3333%   k>=1: n= 225 acc=49.3333%
+  depth=  7.00cm  k=0: n=  75 acc=36.0000%   k>=1: n= 225 acc=44.0000%
+  depth=  7.50cm  k=0: n=  75 acc=37.3333%   k>=1: n= 225 acc=41.3333%
+  depth=  8.00cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=39.1111%
+  depth=  8.18cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=34.6667%
+  depth=  9.55cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=33.3333%
+  depth= 10.91cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=33.3333%
+  depth= 12.27cm  k=0: n=  75 acc=33.3333%   k>=1: n= 225 acc=33.3333%
+  depth= 13.64cm  k=0: n=  76 acc=32.8947%   k>=1: n= 224 acc=33.4821%
+  depth= 15.00cm  k=0: n=  76 acc=34.2105%   k>=1: n= 224 acc=33.0357%
+  POOLED: k=0 n=1733 acc=56.8379%   k>=1 n=5167 acc=60.0348%

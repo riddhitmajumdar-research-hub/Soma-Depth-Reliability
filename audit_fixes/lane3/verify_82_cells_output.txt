@@ -1,0 +1,5 @@
+20Hz: 12 depths
+100Hz: 24 depths
+250Hz: 23 depths
+500Hz: 23 depths
+TOTAL (freq, depth) CELLS in the single joint bh_fdr_correction(all_p_values) family: 82

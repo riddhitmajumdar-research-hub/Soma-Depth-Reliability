@@ -1,0 +1,29 @@
+ResNet1D sweep (pid 7429) active before benchmark: True
+ResNet1D sweep (pid 7429) active after benchmark:  True
+
+Seed 101 end-to-end wall-clock: 815.3s (train=4.2s, controls=651.0s, eval=80.1s)
+
+Projections (linear extrapolation from this one seed; see REPORT.md for caveats -- e.g. dataset-size sweep changes per-seed cost non-uniformly):
+  (a) 24 seeds (this pre-registered run):                 19567s = 326.1min = 5.44hr
+  (b) dataset-size sweep, 4 sizes x 24 seeds:             78266s = 1304.4min = 21.74hr
+  (c) window sweep, 3 settings x 24 seeds:                58700s = 978.3min = 16.31hr
+Traceback (most recent call last):
+  File "<REPO_ROOT>/audit_fixes/lane5/lane5_benchmark.py", line 87, in <module>
+    main()
+  File "<REPO_ROOT>/audit_fixes/lane5/lane5_benchmark.py", line 82, in main
+    json.dump(result, f, indent=2)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+python3 lane5_benchmark.py 2>&1  985.62s user 673.96s system 202% cpu 13:38.03 total
+tail -60  0.00s user 0.00s system 0% cpu 13:38.03 total
+
+[exited with code 0]

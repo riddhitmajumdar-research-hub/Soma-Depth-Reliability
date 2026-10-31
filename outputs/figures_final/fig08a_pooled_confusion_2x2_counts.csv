@@ -1,0 +1,13 @@
+depth_cm,true_class,pred_cirrhosis,pred_healthy,pred_fibrosis
+0.00,cirrhosis,1657,18,725
+0.00,healthy,0,1953,447
+0.00,significant_fibrosis,372,37,1991
+2.73,cirrhosis,1946,34,420
+2.73,healthy,0,2236,164
+2.73,significant_fibrosis,436,25,1939
+4.30,cirrhosis,2278,91,31
+4.30,healthy,9,2387,4
+4.30,significant_fibrosis,541,61,1798
+6.82,cirrhosis,1265,1135,0
+6.82,healthy,115,2285,0
+6.82,significant_fibrosis,884,579,937

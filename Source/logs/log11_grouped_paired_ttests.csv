@@ -1,0 +1,4 @@
+comparison,mean_diff,t_stat,p_value,significant_at_0.05,original_ungrouped_p_value
+cnn_vs_baseline,0.1675,3.906,0.0175,True,0.0083
+resnet1d_vs_baseline,0.1786,4.950,0.0078,True,0.0012
+resnet1d_vs_cnn,0.0111,1.372,0.2420,False,0.22

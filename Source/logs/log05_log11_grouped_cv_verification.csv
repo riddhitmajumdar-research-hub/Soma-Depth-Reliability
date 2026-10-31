@@ -1,0 +1,13 @@
+item,fold,baseline_acc,cnn_acc,resnet1d_acc,n_realizations_total,n_folds,split_method
+log05_baseline_grouped_cv,1,0.6944,,,90,5,GroupKFold
+log05_baseline_grouped_cv,2,0.7222,,,90,5,GroupKFold
+log05_baseline_grouped_cv,3,0.7500,,,90,5,GroupKFold
+log05_baseline_grouped_cv,4,0.7361,,,90,5,GroupKFold
+log05_baseline_grouped_cv,5,0.7324,,,90,5,GroupKFold
+log05_baseline_grouped_cv,mean,0.7270,,,90,5,GroupKFold
+log05_baseline_grouped_cv,sd,0.0208,,,90,5,GroupKFold
+log11_paired_grouped_cv,1,0.7083,0.9444,0.9583,90,5,GroupKFold(group-to-fold mapping shared across baseline/CNN/ResNet1D)
+log11_paired_grouped_cv,2,0.6806,0.9028,0.9028,90,5,GroupKFold(group-to-fold mapping shared across baseline/CNN/ResNet1D)
+log11_paired_grouped_cv,3,0.8056,0.8056,0.8472,90,5,GroupKFold(group-to-fold mapping shared across baseline/CNN/ResNet1D)
+log11_paired_grouped_cv,4,0.7042,0.8889,0.8889,90,5,GroupKFold(group-to-fold mapping shared across baseline/CNN/ResNet1D)
+log11_paired_grouped_cv,5,0.7500,0.9444,0.9444,90,5,GroupKFold(group-to-fold mapping shared across baseline/CNN/ResNet1D)

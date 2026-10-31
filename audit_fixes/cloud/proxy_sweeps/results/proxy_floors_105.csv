@@ -1,0 +1,14 @@
+seed,condition,condition_label,epochs,floor_cm,last_significant_cm,censored,n_shuffles,seconds_train_real,seconds_controls,seconds_eval
+105,0_baseline,"baseline: mixed-depth, 60 epochs, 100 samples, 10 mm, 100 Hz",60,7.5,7.0,False,200,6.4,682.0,126.2
+105,1_epochs_600,training budget 600 epochs,600,15.0,13.636363636363635,False,200,31.6,7542.3,144.6
+105,2_jitter_0.5,"beat-time jitter, SD 0.5 sample (1 ms)",60,6.0,5.5,False,200,4.0,787.2,155.5
+105,2_jitter_1.0,"beat-time jitter, SD 1.0 sample (2 ms)",60,0.0,,False,200,3.9,885.9,158.5
+105,3_carrier_50,pulse carrier 50 Hz,60,15.0,15.0,True,200,4.4,794.1,154.8
+105,3_carrier_150,pulse carrier 150 Hz,60,3.5,2.727272727272727,False,200,4.2,798.7,160.1
+105,4_track_5,tracking distance 5 mm,60,2.727272727272727,5.5,False,200,4.0,793.7,156.1
+105,4_track_15,tracking distance 15 mm,60,8.181818181818182,8.0,False,200,3.6,793.1,156.1
+105,4_track_20,tracking distance 20 mm,60,9.545454545454545,10.909090909090908,False,200,4.1,790.9,153.7
+105,5_window_50,window length 50 samples,60,10.909090909090908,12.272727272727272,False,200,2.1,476.0,85.6
+105,5_window_150,window length 150 samples,60,8.0,15.0,False,200,5.9,1053.2,182.8
+105,6_stiffness_alt,stiffness set 5.4 / 7.3 / 11.4 kPa,60,3.5,5.5,False,200,3.7,705.0,131.4
+105,7_clean_only,"clean-only training, baseline evaluation",60,5.454545454545454,5.0,False,200,2.9,586.4,135.4

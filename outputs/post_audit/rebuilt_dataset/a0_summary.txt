@@ -1,0 +1,47 @@
+p3_a0_a_v1 101 {'train_acc': 0.664, 'val_acc': 0.629, 'acc_clean': 0.727, 'acc_d0': 0.787, 'acc_d8': 0.487}
+p3_a0_a_v1 102 {'train_acc': 0.579, 'val_acc': 0.552, 'acc_clean': 0.717, 'acc_d0': 0.737, 'acc_d8': 0.41}
+p3_a0_a_v1 103 {'train_acc': 0.648, 'val_acc': 0.627, 'acc_clean': 0.803, 'acc_d0': 0.797, 'acc_d8': 0.46}
+p3_a0_a_v1 104 {'train_acc': 0.635, 'val_acc': 0.621, 'acc_clean': 0.75, 'acc_d0': 0.74, 'acc_d8': 0.463}
+p3_a0_a_v1 105 {'train_acc': 0.667, 'val_acc': 0.643, 'acc_clean': 0.763, 'acc_d0': 0.813, 'acc_d8': 0.46}
+p3_a0_a_v1 106 {'train_acc': 0.648, 'val_acc': 0.643, 'acc_clean': 0.823, 'acc_d0': 0.833, 'acc_d8': 0.44}
+p3_a0_a_v1 107 {'train_acc': 0.635, 'val_acc': 0.643, 'acc_clean': 0.767, 'acc_d0': 0.767, 'acc_d8': 0.52}
+p3_a0_a_v1 108 {'train_acc': 0.672, 'val_acc': 0.656, 'acc_clean': 0.75, 'acc_d0': 0.793, 'acc_d8': 0.5}
+p3_a0_b_v1 101 {'train_acc': 0.648, 'val_acc': 0.613, 'acc_clean': 0.787, 'acc_d0': 0.84, 'acc_d8': 0.523}
+p3_a0_b_v1 102 {'train_acc': 0.573, 'val_acc': 0.597, 'acc_clean': 0.733, 'acc_d0': 0.723, 'acc_d8': 0.403}
+p3_a0_b_v1 103 {'train_acc': 0.603, 'val_acc': 0.544, 'acc_clean': 0.733, 'acc_d0': 0.69, 'acc_d8': 0.48}
+p3_a0_b_v1 104 {'train_acc': 0.6, 'val_acc': 0.595, 'acc_clean': 0.66, 'acc_d0': 0.647, 'acc_d8': 0.487}
+p3_a0_b_v1 105 {'train_acc': 0.611, 'val_acc': 0.64, 'acc_clean': 0.79, 'acc_d0': 0.773, 'acc_d8': 0.43}
+p3_a0_b_v1 106 {'train_acc': 0.597, 'val_acc': 0.563, 'acc_clean': 0.757, 'acc_d0': 0.737, 'acc_d8': 0.453}
+p3_a0_b_v1 107 {'train_acc': 0.64, 'val_acc': 0.624, 'acc_clean': 0.653, 'acc_d0': 0.653, 'acc_d8': 0.52}
+p3_a0_b_v1 108 {'train_acc': 0.651, 'val_acc': 0.632, 'acc_clean': 0.767, 'acc_d0': 0.643, 'acc_d8': 0.533}
+p3_a0_c_v1 101 {'train_acc': 0.611, 'val_acc': 0.573, 'acc_clean': 0.747, 'acc_d0': 0.717, 'acc_d8': 0.463}
+p3_a0_c_v1 102 {'train_acc': 0.536, 'val_acc': 0.52, 'acc_clean': 0.723, 'acc_d0': 0.65, 'acc_d8': 0.383}
+p3_a0_c_v1 103 {'train_acc': 0.539, 'val_acc': 0.557, 'acc_clean': 0.85, 'acc_d0': 0.683, 'acc_d8': 0.353}
+p3_a0_c_v1 104 {'train_acc': 0.549, 'val_acc': 0.531, 'acc_clean': 0.78, 'acc_d0': 0.71, 'acc_d8': 0.457}
+p3_a0_c_v1 105 {'train_acc': 0.56, 'val_acc': 0.56, 'acc_clean': 0.73, 'acc_d0': 0.703, 'acc_d8': 0.437}
+p3_a0_c_v1 106 {'train_acc': 0.619, 'val_acc': 0.637, 'acc_clean': 0.69, 'acc_d0': 0.74, 'acc_d8': 0.513}
+p3_a0_c_v1 107 {'train_acc': 0.592, 'val_acc': 0.613, 'acc_clean': 0.747, 'acc_d0': 0.73, 'acc_d8': 0.487}
+p3_a0_c_v1 108 {'train_acc': 0.595, 'val_acc': 0.597, 'acc_clean': 0.767, 'acc_d0': 0.763, 'acc_d8': 0.503}
+p3_a0_e_v1 101 {'train_acc': 0.611, 'val_acc': 0.563, 'acc_clean': 0.72, 'acc_d0': 0.7, 'acc_d8': 0.443}
+p3_a0_e_v1 102 {'train_acc': 0.584, 'val_acc': 0.544, 'acc_clean': 0.763, 'acc_d0': 0.677, 'acc_d8': 0.473}
+p3_a0_e_v1 103 {'train_acc': 0.629, 'val_acc': 0.616, 'acc_clean': 0.723, 'acc_d0': 0.68, 'acc_d8': 0.513}
+p3_a0_e_v1 104 {'train_acc': 0.651, 'val_acc': 0.597, 'acc_clean': 0.733, 'acc_d0': 0.683, 'acc_d8': 0.5}
+p3_a0_e_v1 105 {'train_acc': 0.584, 'val_acc': 0.552, 'acc_clean': 0.757, 'acc_d0': 0.737, 'acc_d8': 0.527}
+p3_a0_e_v1 106 {'train_acc': 0.667, 'val_acc': 0.571, 'acc_clean': 0.763, 'acc_d0': 0.657, 'acc_d8': 0.493}
+p3_a0_e_v1 107 {'train_acc': 0.533, 'val_acc': 0.528, 'acc_clean': 0.72, 'acc_d0': 0.687, 'acc_d8': 0.42}
+p3_a0_e_v1 108 {'train_acc': 0.595, 'val_acc': 0.616, 'acc_clean': 0.767, 'acc_d0': 0.71, 'acc_d8': 0.513}
+
+variant                 n  train   val    clean  d0 (SD)        d8 (SD)
+p3_a0_a_v1             8 0.643  0.627  0.762  0.783 (0.034)  0.468 (0.035)
+p3_a0_b_v1             8 0.615  0.601  0.735  0.713 (0.069)  0.479 (0.047)
+p3_a0_c_v1             8 0.575  0.574  0.754  0.712 (0.035)  0.450 (0.057)
+p2_primary_v1 (d)      8 0.557  0.552  0.687  0.648 (0.078)  0.458 (0.089)
+p3_a0_e_v1             8 0.607  0.573  0.743  0.691 (0.024)  0.485 (0.037)
+
+Ceiling RF on noise-free, jitter-free, hardware-off windows at 0 cm (continuous stiffness, 1500 train / 600 test windows), 8 seeds: mean 0.777 (min 0.750, max 0.810)
+Primary config: share of stiffness samples lying in more than one stage range (interior points): 0.0000 (ranges abut at 6.0 and 9.0, a set of measure zero)
+Zayadeen means/SDs as quoted in Source/physics_model.py (F0-F1, F2, F4), untruncated normal mass outside own assumed stage range:
+  healthy                mean 5.39 SD 0.62: mass outside [3.0,6.0] = 0.163
+  significant_fibrosis   mean 7.32 SD 0.41: mass outside [6.0,9.0] = 0.001
+  cirrhosis              mean 11.42 SD 2.8: mass outside [9.0,15.0] = 0.294
+  mu-only Bayes accuracy with equal priors on these (truncated to 3-15 kPa) distributions: 0.929

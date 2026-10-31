@@ -1,0 +1,135 @@
+==============================================================================
+TASK 1: locating saved per-fold accuracies
+==============================================================================
+  FOUND: Source/logs/log05_log11_grouped_cv_verification.csv
+  FOUND: Source/logs/log11_repeated_grouped_cv_raw.csv
+  FOUND: Source/logs/log11_grouped_paired_ttests.csv
+  FOUND: Source/logs/log11_repeated_grouped_cv_summary.csv
+  FOUND: Source/logs/degradation_aware_final_results.csv
+
+  Per-depth p-values / per-seed significance flags for the 24-seed sweep:
+  NOT SAVED -- degradation_aware_final_sweep.py (run_one_seed()) computes a
+  per-depth permutation p-value and a BH-FDR significance flag per depth
+  internally, but only writes {seed, naive_floor_cm, last_significant_depth_cm,
+  anomalous_recovery} to logs/degradation_aware_final_results.csv -- the
+  per-depth intermediate values are discarded after each seed. Task 6's
+  per-depth BH-FDR-by-seed table therefore cannot be produced without rerunning
+  training, which this lane is not permitted to do.
+
+  Single-split 5-fold accuracies recovered from log05_log11_grouped_cv_verification.csv:
+    baseline: [0.7083, 0.6806, 0.8056, 0.7042, 0.75]
+    cnn: [0.9444, 0.9028, 0.8056, 0.8889, 0.9444]
+    resnet1d: [0.9583, 0.9028, 0.8472, 0.8889, 0.9444]
+
+  Repeated-CV raw rows: 75 (expect 15 reps x 5 folds = 75)
+
+==============================================================================
+TASK 2: single-split paired t-tests (n=5 folds)
+==============================================================================
+
+cnn_vs_baseline: mean_diff=0.1675  t=3.906  p=0.0175  d=1.747
+  CHECK p=0.0175 -> MATCH (computed 0.0175)
+  CHECK d=1.54 -> MISMATCH (computed 1.747)
+
+resnet1d_vs_baseline: mean_diff=0.1786  t=4.948  p=0.0078  d=2.213
+  CHECK p=0.0078 -> MATCH (computed 0.0078)
+  CHECK d=2.76 -> MISMATCH (computed 2.213)
+
+resnet1d_vs_cnn: mean_diff=0.0111  t=1.373  p=0.2418  d=0.614
+  CHECK p=0.242 -> MATCH (computed 0.2418)
+  CHECK d=0.59 -> MATCH (computed 0.614)
+
+--- repeated-CV p=0.0002 check (record's stated repeated-CV significance) ---
+  cnn_vs_baseline: permutation_p_value=0.0002 (rounds to 0.0002) -> MATCH vs record's 0.0002
+    NOTE: this is a sign-flip PERMUTATION p-value, not a corrected
+    resampled t-test p-value -- see Task 3 for the Nadeau-Bengio result,
+    which is the statistically appropriate test for non-independent
+    repeated-CV folds and is NOT the same number.
+  resnet1d_vs_baseline: permutation_p_value=0.0002 (rounds to 0.0002) -> MATCH vs record's 0.0002
+    NOTE: this is a sign-flip PERMUTATION p-value, not a corrected
+    resampled t-test p-value -- see Task 3 for the Nadeau-Bengio result,
+    which is the statistically appropriate test for non-independent
+    repeated-CV folds and is NOT the same number.
+  resnet1d_vs_cnn: permutation_p_value=0.0002 (rounds to 0.0002) -> MATCH vs record's 0.0002
+    NOTE: this is a sign-flip PERMUTATION p-value, not a corrected
+    resampled t-test p-value -- see Task 3 for the Nadeau-Bengio result,
+    which is the statistically appropriate test for non-independent
+    repeated-CV folds and is NOT the same number.
+
+==============================================================================
+TASK 3: Nadeau-Bengio corrected resampled t-test
+==============================================================================
+t = mean / sqrt((1/J + n_test/n_train) * s^2),  n_test/n_train = 1/4
+
+[75 diffs] cnn_vs_baseline: J=75 df=74 mean_diff=0.1434
+  Nadeau-Bengio t=3.005  p=0.003624  95% CI=[0.0483, 0.2384]
+[5 diffs]  cnn_vs_baseline: J=5 df=4 mean_diff=0.1675
+  Nadeau-Bengio t=2.604  p=0.059805  95% CI=[-0.0111, 0.3461]
+
+[75 diffs] resnet1d_vs_baseline: J=75 df=74 mean_diff=0.1917
+  Nadeau-Bengio t=5.385  p=0.000001  95% CI=[0.1208, 0.2626]
+[5 diffs]  resnet1d_vs_baseline: J=5 df=4 mean_diff=0.1786
+  Nadeau-Bengio t=3.298  p=0.029976  95% CI=[0.0283, 0.3289]
+
+[75 diffs] resnet1d_vs_cnn: J=75 df=74 mean_diff=0.0483
+  Nadeau-Bengio t=1.155  p=0.251959  95% CI=[-0.0351, 0.1317]
+[5 diffs]  resnet1d_vs_cnn: J=5 df=4 mean_diff=0.0111
+  Nadeau-Bengio t=0.915  p=0.411893  95% CI=[-0.0226, 0.0448]
+
+==============================================================================
+TASK 4: 24 certified floors (seeds 101-124)
+==============================================================================
+  Columns found: ['seed', 'naive_floor_cm', 'last_significant_depth_cm', 'anomalous_recovery']
+
+  n=24
+  mean=8.4754  CHECK 8.48 -> MATCH
+  SD(ddof=1)=1.8122  CHECK 1.81 -> MATCH
+  median=8.0000  CHECK 8.00 -> MATCH
+  10th pct (numpy linear)=6.5000  CHECK 6.50 -> MATCH
+  5th pct (numpy linear)=5.6500  CHECK 5.65 -> MATCH
+
+  (a) Bootstrap 95% CI, 10,000 resamples of individual floors:
+      5th percentile:  point=5.6500  95% CI=[5.4545, 7.5000]
+      10th percentile: point=6.5000  95% CI=[5.4682, 7.5000]
+
+  (b) Leave-one-out 10th percentile (n=23 each, 24 omissions):
+      range=[6.5000, 6.6000]  (full-sample value 6.5000)
+      values: [np.float64(6.5), np.float64(6.6)]
+
+  (c) Seeds with floor < MAX_VALID_DEPTH_CM (6.5cm, from Source/constants.py):
+      2/24 = 0.0833
+      Clopper-Pearson 95% CI on the fraction: [0.0103, 0.2700]
+
+  (d) Percentile interpolation conventions:
+      10th pct: numpy-linear=6.5000  weibull(n+1)p=6.0000  nearest-rank=6.5000
+      5th  pct: numpy-linear=5.6500  weibull(n+1)p=5.4659  nearest-rank=5.5000
+      -> convention(s) producing 6.50: ['numpy-linear', 'nearest-rank']
+
+==============================================================================
+TASK 5: anomalous_recovery flag
+==============================================================================
+
+  Definition, from Source/degradation_aware_final_sweep.py (run_one_seed(),
+  lines ~155-231): for a given seed, evaluate accuracy at each depth in
+  EVAL_DEPTHS_CM for the seed's trained CNN and for 200 label-shuffled
+  control CNNs; compute a permutation p-value per depth as
+  (#controls >= real accuracy + 1) / 201; apply Benjamini-Hochberg FDR
+  (alpha=0.05) across all of that seed's per-depth p-values to get a
+  per-depth significance flag; call the first depth (in increasing order)
+  that is NOT significant that seed's naive floor; then anomalous_recovery
+  is True if any depth STRICTLY DEEPER than that naive floor is still
+  flagged significant (i.e. the model appears to regain above-chance,
+  FDR-significant accuracy at a depth beyond where it first became
+  indistinguishable from chance).
+
+  Seeds with anomalous_recovery=True: 10/24
+  CHECK 10/24 -> MATCH
+  Seeds: [103, 105, 106, 108, 109, 115, 116, 117, 123, 124]
+
+==============================================================================
+TASK 6: per-depth per-seed significance table
+==============================================================================
+  NOT SAVED. See Task 1 note above -- degradation_aware_final_sweep.py
+  discards the per-depth p-values/flags after deriving the three summary
+  columns per seed, and this lane is not permitted to rerun training to
+  regenerate them. No per-depth table can be produced from existing files.

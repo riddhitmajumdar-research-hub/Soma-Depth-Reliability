@@ -1,0 +1,47 @@
+==============================================================================
+Q8 -- accuracy by beat index k, clean noise-free windows,
+Stage-3 baseline / SimpleCNN / ResNet1D -- training protocol copied
+verbatim from Source/significance_testing.py (no saved checkpoints existed)
+==============================================================================
+
+Baseline (LogisticRegression, 5-fold pooled test predictions, n=359):
+  Overall accuracy: 71.5877%
+  By class:
+    cirrhosis              n= 119  acc=78.1513%
+    healthy                n= 120  acc=81.6667%
+    significant_fibrosis   n= 120  acc=55.0000%
+  By beat index k:
+    k=0  n=  90  acc=100.0000%
+    k=1  n=  90  acc=61.1111%
+    k=2  n=  90  acc=64.4444%
+    k=3  n=  89  acc=60.6742%
+  Fold 1: CNN=90.28%  ResNet1D=90.28%
+    [Fold 2] ResNet1D collapsed on attempt 1 (train_acc=33.48%) -- restarting
+  Fold 2: CNN=81.94%  ResNet1D=91.67%
+  Fold 3: CNN=90.28%  ResNet1D=93.06%
+  Fold 4: CNN=91.67%  ResNet1D=94.44%
+  Fold 5: CNN=87.50%  ResNet1D=86.11%
+
+CNN (SimpleCNN, 5-fold pooled test predictions, n=360):
+  Overall accuracy: 88.3333%
+  By class:
+    cirrhosis              n= 120  acc=95.0000%
+    healthy                n= 120  acc=91.6667%
+    significant_fibrosis   n= 120  acc=78.3333%
+  By beat index k:
+    k=0  n=  90  acc=93.3333%
+    k=1  n=  90  acc=83.3333%
+    k=2  n=  90  acc=88.8889%
+    k=3  n=  90  acc=87.7778%
+
+ResNet1D (5-fold pooled test predictions, n=360):
+  Overall accuracy: 91.1111%
+  By class:
+    cirrhosis              n= 120  acc=100.0000%
+    healthy                n= 120  acc=96.6667%
+    significant_fibrosis   n= 120  acc=76.6667%
+  By beat index k:
+    k=0  n=  90  acc=100.0000%
+    k=1  n=  90  acc=85.5556%
+    k=2  n=  90  acc=90.0000%
+    k=3  n=  90  acc=88.8889%

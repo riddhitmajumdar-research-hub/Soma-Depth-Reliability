@@ -1,0 +1,10 @@
+PHYSICS-ERROR BOUND, not a re-certified floor (needs eval on saved weights).
+class                 reference                        x_ref(cm)   ratio  x_eq(cm)  shift(cm)
+healthy               24seed_mean_floor_8.48cm              8.48  1.0272    8.7109     0.2309
+healthy               safety_gate_MAX_VALID_DEPTH_CM        6.50  1.0272    6.6770     0.1770
+significant_fibrosis  24seed_mean_floor_8.48cm              8.48  1.0098    8.5635     0.0835
+significant_fibrosis  safety_gate_MAX_VALID_DEPTH_CM        6.50  1.0098    6.5640     0.0640
+cirrhosis             24seed_mean_floor_8.48cm              8.48  1.0477    8.8847     0.4047
+cirrhosis             safety_gate_MAX_VALID_DEPTH_CM        6.50  1.0477    6.8102     0.3102
+
+Saved: <REPO_ROOT>/audit_fixes/lane1/task2_floor_shift_bound.csv

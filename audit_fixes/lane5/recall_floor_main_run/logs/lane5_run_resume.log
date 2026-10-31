@@ -1,0 +1,68 @@
+Resuming: found existing results for seeds [101, 102]
+--- Seed 103 starting (3/24) ---
+Seed 103: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed103.csv
+Seed 103 done in 812s. floor=9.55cm (original=9.545454545454545, match=True). ETA for remaining 21 seeds: 284.4 min
+--- Seed 104 starting (4/24) ---
+Seed 104: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed104.csv
+Seed 104 done in 729s. floor=7.50cm (original=8.0, match=False). ETA for remaining 20 seeds: 243.0 min
+--- Seed 105 starting (5/24) ---
+Seed 105: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed105.csv
+Seed 105 done in 771s. floor=8.00cm (original=8.0, match=True). ETA for remaining 19 seeds: 244.2 min
+--- Seed 106 starting (6/24) ---
+Seed 106: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed106.csv
+Seed 106 done in 726s. floor=8.18cm (original=8.0, match=False). ETA for remaining 18 seeds: 217.9 min
+--- Seed 107 starting (7/24) ---
+Seed 107: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed107.csv
+Seed 107 done in 648s. floor=7.50cm (original=7.5, match=True). ETA for remaining 17 seeds: 183.6 min
+--- Seed 108 starting (8/24) ---
+Seed 108: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed108.csv
+Seed 108 done in 637s. floor=9.55cm (original=9.545454545454545, match=True). ETA for remaining 16 seeds: 169.9 min
+--- Seed 109 starting (9/24) ---
+Seed 109: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed109.csv
+Seed 109 done in 640s. floor=9.55cm (original=9.545454545454545, match=True). ETA for remaining 15 seeds: 159.9 min
+--- Seed 110 starting (10/24) ---
+Seed 110: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed110.csv
+Seed 110 done in 661s. floor=7.50cm (original=7.0, match=False). ETA for remaining 14 seeds: 154.3 min
+--- Seed 111 starting (11/24) ---
+Seed 111: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed111.csv
+Seed 111 done in 665s. floor=5.50cm (original=5.454545454545454, match=False). ETA for remaining 13 seeds: 144.0 min
+--- Seed 112 starting (12/24) ---
+Seed 112: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed112.csv
+Seed 112 done in 637s. floor=12.27cm (original=12.272727272727272, match=True). ETA for remaining 12 seeds: 127.3 min
+--- Seed 113 starting (13/24) ---
+Seed 113: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed113.csv
+Seed 113 done in 640s. floor=6.82cm (original=6.5, match=False). ETA for remaining 11 seeds: 117.3 min
+--- Seed 114 starting (14/24) ---
+Seed 114: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed114.csv
+Seed 114 done in 637s. floor=2.73cm (original=7.5, match=False). ETA for remaining 10 seeds: 106.2 min
+--- Seed 115 starting (15/24) ---
+Seed 115: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed115.csv
+Seed 115 done in 633s. floor=10.91cm (original=9.545454545454545, match=False). ETA for remaining 9 seeds: 94.9 min
+--- Seed 116 starting (16/24) ---
+Seed 116: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed116.csv
+Seed 116 done in 632s. floor=9.55cm (original=10.909090909090908, match=False). ETA for remaining 8 seeds: 84.2 min
+--- Seed 117 starting (17/24) ---
+Seed 117: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed117.csv
+Seed 117 done in 670s. floor=7.50cm (original=8.0, match=False). ETA for remaining 7 seeds: 78.2 min
+--- Seed 118 starting (18/24) ---
+Seed 118: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed118.csv
+Seed 118 done in 639s. floor=6.50cm (original=6.5, match=True). ETA for remaining 6 seeds: 63.9 min
+--- Seed 119 starting (19/24) ---
+Seed 119: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed119.csv
+Seed 119 done in 637s. floor=7.50cm (original=7.5, match=True). ETA for remaining 5 seeds: 53.1 min
+--- Seed 120 starting (20/24) ---
+Seed 120: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed120.csv
+Seed 120 done in 637s. floor=7.50cm (original=7.5, match=True). ETA for remaining 4 seeds: 42.5 min
+--- Seed 121 starting (21/24) ---
+Seed 121: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed121.csv
+Seed 121 done in 639s. floor=9.55cm (original=8.181818181818182, match=False). ETA for remaining 3 seeds: 32.0 min
+--- Seed 122 starting (22/24) ---
+Seed 122: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed122.csv
+Seed 122 done in 644s. floor=9.55cm (original=12.272727272727272, match=False). ETA for remaining 2 seeds: 21.5 min
+--- Seed 123 starting (23/24) ---
+Seed 123: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed123.csv
+Seed 123 done in 645s. floor=9.55cm (original=9.545454545454545, match=True). ETA for remaining 1 seeds: 10.8 min
+--- Seed 124 starting (24/24) ---
+Seed 124: per-depth aggregate detail checkpointed to <REPO_ROOT>/audit_fixes/lane5/logs/lane5_aggregate_depth_detail_seed124.csv
+Seed 124 done in 401s. floor=8.18cm (original=9.545454545454545, match=False). ETA for remaining 0 seeds: 0.0 min
+All done. Full data in <REPO_ROOT>/audit_fixes/lane5/logs/lane5_per_class_results.csv

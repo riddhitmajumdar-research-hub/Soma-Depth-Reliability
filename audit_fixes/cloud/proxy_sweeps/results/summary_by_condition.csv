@@ -1,0 +1,14 @@
+condition,condition_label,n,mean,sd,median,min,max,censored,seeds_at_0,mean_is_lower_bound
+0_baseline,"baseline: mixed-depth, 60 epochs, 100 samples, 10 mm, 100 Hz",8,8.44,1.73,8.52,5.5,10.91,0,0,False
+1_epochs_600,training budget 600 epochs,8,14.83,0.48,15.0,13.64,15.0,3,0,True
+2_jitter_0.5,"beat-time jitter, SD 0.5 sample (1 ms)",8,5.78,2.94,6.5,1.36,9.55,0,0,False
+2_jitter_1.0,"beat-time jitter, SD 1.0 sample (2 ms)",8,0.17,0.48,0.0,0.0,1.36,0,7,False
+3_carrier_150,pulse carrier 150 Hz,8,3.22,2.24,3.5,0.0,6.0,0,2,False
+3_carrier_50,pulse carrier 50 Hz,8,15.0,0.0,15.0,15.0,15.0,8,0,True
+4_track_15,tracking distance 15 mm,8,10.06,1.92,10.23,8.18,13.64,0,0,False
+4_track_20,tracking distance 20 mm,8,10.91,1.03,10.91,9.55,12.27,0,0,False
+4_track_5,tracking distance 5 mm,8,3.44,1.8,2.73,1.36,6.5,0,0,False
+5_window_150,window length 150 samples,8,8.18,2.94,8.0,2.73,12.27,0,0,False
+5_window_50,window length 50 samples,8,9.16,1.8,9.55,6.5,10.91,0,0,False
+6_stiffness_alt,stiffness set 5.4 / 7.3 / 11.4 kPa,8,8.11,3.13,9.55,2.73,10.91,0,0,False
+7_clean_only,"clean-only training, baseline evaluation",8,8.52,5.64,7.52,0.0,15.0,2,1,True

@@ -1,0 +1,4 @@
+family,n,mean_cm,sd_cm,median_cm
+"CNN, 60 epochs (24 networks)",24,9.35,3.65,8.88
+Random forest (24 networks),24,13.24,1.29,12.95
+ResNet1D (10 networks),10,6.79,4.71,7.38

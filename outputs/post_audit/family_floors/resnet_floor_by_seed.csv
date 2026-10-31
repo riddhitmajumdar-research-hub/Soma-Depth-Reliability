@@ -1,0 +1,11 @@
+label,seed,floor_new_median,new_tie_flag,new_n_censored_draws,floor_old_median,old_n_censored_draws
+"complete, N = 10, B = 719",101,1.3636363636,False,0,2.7272727273,0
+"complete, N = 10, B = 719",102,6.0,False,0,6.25,0
+"complete, N = 10, B = 719",103,10.0,False,0,7.0,0
+"complete, N = 10, B = 719",104,1.3636363636,False,0,2.7272727273,0
+"complete, N = 10, B = 719",105,8.75,False,0,7.5,0
+"complete, N = 10, B = 719",106,0.0,False,0,1.3636363636,0
+"complete, N = 10, B = 719",107,10.9090909091,False,0,12.2727272727,0
+"complete, N = 10, B = 719",108,5.0,True,0,2.7272727273,0
+"complete, N = 10, B = 719",109,12.2727272727,False,0,13.6363636364,0
+"complete, N = 10, B = 719",110,12.2727272727,False,0,13.6363636364,0

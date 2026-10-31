@@ -1,0 +1,26 @@
+found clean files: 8  main-run files: 24
+
+===== CLEAN-TRAINED MODEL (matched protocol) =====
+seed  perm_floor  binom300_floor  binom75_floor  | acc at 8.18/12.27/15.0
+ 101    2.73         5.45           5.00   |  0.330 / 0.333 / 0.333
+ 102   15.00        15.00          10.91   |  0.570 / 0.417 / 0.337
+ 103    4.00         6.50           6.00   |  0.337 / 0.333 / 0.333
+ 104   10.91        10.91           9.55   |  0.493 / 0.347 / 0.333
+ 105    5.00         7.50           6.50   |  0.347 / 0.333 / 0.333
+ 106    6.00         6.82           6.82   |  0.407 / 0.340 / 0.337
+ 107   15.00*       13.64          12.27   |  0.520 / 0.387 / 0.400
+ 108   10.91        10.91           9.55   |  0.503 / 0.333 / 0.333
+median floors: perm=8.45 binom300=9.20 binom75=8.18   (* = no non-significant depth)
+
+===== DEGRADATION-AWARE CNN, replicate run =====
+seed  perm_floor  binom300_floor  binom75_floor  | acc at 8.18/12.27/15.0
+Traceback (most recent call last):
+  File "/tmp/soma_null_check.py", line 44, in <module>
+    report('DEGRADATION-AWARE CNN, replicate run',mf)
+  File "/tmp/soma_null_check.py", line 27, in report
+    d,a,sigp=load(f)
+  File "/tmp/soma_null_check.py", line 19, in load
+    return (np.array([float(r['depth_cm']) for r in rows]), np.array([float(r['acc_real']) for r in rows]),
+  File "/tmp/soma_null_check.py", line 19, in <listcomp>
+    return (np.array([float(r['depth_cm']) for r in rows]), np.array([float(r['acc_real']) for r in rows]),
+KeyError: 'acc_real'

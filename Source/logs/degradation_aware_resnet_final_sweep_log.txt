@@ -1,0 +1,114 @@
+
+--- Seed 101 starting ---
+Seed 101: naive_floor=6.00cm  last_sig=7.5  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.39% [OK]  (2852s)
+
+--- Seed 102 starting ---
+Found existing results for seeds: [101]
+Seed 101: already done, skipping.
+
+--- Seed 102 starting ---
+Seed 102: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.22% [OK]  (4583s)
+
+--- Seed 103 starting ---
+Seed 103: naive_floor=15.00cm  last_sig=13.636363636363635  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.30% [OK]  (49393s)
+
+--- Seed 104 starting ---
+Seed 104: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.42% [OK]  (29627s)
+
+--- Seed 105 starting ---
+Seed 105: naive_floor=8.18cm  last_sig=8.0  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.32% [OK]  (2673s)
+
+--- Seed 106 starting ---
+Seed 106: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.35% [OK]  (2674s)
+
+--- Seed 107 starting ---
+Seed 107: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.25% [OK]  (3966s)
+
+--- Seed 108 starting ---
+Seed 108: naive_floor=13.64cm  last_sig=12.272727272727272  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.35% [OK]  (5286s)
+
+--- Seed 109 starting ---
+Seed 109: naive_floor=6.82cm  last_sig=7.5  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.36% [OK]  (2597s)
+
+--- Seed 110 starting ---
+Seed 110: naive_floor=1.36cm  last_sig=13.636363636363635  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.34% [OK]  (7703s)
+
+--- Seed 111 starting ---
+Seed 111: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.26% [OK]  (2671s)
+
+--- Seed 112 starting ---
+Seed 112: naive_floor=4.00cm  last_sig=15.0  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.14% [OK]  (51550s)
+
+--- Seed 113 starting ---
+Seed 113: naive_floor=9.55cm  last_sig=15.0  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.21% [OK]  (2564s)
+
+--- Seed 114 starting ---
+Seed 114: naive_floor=10.91cm  last_sig=12.272727272727272  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=32.93% [OK]  (2553s)
+
+--- Seed 115 starting ---
+Seed 115: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.45% [OK]  (2649s)
+
+--- Seed 116 starting ---
+Seed 116: naive_floor=10.91cm  last_sig=12.272727272727272  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.58% [OK]  (4121s)
+
+--- Seed 117 starting ---
+Seed 117: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=1  escaped_on_attempt=1  control_test_mean=33.16% [OK]  (3659s)
+
+--- Seed 118 starting ---
+Seed 118: naive_floor=10.91cm  last_sig=9.545454545454545  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.50% [OK]  (3395s)
+
+--- Seed 119 starting ---
+Seed 119: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.27% [OK]  (2551s)
+
+--- Seed 120 starting ---
+Seed 120: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.40% [OK]  (2553s)
+
+--- Seed 121 starting ---
+Seed 121: naive_floor=10.91cm  last_sig=12.272727272727272  anomalous_recovery=True  collapses=0  escaped_on_attempt=0  control_test_mean=33.49% [OK]  (3840s)
+
+--- Seed 122 starting ---
+Seed 122: naive_floor=10.91cm  last_sig=9.545454545454545  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.20% [OK]  (4130s)
+
+--- Seed 123 starting ---
+Seed 123: naive_floor=10.91cm  last_sig=9.545454545454545  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.45% [OK]  (3957s)
+
+--- Seed 124 starting ---
+Seed 124: naive_floor=8.18cm  last_sig=8.0  anomalous_recovery=False  collapses=0  escaped_on_attempt=0  control_test_mean=33.41% [OK]  (3972s)
+
+======================================================================
+FINAL SUMMARY (ResNet1D) -- 24 seeds, N_SAMPLES_PER_CELL=300, N_EPOCHS=150
+======================================================================
+  seed= 101  naive_floor= 6.00cm  last_sig= 7.50cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.39%  sanity_ok=True
+  seed= 102  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.22%  sanity_ok=True
+  seed= 103  naive_floor=15.00cm  last_sig=13.64cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.30%  sanity_ok=True
+  seed= 104  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.42%  sanity_ok=True
+  seed= 105  naive_floor= 8.18cm  last_sig= 8.00cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.32%  sanity_ok=True
+  seed= 106  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.35%  sanity_ok=True
+  seed= 107  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.25%  sanity_ok=True
+  seed= 108  naive_floor=13.64cm  last_sig=12.27cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.35%  sanity_ok=True
+  seed= 109  naive_floor= 6.82cm  last_sig= 7.50cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.36%  sanity_ok=True
+  seed= 110  naive_floor= 1.36cm  last_sig=13.64cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.34%  sanity_ok=True
+  seed= 111  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.26%  sanity_ok=True
+  seed= 112  naive_floor= 4.00cm  last_sig=15.00cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.14%  sanity_ok=True
+  seed= 113  naive_floor= 9.55cm  last_sig=15.00cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.21%  sanity_ok=True
+  seed= 114  naive_floor=10.91cm  last_sig=12.27cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=32.93%  sanity_ok=True
+  seed= 115  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.45%  sanity_ok=True
+  seed= 116  naive_floor=10.91cm  last_sig=12.27cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.58%  sanity_ok=True
+  seed= 117  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=1  escaped_on_attempt=1  control_mean=33.16%  sanity_ok=True
+  seed= 118  naive_floor=10.91cm  last_sig= 9.55cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.50%  sanity_ok=True
+  seed= 119  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.27%  sanity_ok=True
+  seed= 120  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.40%  sanity_ok=True
+  seed= 121  naive_floor=10.91cm  last_sig=12.27cm  anomalous=True  collapses=0  escaped_on_attempt=0  control_mean=33.49%  sanity_ok=True
+  seed= 122  naive_floor=10.91cm  last_sig= 9.55cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.20%  sanity_ok=True
+  seed= 123  naive_floor=10.91cm  last_sig= 9.55cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.45%  sanity_ok=True
+  seed= 124  naive_floor= 8.18cm  last_sig= 8.00cm  anomalous=False  collapses=0  escaped_on_attempt=0  control_mean=33.41%  sanity_ok=True
+
+  mean=10.36cm  median=10.91cm  std=3.10cm  min=1.36cm  max=15.00cm
+  seeds with anomalous late recovery: 8/24
+  seeds with FAILED control sanity check: 0/24
+  real-model collapse events, total across all 24 seeds: 1
+  seeds where real model NEVER escaped collapse after 5 retries: 0
+
+  RECOMMENDED REPORTABLE RANGE: 7.3cm - 13.5cm (mean +/- 1 std)
+
+All done. Full data in logs/degradation_aware_resnet_final_results.csv

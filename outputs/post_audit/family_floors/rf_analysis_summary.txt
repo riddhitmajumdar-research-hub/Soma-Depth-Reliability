@@ -1,0 +1,19 @@
+## rf  (N=24, K=10, B=719)
+evaluation matrix: 240 of 240 present; gaps: none
+wall-clock per draw (includes any sleep time): median 732 s, total 60.30 h; power labels: ['AC, LPM off', 'battery, LPM off', 'mixed (AC, LPM off -> battery, LPM off)', 'mixed (battery, LPM off -> AC, LPM off)']
+[all | new rule] per-seed floor (median over draws): n=24 mean 13.24 SD 1.29 median 12.95 range 10.91-16.36 p5 12.27 [10.91, 12.27] p10 12.27 [11.32, 12.27]; seeds censored at 20 cm 0; seeds at 0.00 cm 0; tie-flagged seeds 2
+[all | new rule] pooled seed x draw: n=240 mean 13.26 SD 1.29 median 12.95 range 10.00-16.36 p5 12.27 p10 12.27; censored evaluations 0; 0.00 floors 0
+[all | old rule] per-seed floor (median over draws): n=24 mean 14.15 SD 1.18 median 13.64 range 10.91-16.36 p5 12.48 [10.91, 13.64] p10 13.64 [11.32, 13.64]; seeds censored at 20 cm 0; seeds at 0.00 cm 0; tie-flagged seeds 2
+[all | old rule] pooled seed x draw: n=240 mean 14.21 SD 1.11 median 13.64 range 10.91-16.36 p5 12.27 p10 13.64; censored evaluations 0; 0.00 floors 0
+[101-110 | new rule] per-seed floor (median over draws): n=10 mean 13.77 SD 1.36 median 13.64 range 12.27-16.36 p5 12.27 [12.27, 13.64] p10 12.27 [12.27, 13.64]; seeds censored at 20 cm 0; seeds at 0.00 cm 0; tie-flagged seeds 0
+[101-110 | new rule] pooled seed x draw: n=100 mean 13.76 SD 1.34 median 13.64 range 12.27-16.36 p5 12.27 p10 12.27; censored evaluations 0; 0.00 floors 0
+[101-110 | old rule] per-seed floor (median over draws): n=10 mean 14.32 SD 0.72 median 14.32 range 13.64-15.00 p5 13.64 [13.64, 13.64] p10 13.64 [13.64, 13.64]; seeds censored at 20 cm 0; seeds at 0.00 cm 0; tie-flagged seeds 0
+[101-110 | old rule] pooled seed x draw: n=100 mean 14.30 SD 0.76 median 13.64 range 13.64-16.36 p5 13.64 p10 13.64; censored evaluations 0; 0.00 floors 0
+new-rule evaluations where depth 0 starts the run (start_nonsignificant): 0; evaluations with depth-0 p at the minimum but depth 0 not significant: 0; evaluations with p_min above the minimum possible: 0
+[all] variance components (cm^2), censored floors included at 20 cm (censored fraction 0.000, 24 seeds, 240 evaluations): seed 1.546 [ANOVA raw 1.546, REML 1.546] draw 0.184 [REML 0.184] grid 0.046; shares seed 0.870 draw 0.104 grid 0.026; bootstrap 95% CI shares seed 0.691-0.949, draw 0.028-0.266; negative seed estimate set to 0: False
+[all] variance components, censored evaluations removed (unbalanced, 24 seeds, 240 evaluations): seed 1.546 [ANOVA raw 1.546, REML 1.546] draw 0.184 [REML 0.184] shares seed 0.870 draw 0.104 grid 0.026; CI shares seed 0.698-0.950
+[101-110] variance components (cm^2), censored floors included at 20 cm (censored fraction 0.000, 10 seeds, 100 evaluations): seed 1.885 [ANOVA raw 1.885, REML 1.885] draw 0.093 [REML 0.093] grid 0.046; shares seed 0.931 draw 0.046 grid 0.023; bootstrap 95% CI shares seed 0.731-0.982, draw 0.000-0.214; negative seed estimate set to 0: False
+[101-110] variance components, censored evaluations removed (unbalanced, 10 seeds, 100 evaluations): seed 1.885 [ANOVA raw 1.885, REML 1.885] draw 0.093 [REML 0.093] shares seed 0.931 draw 0.046 grid 0.023; CI shares seed 0.740-0.983
+[all] classwise minimum-class safety floor (real model, per seed): n=24 mean 9.34 SD 0.65 median 9.25 range 8.00-10.91 p5 8.25 [8.00, 9.00] p10 8.40 [8.07, 9.00]; censored at 20 cm 0; at 0.00 cm 0; distribution {8.0: 1, 8.25: 2, 8.75: 1, 9.0: 4, 9.25: 5, 9.5: 2, 9.75: 5, 10.0: 3, 10.91: 1}
+[101-110] classwise minimum-class safety floor (real model, per seed): n=10 mean 9.40 SD 0.53 median 9.38 range 8.25-10.00 p5 8.59 [8.25, 9.25] p10 8.93 [8.25, 9.25]; censored at 20 cm 0; at 0.00 cm 0; distribution {8.25: 1, 9.0: 1, 9.25: 3, 9.5: 1, 9.75: 2, 10.0: 2}
+

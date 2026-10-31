@@ -1,0 +1,7 @@
+class,E_kPa,G_kPa,c_m_per_s,TOF_ms
+healthy,4.5,1.5,1.1895773785772161,8.406346808612328
+significant_fibrosis,7.5,2.5,1.535737792084878,6.511528238439882
+cirrhosis,12.0,4.0,1.9425717247145284,5.1478150704935
+
+rho_kg_m3,tracking_distance_m,carrier_Hz,sample_rate_Hz,window_samples,SNR_dB,sigma
+1060,0.01,100,500,100,27.05,0.044411966136558886

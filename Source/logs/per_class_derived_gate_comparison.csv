@@ -1,0 +1,8 @@
+quantity,value,note
+existing_aggregate_derived_gate_cm,6.5,10th percentile of 24-seed aggregate naive_floor_cm distribution
+seed121_aggregate_floor_cm,8.18,this seed own certified floor (SEED121_CERTIFIED_FLOOR_CM)
+cirrhosis_single_seed121_floor_cm,7.0,first depth where seed121 cirrhosis recall drops below 0.45 (single-seed only -- no 24-seed per-class distribution exists)
+significant_fibrosis_single_seed121_floor_cm,7.5,first depth where seed121 significant_fibrosis recall drops below 0.45 (single-seed only -- no 24-seed per-class distribution exists)
+healthy_single_seed121_floor_cm,,first depth where seed121 healthy recall drops below 0.45 (single-seed only -- no 24-seed per-class distribution exists)
+margin_existing_gate_to_cirrhosis_floor_cm,0.5,positive = existing 6.50cm gate is still shallower (more conservative) than this per-class floor
+margin_existing_gate_to_fibrosis_floor_cm,1.0,positive = existing 6.50cm gate is still shallower (more conservative) than this per-class floor

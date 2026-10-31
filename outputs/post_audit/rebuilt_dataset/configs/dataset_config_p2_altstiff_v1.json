@@ -1,0 +1,54 @@
+{
+  "config_id": "p2_altstiff_v1",
+  "status": "prespecified retest of the alternative stiffness set with eta_by_stage ON; CNN only, seeds 101-108",
+  "arms": {
+    "default_set": {
+      "class_kpa": {
+        "healthy": 4.5,
+        "significant_fibrosis": 7.5,
+        "cirrhosis": 12.0
+      },
+      "eta_by_stage": true
+    },
+    "alt_set_stage_eta": {
+      "class_kpa": {
+        "healthy": 5.4,
+        "significant_fibrosis": 7.3,
+        "cirrhosis": 11.4
+      },
+      "eta_by_stage": true
+    },
+    "alt_set_old_lookup": {
+      "class_kpa": {
+        "healthy": 5.4,
+        "significant_fibrosis": 7.3,
+        "cirrhosis": 11.4
+      },
+      "eta_by_stage": false
+    }
+  },
+  "alt_set_source": "README.md Log 18 and Source/physics_model.py comment: 'tightened values 5.4/7.3/11.4 kPa', from Zayadeen et al. as quoted in the repo. The earlier 'no effect' proxy result is not recorded anywhere in the repo, so its design is not reproduced; this config states the retest design.",
+  "design": "class-exact stiffness (mu_mode fixed), hardware off, certified noise 27.05 dB, certified training set (depths 0,3,6,9,12; 25 windows per depth per class). Same dataset streams for all three arms, differing only in the class kPa and the eta source. Evaluation: accuracy at 0, 6.5, 8, 10 cm, 300 windows per cell. CNN settings as in p2_primary_v1.",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "stream_seed_rule": "zlib.crc32(f'{config_id}|{arm}|{seed}|{stream}')",
+  "models": {
+    "cnn": {
+      "class": "cnn_classifier.SimpleCNN",
+      "train_fn": "degradation_aware_final_sweep.train_cnn",
+      "epochs": 60,
+      "optimizer": "Adam lr 0.001",
+      "batch": "full batch",
+      "torch_seed": "seed",
+      "restart_on_collapse": false
+    }
+  }
+}

@@ -1,0 +1,57 @@
+node,log,configuration,kind,label,supporting_sentence_fragment
+N01,1,A,step,Sliding window with 50% overlap for a RAM-limited device,with a 50% temporal overlap
+N02,2,A,step,Stiffness-to-arrival-time chain checked end to end,confirming the stiffness-to-arrival-time chain computes correctly end to end
+N03,3,A,step,Kelvin-Voigt viscoelastic attenuation added,Kelvin-Voigt viscoelastic formulation
+N04,4,A,correction,Baseline classifier: a real bug found and fixed,"A real bug, found and fixed"
+N05,4,A,correction,Second fix: feature scaling,A second fix: feature scaling
+N06,5,A,step,Cross-validation replaces one split,"is now the project's reported, reproducible Stage 3 accuracy figure"
+N07,6,A,check,Signal falls to about 10% within 1 to 4 cm for the viscosity values tested,the signal collapses to roughly 10% strength somewhere between 1 and 4cm
+N08,7,A,correction,CNN: a real and subtle bug,"A real bug, and a subtle one"
+N09,8,A,step,ResNet1D with validation-driven stopping,(patience of 15 epochs)
+N10,9,A,check,"Grad-CAM anomaly checked, left unexplained","A genuine anomaly, checked but left unexplained"
+N11,10,A,correction,Correction made before writing any code,"A correction, made before writing any code"
+N12,11,A,correction,Validation split silently broken,Bug one: a validation split I built for this step was silently broken
+N13,11,A,correction,Second collapse in 2 of 5 folds,"Bug two: a second, different kind of collapse, in 2 of 5 folds even after the first fix"
+N14,12,A,correction,A negative control exposed a permutation-testing limit; fixed with 200 shuffles,"This turned out to be a known permutation-testing limitation, not a bug in my code"
+N15,13,A,step,Certified CNN floors by frequency (original noise model),"The certified floors, by frequency"
+N16,14,A,check,20 Hz shows no floor in any clinical depth range,20Hz shows no floor within any clinically meaningful depth range
+N17,14,A,check,At the certified floor every healthy sample is called cirrhosis,every single healthy-tissue sample gets misclassified as cirrhosis
+N18,15,A,step,Degradation-aware training moves the floor from 5.45 to 8.18 cm (original noise model),the floor moved from 5.45cm to 8.18cm
+N19,16,A,check,"Calibration: badly miscalibrated, with a pattern","The result: badly miscalibrated, and the miscalibration follows a clear pattern"
+N20,17,A,check,Power-law attenuation tested against the certified CNN,"Under the power-law model, accuracy never dropped"
+N21,18,A,correction,Gap 1: noise floor at the wrong frequency and sensor,"Gap 1: the sensor noise floor was measured at the wrong frequency, for the wrong kind of sensor"
+N22,18,A,correction,Gap 4: depth grid too coarse,Gap 4: my Stage 4 depth grid was too coarse to support the precision I was reporting
+N23,19,A,step,Stage 4 recertified under the corrected noise model,did not overturn my core findings
+N24,20,A,step,24-seed sweep: 8.48 cm +/- 1.81 cm,Reportable result: 8.48cm +/- 1.81cm (n=24 seeds)
+N25,21,A,check,Seed provenance rechecked against the files,"Item 1: seed provenance, re-checked against the actual files"
+N26,21,A,check,Real phantom data: not evidence of hard-versus-soft discrimination,so it is not evidence of hard-versus-soft discrimination
+N27,22,A,check,Cirrhosis viscosity: the finding breaks outside the relevant range,"The result: the finding breaks, but well outside where it matters"
+N28,23,A,deadend,First attempt to reproduce the certified model abandoned,"A first attempt at reproducing the exact certified model, abandoned for a real reason"
+N29,23,A,step,Recalibration: root cause found,"Finding the actual root cause, rather than trying a third bucket boundary"
+N30,24,A,check,"Noise robustness: the floor holds, near monotonic","The result: the floor holds, and degrades close to monotonically"
+N31,25,A,correction,Safety gate statistic was wrong,"The safety gate was wrong, and it would have looked correct"
+N32,25,A,correction,Train/test leakage in two places,"Train/test leakage was hiding in two places, not one"
+N33,25,A,correction,Kelvin-Voigt used outside its validity,The Kelvin-Voigt model was being trusted outside where it's actually valid
+N34,26,A,step,Audit work indexed by folder,"each piece of work now has a note, a location in the repository and a stated basis for its date"
+N35,27,A,check,Random forest at 24 seeds: floor depends on the model,so the floor is not fixed by the signal alone: it depends on the model
+N36,28,A,check,19-condition robustness battery,The report states directions: amplitude randomization deeper in all four seeds
+N37,29,A,correction,"Biased amplitude gain, corrected rerun",The report's addendum says the deepening survives for three of the four seeds but not unanimously
+N38,30,A,check,Battery replicated on seeds 105 to 108,The replication supports the direction of most conditions across eight seeds
+N39,31,A,check,2.6x viscosity shallowing is a few marginal depths,whether a handful of mid-shallow depths land on the right or wrong side of the BH threshold
+N40,32,A,correction,Collapse direction revised: not always healthy into cirrhosis,does not describe the pooled behaviour of either family of networks
+N41,33,A,check,Frozen probe at the corrected noise level,Class information is therefore still present in the representation where the output has lost it
+N42,34,A,check,Baselines under the Nadeau-Bengio correction,is nominally significant but would not survive the Bonferroni threshold for eight comparisons
+N43,35,A,correction,Progression figure redrawn; erratum in Log 22,"can no longer be formed; the comparison is 0.00, 4.30 and 8.48 cm"
+N44,36,A,check,Phantom controls: the depth band explains nearly all of the result,so the depth band alone explains nearly all of the original result
+N45,37,A,check,Clean-trained against mixed-depth floor spread,very different spreads
+N46,38,A,check,Sensitivity sweeps on eight networks,"The floor falls as timing jitter rises, with 7 of 8 seeds at 0.00 cm at 1 sample"
+N47,39,A,correction,Floors of 15.0 cm in conditions 4a and 4b are mostly the viscosity default,"is mostly the viscosity default, not a robustness of the classifier"
+N48,39,A,check,Viscosity sweep saturates at both ends,In the viscosity sweep the floors saturate at both ends
+N49,40,B,check,Rebuilt dataset: accuracy drop is not a pipeline fault,The drop in CNN accuracy at 0 cm is not a fault in the pipeline
+N50,41,B,check,"Floor varies between networks, not between draws",The floor varies mainly between networks and little between repeated permutation draws
+N51,41,B,check,Configuration B floor at 60 epochs differs from configuration A,is not the configuration A floor
+N52,42,B,check,Confidence is a weak failure signal,Confidence falls with depth but is a weak signal of failure at every depth
+N53,42,B,check,Attribution agreement largely an input property,is largely an input property at shallow depth
+N54,43,B,step,Floor moves about 4.5 cm from 60 to 200 epochs,The floor of configuration B moves by about 4.5 cm when the training budget goes from 60 to 200 epochs
+N55,43,B,step,"Configuration B gate: 6.08 cm at 60 epochs, 12.27 cm at 200 epochs",with a lower-tail gate of 6.08 cm and 12.27 cm
+N56,43,B,check,"Timing error 2.0 ms makes the floor shallower, not failing",it makes it shallower by 1.9 cm on average

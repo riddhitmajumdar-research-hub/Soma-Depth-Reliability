@@ -1,0 +1,26 @@
+Building training set for seed 121...
+Training real model...
+Training 200 shuffled-label controls...
+  20/200 done
+  40/200 done
+  60/200 done
+  80/200 done
+  100/200 done
+  120/200 done
+  140/200 done
+  160/200 done
+  180/200 done
+  200/200 done
+
+======================================================================
+SEED 121 REPRODUCTION RESULT
+======================================================================
+naive_floor_cm         = 8.18
+last_significant_depth = 8.0
+anomalous_recovery     = False
+
+Expected (final_sweep_log.txt line 63):
+naive_floor=8.18cm  last_sig=8.0  anomalous_recovery=False
+
+MATCH: True
+Saved weights to soma_certified_model_seed121_corrected_noise.pt

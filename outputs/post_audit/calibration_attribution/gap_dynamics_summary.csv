@@ -1,0 +1,19 @@
+quantity,n,mean_or_rho,sd,median,min,max,ci_lo,ci_hi
+g0,24,0.638,0.186,0.577,0.358,1.059,0.568,0.713
+plateau,24,0.064,0.038,0.049,0.017,0.149,0.05,0.079
+half_depth,24,1.803,0.484,1.816,0.976,2.837,1.621,1.997
+halving_distance,24,1.876,0.402,1.824,1.291,2.838,1.723,2.04
+r2,24,0.974,0.021,0.978,0.92,0.995,0.965,0.981
+collapse_depth,24,6.56,2.56,6.25,3.5,12.273,5.589,7.598
+Spearman half_depth vs floor_new,24,0.215,,,,,-0.24,0.661
+Spearman half_depth vs classwise_floor,24,0.304,,,,,-0.14,0.642
+Spearman collapse_depth vs floor_new,24,0.61,,,,,0.241,0.846
+Spearman collapse_depth vs classwise_floor,24,-0.135,,,,,-0.523,0.318
+Spearman halving_distance vs floor_new,24,-0.23,,,,,-0.607,0.224
+Spearman halving_distance vs classwise_floor,24,0.149,,,,,-0.293,0.59
+Spearman half_depth vs floor_new (without seed 104),23,0.132,,,,,-0.336,0.612
+Spearman half_depth vs classwise_floor (without seed 104),23,0.227,,,,,-0.228,0.6
+Spearman collapse_depth vs floor_new (without seed 104),23,0.563,,,,,0.17,0.821
+Spearman collapse_depth vs classwise_floor (without seed 104),23,-0.262,,,,,-0.596,0.168
+Spearman halving_distance vs floor_new (without seed 104),23,-0.298,,,,,-0.647,0.174
+Spearman halving_distance vs classwise_floor (without seed 104),23,0.122,,,,,-0.33,0.59

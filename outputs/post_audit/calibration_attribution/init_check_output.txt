@@ -1,0 +1,25 @@
+101 init1 == epoch-0: True | init2 == epoch-0: False
+102 init1 == epoch-0: True | init2 == epoch-0: False
+103 init1 == epoch-0: True | init2 == epoch-0: False
+104 init1 == epoch-0: True | init2 == epoch-0: False
+105 init1 == epoch-0: True | init2 == epoch-0: False
+106 init1 == epoch-0: True | init2 == epoch-0: False
+107 init1 == epoch-0: True | init2 == epoch-0: False
+108 init1 == epoch-0: True | init2 == epoch-0: False
+109 init1 == epoch-0: True | init2 == epoch-0: False
+110 init1 == epoch-0: True | init2 == epoch-0: False
+111 init1 == epoch-0: True | init2 == epoch-0: False
+112 init1 == epoch-0: True | init2 == epoch-0: False
+113 init1 == epoch-0: True | init2 == epoch-0: False
+114 init1 == epoch-0: True | init2 == epoch-0: False
+115 init1 == epoch-0: True | init2 == epoch-0: False
+116 init1 == epoch-0: True | init2 == epoch-0: False
+117 init1 == epoch-0: True | init2 == epoch-0: False
+118 init1 == epoch-0: True | init2 == epoch-0: False
+119 init1 == epoch-0: True | init2 == epoch-0: False
+120 init1 == epoch-0: True | init2 == epoch-0: False
+121 init1 == epoch-0: True | init2 == epoch-0: False
+122 init1 == epoch-0: True | init2 == epoch-0: False
+123 init1 == epoch-0: True | init2 == epoch-0: False
+124 init1 == epoch-0: True | init2 == epoch-0: False
+init1 identical to trainer epoch-0 weights in 24 of 24 seeds; init2 in 0 of 24

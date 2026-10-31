@@ -1,0 +1,188 @@
+
+==============================================================================
+0. FILE / STATUS CHECK
+==============================================================================
+CNN CSV:    <REPO_ROOT>/Source/logs/degradation_aware_final_results.csv
+ResNet CSV: <REPO_ROOT>/Source/logs/degradation_aware_resnet_final_results.csv
+MAX_VALID_DEPTH_CM (imported from constants.py): 6.5
+CNN rows: 24 | columns: ['seed', 'naive_floor_cm', 'last_significant_depth_cm', 'anomalous_recovery']
+ResNet rows: 20 | columns: ['seed', 'naive_floor_cm', 'last_significant_depth_cm', 'anomalous_recovery', 'real_model_collapse_count', 'real_model_escaped_on_attempt', 'control_test_mean_overall', 'control_sanity_ok']
+CNN seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124]
+ResNet seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]
+Seeds missing from ResNet CSV (expected 101-124): [121, 122, 123, 124]
+STATUS: ResNet1D sweep INCOMPLETE in this pass (20/24 seeds present). All statistics below computed on the PROVISIONAL n= available now, NOT the certified n=24 comparison.
+
+Matched seeds (present in BOTH files, n=20): [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]
+
+==============================================================================
+1. DESCRIPTIVE STATS — FLOOR SETS
+==============================================================================
+
+CNN (n=24, full)
+  n      = 24
+  mean   = 8.475379 cm
+  SD(ddof=1) = 1.812193 cm
+  median = 8.000000 cm
+  5th pct  : linear=5.650000  weibull=5.465909  nearest-rank=5.454545
+  10th pct : linear=6.500000  weibull=6.000000  nearest-rank=5.500000
+  range  = [5.454545, 12.272727] cm
+
+ResNet1D (n=20, PROVISIONAL — sweep incomplete)
+  n      = 20
+  mean   = 10.386364 cm
+  SD(ddof=1) = 3.436857 cm
+  median = 12.272727 cm
+  5th pct  : linear=3.868182  weibull=1.495455  nearest-rank=1.363636
+  10th pct : linear=5.800000  weibull=4.200000  nearest-rank=4.000000
+  range  = [1.363636, 15.000000] cm
+
+==============================================================================
+2. MANN-WHITNEY U (independent, CNN[n=24] vs ResNet1D[available n])
+==============================================================================
+scipy mannwhitneyu: U=123.5, p=0.00565569
+Ties present in combined pool: True
+Cross-check permutation test: p=0.00447000 (Monte Carlo (100000 permutations))
+scipy exact/approx p vs permutation p: MATCH (|diff|=0.001186)
+
+==============================================================================
+3. HODGES-LEHMANN SHIFT (independent samples, CNN[24] vs ResNet1D[avail])
+==============================================================================
+HL shift (ResNet1D - CNN) = 2.727273 cm
+10,000-resample bootstrap 95% CI: [1.000000, 4.272727] cm
+
+==============================================================================
+4. PAIRED WILCOXON SIGNED-RANK (matched seeds only, n=20, PROVISIONAL if <24)
+==============================================================================
+Per-seed differences (ResNet1D - CNN):
+  seed 101: ResNet=6.0000  CNN=9.5455  diff=-3.5455
+  seed 102: ResNet=12.2727  CNN=5.5000  diff=6.7727
+  seed 103: ResNet=15.0000  CNN=9.5455  diff=5.4545
+  seed 104: ResNet=12.2727  CNN=8.0000  diff=4.2727
+  seed 105: ResNet=8.1818  CNN=8.0000  diff=0.1818
+  seed 106: ResNet=12.2727  CNN=8.0000  diff=4.2727
+  seed 107: ResNet=12.2727  CNN=7.5000  diff=4.7727
+  seed 108: ResNet=13.6364  CNN=9.5455  diff=4.0909
+  seed 109: ResNet=6.8182  CNN=9.5455  diff=-2.7273
+  seed 110: ResNet=1.3636  CNN=7.0000  diff=-5.6364
+  seed 111: ResNet=12.2727  CNN=5.4545  diff=6.8182
+  seed 112: ResNet=4.0000  CNN=12.2727  diff=-8.2727
+  seed 113: ResNet=9.5455  CNN=6.5000  diff=3.0455
+  seed 114: ResNet=10.9091  CNN=7.5000  diff=3.4091
+  seed 115: ResNet=12.2727  CNN=9.5455  diff=2.7273
+  seed 116: ResNet=10.9091  CNN=10.9091  diff=0.0000
+  seed 117: ResNet=12.2727  CNN=8.0000  diff=4.2727
+  seed 118: ResNet=10.9091  CNN=6.5000  diff=4.4091
+  seed 119: ResNet=12.2727  CNN=7.5000  diff=4.7727
+  seed 120: ResNet=12.2727  CNN=7.5000  diff=4.7727
+Number of zero differences (Wilcoxon zero_method='wilcox' drops these): 1
+Wilcoxon signed-rank: statistic=44.0, p=0.03997423
+Paired HL (median of paired diffs) = 4.181818 cm
+10,000-resample bootstrap 95% CI: [1.454545, 4.590909] cm
+
+==============================================================================
+5. FRACTION OF SEEDS WITH FLOOR < 6.5 cm
+==============================================================================
+CNN (n=24): 2/24 = 0.0833  Clopper-Pearson 95% CI: [0.0103, 0.2700]
+ResNet1D (n=20, PROVISIONAL): 3/20 = 0.1500  Clopper-Pearson 95% CI: [0.0321, 0.3789]
+
+==============================================================================
+6. ANOMALOUS_RECOVERY COUNTS
+==============================================================================
+CNN: 10/24 = 0.4167
+ResNet1D: 7/20 = 0.3500 (n=20, PROVISIONAL if <24: True)
+
+==============================================================================
+7. RESNET1D RESTART DATA (CNN file has no equivalent columns -> N/A)
+==============================================================================
+Per-seed collapse_count / escaped_on_attempt:
+  seed 101: collapses=0  escaped_on_attempt=0
+  seed 102: collapses=0  escaped_on_attempt=0
+  seed 103: collapses=0  escaped_on_attempt=0
+  seed 104: collapses=0  escaped_on_attempt=0
+  seed 105: collapses=0  escaped_on_attempt=0
+  seed 106: collapses=0  escaped_on_attempt=0
+  seed 107: collapses=0  escaped_on_attempt=0
+  seed 108: collapses=0  escaped_on_attempt=0
+  seed 109: collapses=0  escaped_on_attempt=0
+  seed 110: collapses=0  escaped_on_attempt=0
+  seed 111: collapses=0  escaped_on_attempt=0
+  seed 112: collapses=0  escaped_on_attempt=0
+  seed 113: collapses=0  escaped_on_attempt=0
+  seed 114: collapses=0  escaped_on_attempt=0
+  seed 115: collapses=0  escaped_on_attempt=0
+  seed 116: collapses=0  escaped_on_attempt=0
+  seed 117: collapses=1  escaped_on_attempt=1
+  seed 118: collapses=0  escaped_on_attempt=0
+  seed 119: collapses=0  escaped_on_attempt=0
+  seed 120: collapses=0  escaped_on_attempt=0
+
+Overall restart rate: 1/20 = 0.0500  Clopper-Pearson 95% CI: [0.0013, 0.2487]
+(PROVISIONAL — based on 20/24 seeds; sweep incomplete: True)
+
+==============================================================================
+8. RESNET1D 10TH-PERCENTILE GATE CANDIDATE (n=20, PROVISIONAL)
+==============================================================================
+numpy-linear:  5.800000 cm
+Weibull:       4.200000 cm
+nearest-rank:  4.000000 cm
+Bootstrap 95% CI on linear 10th percentile: [1.363636, 10.636364] cm
+Compare to record's certified gate MAX_VALID_DEPTH_CM = 6.5 cm (that value was derived from the CNN's 24-seed distribution, not ResNet1D's — stated here for context only, not a like-for-like check).
+
+==============================================================================
+9. SEEDS WHERE RESNET1D FLOOR EXACTLY EQUALS CNN FLOOR
+==============================================================================
+  seed 116: both floors = 10.909091 cm
+
+==============================================================================
+10. RAW DATA DUMP FOR REPORT CROSS-CHECK
+==============================================================================
+CNN seed -> floor:
+  101: 9.545454545454545
+  102: 5.5
+  103: 9.545454545454545
+  104: 8.0
+  105: 8.0
+  106: 8.0
+  107: 7.5
+  108: 9.545454545454545
+  109: 9.545454545454545
+  110: 7.0
+  111: 5.454545454545454
+  112: 12.272727272727272
+  113: 6.5
+  114: 7.5
+  115: 9.545454545454545
+  116: 10.909090909090908
+  117: 8.0
+  118: 6.5
+  119: 7.5
+  120: 7.5
+  121: 8.181818181818182
+  122: 12.272727272727272
+  123: 9.545454545454545
+  124: 9.545454545454545
+ResNet1D seed -> floor:
+  101: 6.0
+  102: 12.272727272727272
+  103: 15.0
+  104: 12.272727272727272
+  105: 8.181818181818182
+  106: 12.272727272727272
+  107: 12.272727272727272
+  108: 13.636363636363635
+  109: 6.8181818181818175
+  110: 1.3636363636363635
+  111: 12.272727272727272
+  112: 4.0
+  113: 9.545454545454545
+  114: 10.909090909090908
+  115: 12.272727272727272
+  116: 10.909090909090908
+  117: 12.272727272727272
+  118: 10.909090909090908
+  119: 12.272727272727272
+  120: 12.272727272727272
+
+==============================================================================
+DONE
+==============================================================================

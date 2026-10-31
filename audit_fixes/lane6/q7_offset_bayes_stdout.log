@@ -1,0 +1,57 @@
+==============================================================================
+Q7 -- offset demonstration & noise-free Bayes accuracy from offset alone
+n_per_class=20000, jitter_std=0.03, heart_rate_hz=1.15, seed=42
+==============================================================================
+
+Total windows collected: 239734  (target 60000; shortfall from occasional truncated last-beat windows near t=3s, same as extract_raw_windows).
+
+tof per class (deterministic, from time_of_flight_s): healthy=8.4063ms, significant_fibrosis=6.5115ms, cirrhosis=5.1478ms
+sample spacing dt (time[1]-time[0]) = 2.001334ms  (np.linspace(0,3,1500) grid, not exactly 1/500Hz=2.000ms)
+
+--- k=0 check: offset should equal tof exactly ---
+  healthy                n= 20000  offset==tof to within max|err|=0.000e+00s (float64 rounding only) -> MATCH
+  significant_fibrosis   n= 20000  offset==tof to within max|err|=0.000e+00s (float64 rounding only) -> MATCH
+  cirrhosis              n= 20000  offset==tof to within max|err|=0.000e+00s (float64 rounding only) -> MATCH
+
+--- k>=1 check: offset should be tof - U[0, dt) ---
+  healthy                n= 59904  frac=tof-offset: min=0.00011ms max=2.00130ms mean=1.00066ms  (expected range [0,2.00133)ms, expected mean~1.00067ms)  -> MATCH
+  significant_fibrosis   n= 59919  frac=tof-offset: min=0.00010ms max=2.00120ms mean=1.00189ms  (expected range [0,2.00133)ms, expected mean~1.00067ms)  -> MATCH
+  cirrhosis              n= 59911  frac=tof-offset: min=0.00006ms max=2.00130ms mean=0.99690ms  (expected range [0,2.00133)ms, expected mean~1.00067ms)  -> MATCH
+
+==============================================================================
+Noise-free Bayes accuracy from offset alone -- EXACT analytic decision rule
+(uses the generator's known exact distribution: point mass at tof for k=0, uniform on (tof-dt,tof] for k>=1 -- no density estimation/smoothing)
+==============================================================================
+
+Overall exact Bayes accuracy (offset alone): 90.5994%  (n_test=71921)
+
+Per-class accuracy (recall):
+  healthy                n= 23971  acc=97.9100%
+  significant_fibrosis   n= 23976  acc=86.0611%
+  cirrhosis              n= 23974  acc=87.8285%
+
+Per-k accuracy:
+  k=0  n= 18057  acc=100.0000%
+  k=1  n= 18041  acc=87.5506%
+  k=2  n= 18030  acc=87.4321%
+  k=3  n= 17793  acc=87.3602%
+
+==============================================================================
+(comparison) same question via a 1D Gaussian-KDE density classifier, equal priors -- kept for transparency, but see note above on why the exact rule above is preferred
+==============================================================================
+KDE bandwidth (Silverman's rule, pooled train offsets): 1.425651e-04
+
+Train/test split: 167813/71921 windows (stratified by class, test_size=0.3, seed=42)
+
+Overall Bayes accuracy (offset alone): 86.3002%  (n_test=71921)
+
+Per-class accuracy (recall):
+  healthy                n= 23971  acc=88.8282%
+  significant_fibrosis   n= 23976  acc=70.0742%
+  cirrhosis              n= 23974  acc=100.0000%
+
+Per-k accuracy:
+  k=0  n= 18057  acc=100.0000%
+  k=1  n= 18041  acc=81.7527%
+  k=2  n= 18030  acc=81.7360%
+  k=3  n= 17793  acc=81.6332%

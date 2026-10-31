@@ -1,0 +1,109 @@
+seed=105 real model trained in 17s
+seed=105 controls trained 50/200
+seed=105 controls trained 100/200
+seed=105 controls trained 150/200
+seed=105 controls trained 200/200
+seed=105 200 controls trained in 98s
+seed=105 condition=1_baseline floor=8.00cm censored=False (5s)
+seed=105 condition=2_amp_randomization floor=8.18cm censored=False (5s)
+seed=105 condition=3a_spreading_p0.5 floor=6.50cm censored=False (5s)
+seed=105 condition=3b_spreading_p1.0 floor=4.30cm censored=False (5s)
+seed=105 condition=4a_stiffness_cv_perclass floor=15.00cm censored=True (5s)
+seed=105 condition=4b_stiffness_cv_uniform floor=3.50cm censored=False (5s)
+seed=105 condition=5a_snr20 floor=8.00cm censored=False (5s)
+seed=105 condition=5b_snr13.58 floor=7.50cm censored=False (5s)
+seed=105 condition=5c_snr10 floor=7.50cm censored=False (5s)
+seed=105 condition=5d_snr5 floor=5.00cm censored=False (5s)
+seed=105 condition=5e_snr0 floor=4.50cm censored=False (5s)
+seed=105 condition=6a_exact_atten floor=8.18cm censored=False (5s)
+seed=105 condition=6b_exact_atten_tof floor=8.00cm censored=False (5s)
+seed=105 condition=7a_viscosity_healthy_fibrosis_1.4x floor=10.91cm censored=False (5s)
+seed=105 condition=7b_viscosity_healthy_fibrosis_1.8x floor=10.91cm censored=False (5s)
+seed=105 condition=7c_viscosity_healthy_fibrosis_2.6x floor=10.91cm censored=False (5s)
+seed=105 condition=7d_viscosity_cirrhosis_1.2 floor=15.00cm censored=True (5s)
+seed=105 condition=7e_viscosity_cirrhosis_2.18 floor=7.00cm censored=False (5s)
+seed=105 condition=7f_viscosity_cirrhosis_2.5 floor=6.50cm censored=False (5s)
+seed=105 noise probe done
+seed=105 TOTAL 208s (train=17s controls=98s)
+seed=106 real model trained in 1s
+seed=106 controls trained 50/200
+seed=106 controls trained 100/200
+seed=106 controls trained 150/200
+seed=106 controls trained 200/200
+seed=106 200 controls trained in 80s
+seed=106 condition=1_baseline floor=9.55cm censored=False (5s)
+seed=106 condition=2_amp_randomization floor=10.91cm censored=False (5s)
+seed=106 condition=3a_spreading_p0.5 floor=6.00cm censored=False (5s)
+seed=106 condition=3b_spreading_p1.0 floor=4.00cm censored=False (5s)
+seed=106 condition=4a_stiffness_cv_perclass floor=4.00cm censored=False (5s)
+seed=106 condition=4b_stiffness_cv_uniform floor=0.00cm censored=False (5s)
+seed=106 condition=5a_snr20 floor=7.50cm censored=False (5s)
+seed=106 condition=5b_snr13.58 floor=6.82cm censored=False (5s)
+seed=106 condition=5c_snr10 floor=6.00cm censored=False (5s)
+seed=106 condition=5d_snr5 floor=5.45cm censored=False (5s)
+seed=106 condition=5e_snr0 floor=3.50cm censored=False (5s)
+seed=106 condition=6a_exact_atten floor=8.18cm censored=False (5s)
+seed=106 condition=6b_exact_atten_tof floor=9.55cm censored=False (5s)
+seed=106 condition=7a_viscosity_healthy_fibrosis_1.4x floor=9.55cm censored=False (5s)
+seed=106 condition=7b_viscosity_healthy_fibrosis_1.8x floor=10.91cm censored=False (5s)
+seed=106 condition=7c_viscosity_healthy_fibrosis_2.6x floor=9.55cm censored=False (5s)
+seed=106 condition=7d_viscosity_cirrhosis_1.2 floor=15.00cm censored=True (5s)
+seed=106 condition=7e_viscosity_cirrhosis_2.18 floor=6.82cm censored=False (5s)
+seed=106 condition=7f_viscosity_cirrhosis_2.5 floor=6.50cm censored=False (5s)
+seed=106 noise probe done
+seed=106 TOTAL 176s (train=1s controls=80s)
+seed=107 real model trained in 1s
+seed=107 controls trained 50/200
+seed=107 controls trained 100/200
+seed=107 controls trained 150/200
+seed=107 controls trained 200/200
+seed=107 200 controls trained in 77s
+seed=107 condition=1_baseline floor=7.50cm censored=False (5s)
+seed=107 condition=2_amp_randomization floor=8.00cm censored=False (5s)
+seed=107 condition=3a_spreading_p0.5 floor=1.36cm censored=False (5s)
+seed=107 condition=3b_spreading_p1.0 floor=0.00cm censored=False (5s)
+seed=107 condition=4a_stiffness_cv_perclass floor=15.00cm censored=True (5s)
+seed=107 condition=4b_stiffness_cv_uniform floor=6.82cm censored=False (5s)
+seed=107 condition=5a_snr20 floor=8.00cm censored=False (5s)
+seed=107 condition=5b_snr13.58 floor=7.00cm censored=False (5s)
+seed=107 condition=5c_snr10 floor=5.00cm censored=False (5s)
+seed=107 condition=5d_snr5 floor=4.30cm censored=False (5s)
+seed=107 condition=5e_snr0 floor=3.50cm censored=False (5s)
+seed=107 condition=6a_exact_atten floor=8.00cm censored=False (5s)
+seed=107 condition=6b_exact_atten_tof floor=7.50cm censored=False (5s)
+seed=107 condition=7a_viscosity_healthy_fibrosis_1.4x floor=6.50cm censored=False (5s)
+seed=107 condition=7b_viscosity_healthy_fibrosis_1.8x floor=8.00cm censored=False (5s)
+seed=107 condition=7c_viscosity_healthy_fibrosis_2.6x floor=9.55cm censored=False (5s)
+seed=107 condition=7d_viscosity_cirrhosis_1.2 floor=10.91cm censored=False (5s)
+seed=107 condition=7e_viscosity_cirrhosis_2.18 floor=6.50cm censored=False (5s)
+seed=107 condition=7f_viscosity_cirrhosis_2.5 floor=1.36cm censored=False (5s)
+seed=107 noise probe done
+seed=107 TOTAL 172s (train=1s controls=77s)
+seed=108 real model trained in 1s
+seed=108 controls trained 50/200
+seed=108 controls trained 100/200
+seed=108 controls trained 150/200
+seed=108 controls trained 200/200
+seed=108 200 controls trained in 91s
+seed=108 condition=1_baseline floor=10.91cm censored=False (5s)
+seed=108 condition=2_amp_randomization floor=13.64cm censored=False (5s)
+seed=108 condition=3a_spreading_p0.5 floor=15.00cm censored=False (5s)
+seed=108 condition=3b_spreading_p1.0 floor=7.50cm censored=False (5s)
+seed=108 condition=4a_stiffness_cv_perclass floor=15.00cm censored=True (5s)
+seed=108 condition=4b_stiffness_cv_uniform floor=15.00cm censored=True (5s)
+seed=108 condition=5a_snr20 floor=7.50cm censored=False (5s)
+seed=108 condition=5b_snr13.58 floor=6.82cm censored=False (5s)
+seed=108 condition=5c_snr10 floor=6.00cm censored=False (5s)
+seed=108 condition=5d_snr5 floor=4.30cm censored=False (6s)
+seed=108 condition=5e_snr0 floor=3.50cm censored=False (5s)
+seed=108 condition=6a_exact_atten floor=13.64cm censored=False (6s)
+seed=108 condition=6b_exact_atten_tof floor=9.55cm censored=False (5s)
+seed=108 condition=7a_viscosity_healthy_fibrosis_1.4x floor=13.64cm censored=False (5s)
+seed=108 condition=7b_viscosity_healthy_fibrosis_1.8x floor=12.27cm censored=False (5s)
+seed=108 condition=7c_viscosity_healthy_fibrosis_2.6x floor=13.64cm censored=False (5s)
+seed=108 condition=7d_viscosity_cirrhosis_1.2 floor=15.00cm censored=True (5s)
+seed=108 condition=7e_viscosity_cirrhosis_2.18 floor=7.50cm censored=False (5s)
+seed=108 condition=7f_viscosity_cirrhosis_2.5 floor=7.50cm censored=False (5s)
+seed=108 noise probe done
+seed=108 TOTAL 190s (train=1s controls=91s)
+ALL SEEDS COMPLETE

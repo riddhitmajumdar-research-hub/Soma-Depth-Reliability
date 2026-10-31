@@ -1,0 +1,16 @@
+{
+  "bench_seed": 101,
+  "resnet_sweep_active_before": true,
+  "resnet_sweep_active_after": true,
+  "wall_clock_seconds": 815.2731249332428,
+  "train_seconds": 4.203030824661255,
+  "controls_seconds": 651.0121507644653,
+  "eval_seconds": 80.0774290561676,
+  "agg_floor_cm": 9.545454545454545,
+  "original_agg_floor_cm": 9.545454545454545,
+  "floor_match": true,
+  "projected_24_seeds_seconds": 19566.554998397827,
+  "projected_dataset_sweep_seconds": 78266.219993591309,
+  "projected_window_sweep_seconds": 58699.664995193481,
+  "note": "Reconstructed by hand from this run's raw stdout (audit_fixes/lane5/logs/lane5_benchmark_raw_stdout.txt) after the original json.dump crashed on a numpy.bool_ (floor_match) -- see REPORT.md 'Surprises'. The script itself has since been fixed (explicit bool()/float() casts) for future runs; this file was NOT produced by re-running the benchmark, to avoid a second ~14-minute one-seed run for a value already captured correctly on stdout."
+}

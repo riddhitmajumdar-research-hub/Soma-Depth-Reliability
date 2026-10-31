@@ -1,0 +1,6 @@
+statistic,value_cm,note
+bootstrap_of_means_5th_percentile,7.8864,"wrong statistic for a safety gate -- bounds population mean, not individual-unit risk -- do not use"
+bootstrap_of_individuals_percentile,5.5000,
+raw_empirical_5th_percentile,5.6500,
+raw_empirical_10th_percentile,6.5000,adopted for MAX_VALID_DEPTH_CM
+worst_observed_seed_minimum,5.4545,

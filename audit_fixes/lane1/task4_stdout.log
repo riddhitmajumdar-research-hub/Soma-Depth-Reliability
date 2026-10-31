@@ -1,0 +1,10 @@
+HEURISTIC amplitude-equivalence depth at 20Hz, NOT a classifier prediction.
+class                 reference                         x100(cm)       a20      a100  x20_heur(cm)
+healthy               24seed_mean_floor_8.48cm              8.48    2.2100   53.8456       206.608
+healthy               safety_gate_MAX_VALID_DEPTH_CM        6.50    2.2100   53.8456       158.367
+significant_fibrosis  24seed_mean_floor_8.48cm              8.48    1.0279   25.4559       210.016
+significant_fibrosis  safety_gate_MAX_VALID_DEPTH_CM        6.50    1.0279   25.4559       160.979
+cirrhosis             24seed_mean_floor_8.48cm              8.48    1.7951   42.9158       202.734
+cirrhosis             safety_gate_MAX_VALID_DEPTH_CM        6.50    1.7951   42.9158       155.397
+
+Saved: <REPO_ROOT>/audit_fixes/lane1/table4_20hz_sanity_check.csv

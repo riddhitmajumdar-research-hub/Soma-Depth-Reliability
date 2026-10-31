@@ -1,0 +1,15 @@
+P2 primary dataset, mean over 24 seeds
+  F1_basic  robust    train 0.464 (SD 0.026) val 0.438 (SD 0.024) clean 0.353 d0 0.344 d6.5 0.559 d8 0.542 d10 0.484
+  F1_basic  standard  train 0.465 (SD 0.025) val 0.438 (SD 0.023) clean 0.356 d0 0.346 d6.5 0.556 d8 0.544 d10 0.483
+  F1_basic  none      train 0.464 (SD 0.026) val 0.441 (SD 0.021) clean 0.353 d0 0.349 d6.5 0.556 d8 0.545 d10 0.480
+  F2_gated  robust    train 0.503 (SD 0.031) val 0.463 (SD 0.023) clean 0.333 d0 0.381 d6.5 0.549 d8 0.581 d10 0.530
+  F2_gated  standard  train 0.503 (SD 0.031) val 0.465 (SD 0.020) clean 0.337 d0 0.390 d6.5 0.550 d8 0.587 d10 0.527
+  F2_gated  none      train 0.500 (SD 0.030) val 0.466 (SD 0.023) clean 0.333 d0 0.388 d6.5 0.551 d8 0.582 d10 0.524
+  paired val-accuracy difference robust - standard, F1_basic: mean +0.0007, SD 0.0044, max |diff| 0.0080
+  paired val-accuracy difference robust - standard, F2_gated: mean -0.0019, SD 0.0116, max |diff| 0.0347
+Old pipeline on old clean data (oracle windows), test accuracy over 24 dataset seeds
+  standard  0.690 (SD 0.048)
+  robust    0.662 (SD 0.036)
+  none      0.406 (SD 0.034)
+  paired robust - standard: mean -0.0278, SD 0.0262, max |diff| 0.1111
+RF on the 6 LR features, mean over 24 seeds: val 0.530, eval_clean 0.620, eval_d0 0.585, eval_d6.5 0.505, eval_d8 0.535, eval_d10 0.513

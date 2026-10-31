@@ -1,0 +1,69 @@
+======================================================================
+SOMA ETS Montreal Path 2 -- real-RF retrain
+======================================================================
+
+Building training set (Acqui1-5)...
+  [TRAIN] Acqui1: 36 RF files processed, running total windows = 18432
+  [TRAIN] Acqui2: 34 RF files processed, running total windows = 35840
+  [TRAIN] Acqui3: 36 RF files processed, running total windows = 54272
+  [TRAIN] Acqui4: 34 RF files processed, running total windows = 71680
+  [TRAIN] Acqui5: 36 RF files processed, running total windows = 90112
+Total training windows: 90112 (45056 inclusion, 45056 background)
+
+Building held-out test set (Acqui6)...
+  [TEST] Acqui6: 32 RF files processed, running total windows = 16384
+Total test windows: 16384 (8192 inclusion, 8192 background)
+
+Data prep done at 4.0s. Training real model...
+REAL MODEL held-out accuracy: 0.9725  (elapsed 489.0s)
+Saved real model to ets_path2_real_model.pt
+  shuffle 5/200 done, control_acc=0.4997  (elapsed 2625.0s)
+  shuffle 10/200 done, control_acc=0.5737  (elapsed 4713.4s)
+  shuffle 15/200 done, control_acc=0.6099  (elapsed 6811.6s)
+  shuffle 20/200 done, control_acc=0.5154  (elapsed 8915.3s)
+  shuffle 25/200 done, control_acc=0.4920  (elapsed 11016.2s)
+  shuffle 30/200 done, control_acc=0.5007  (elapsed 13117.5s)
+  shuffle 35/200 done, control_acc=0.4687  (elapsed 15219.0s)
+  shuffle 40/200 done, control_acc=0.5090  (elapsed 17315.1s)
+  shuffle 45/200 done, control_acc=0.4451  (elapsed 19396.3s)
+  shuffle 50/200 done, control_acc=0.5140  (elapsed 21492.1s)
+  shuffle 55/200 done, control_acc=0.5208  (elapsed 23593.1s)
+  shuffle 60/200 done, control_acc=0.4855  (elapsed 25691.5s)
+  shuffle 65/200 done, control_acc=0.4841  (elapsed 27790.5s)
+  shuffle 70/200 done, control_acc=0.4528  (elapsed 29893.0s)
+  shuffle 75/200 done, control_acc=0.4581  (elapsed 32002.5s)
+  shuffle 80/200 done, control_acc=0.5505  (elapsed 34193.8s)
+  shuffle 85/200 done, control_acc=0.5189  (elapsed 36313.2s)
+  shuffle 90/200 done, control_acc=0.5002  (elapsed 38433.2s)
+  shuffle 95/200 done, control_acc=0.5081  (elapsed 40545.4s)
+  shuffle 100/200 done, control_acc=0.4993  (elapsed 42643.7s)
+  shuffle 105/200 done, control_acc=0.5149  (elapsed 44733.5s)
+  shuffle 110/200 done, control_acc=0.5294  (elapsed 46834.4s)
+  shuffle 115/200 done, control_acc=0.4834  (elapsed 48938.0s)
+  shuffle 120/200 done, control_acc=0.5593  (elapsed 51040.7s)
+  shuffle 125/200 done, control_acc=0.4610  (elapsed 53140.8s)
+  shuffle 130/200 done, control_acc=0.4443  (elapsed 55247.7s)
+  shuffle 135/200 done, control_acc=0.4478  (elapsed 57352.9s)
+  shuffle 140/200 done, control_acc=0.5045  (elapsed 59462.1s)
+  shuffle 145/200 done, control_acc=0.4815  (elapsed 61561.4s)
+  shuffle 150/200 done, control_acc=0.5078  (elapsed 63662.3s)
+  shuffle 155/200 done, control_acc=0.5574  (elapsed 65768.8s)
+  shuffle 160/200 done, control_acc=0.5552  (elapsed 67868.2s)
+  shuffle 165/200 done, control_acc=0.4772  (elapsed 69967.9s)
+  shuffle 170/200 done, control_acc=0.4886  (elapsed 72060.2s)
+  shuffle 175/200 done, control_acc=0.5179  (elapsed 74160.1s)
+  shuffle 180/200 done, control_acc=0.4930  (elapsed 76263.7s)
+  shuffle 185/200 done, control_acc=0.5080  (elapsed 78360.7s)
+  shuffle 190/200 done, control_acc=0.5100  (elapsed 80464.7s)
+  shuffle 195/200 done, control_acc=0.5023  (elapsed 82630.2s)
+  shuffle 200/200 done, control_acc=0.4504  (elapsed 84728.0s)
+
+======================================================================
+FINAL RESULT
+======================================================================
+Real model held-out accuracy:     0.9725
+Control mean accuracy (n=200): 0.4991
+Control std:                      0.0326
+p-value:                          0.0050
+Significant (p<=0.05):             True
+Total elapsed: 84728.0s

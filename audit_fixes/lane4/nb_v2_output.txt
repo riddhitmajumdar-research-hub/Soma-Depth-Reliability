@@ -1,0 +1,14 @@
+baseline: mean 70.94%
+cnn: mean 85.28%
+resnet1d: mean 90.11%
+svm: mean 90.50%
+rf: mean 91.72%
+gru: mean 24.33%
+svm vs baseline: diff=+19.56pp t=7.057 df=74 p=7.70524e-10 95% CI=[14.04, 25.08]
+rf vs baseline: diff=+20.78pp t=6.415 df=74 p=1.18634e-08 95% CI=[14.33, 27.24]
+svm vs cnn: diff=+5.22pp t=1.432 df=74 p=0.156386 95% CI=[-2.04, 12.49]
+rf vs cnn: diff=+6.44pp t=2.010 df=74 p=0.0480601 95% CI=[0.06, 12.83]
+svm vs resnet1d: diff=+0.39pp t=0.165 df=74 p=0.869064 95% CI=[-4.30, 5.07]
+rf vs resnet1d: diff=+1.61pp t=0.558 df=74 p=0.578786 95% CI=[-4.15, 7.37]
+rf vs svm: diff=+1.22pp t=0.713 df=74 p=0.478013 95% CI=[-2.19, 4.64]
+gru vs baseline: diff=-46.61pp t=-12.576 df=74 p=4.72306e-20 95% CI=[-53.99, -39.22]

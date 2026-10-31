@@ -1,0 +1,18 @@
+{
+  "T_stable": 0.05232909412345701,
+  "T_declining": 0.05000662713858094,
+  "regime_boundary_cm": 5.45,
+  "gate_cutoff_cm": 9.0,
+  "results": {
+    "stable": {
+      "uce_before": 0.4035955132858315,
+      "uce_after": 0.1612705520728684,
+      "n_held": 270
+    },
+    "declining": {
+      "uce_before": 0.34504793822222224,
+      "uce_after": 0.06201724317103219,
+      "n_held": 270
+    }
+  }
+}

@@ -1,0 +1,37 @@
+Verified from Source/physics_model.generate_signal signature: fs=500Hz -> 2.00 ms/sample
+  d(mm)pair                                       model   gap(ms)  gap(samples)  separable>=1samp
+      5healthy vs significant_fibrosis               c0    0.9474        0.4737             False
+      5healthy vs significant_fibrosis           cexact    0.8995        0.4497             False
+      5healthy vs cirrhosis                          c0    1.6293        0.8146             False
+      5healthy vs cirrhosis                      cexact    1.6329        0.8165             False
+      5significant_fibrosis vs cirrhosis             c0    0.6819        0.3409             False
+      5significant_fibrosis vs cirrhosis         cexact    0.7335        0.3667             False
+    7.5healthy vs significant_fibrosis               c0    1.4211        0.7106             False
+    7.5healthy vs significant_fibrosis           cexact    1.3492        0.6746             False
+    7.5healthy vs cirrhosis                          c0    2.4439        1.2219              True
+    7.5healthy vs cirrhosis                      cexact    2.4494        1.2247              True
+    7.5significant_fibrosis vs cirrhosis             c0    1.0228        0.5114             False
+    7.5significant_fibrosis vs cirrhosis         cexact    1.1002        0.5501             False
+     10healthy vs significant_fibrosis               c0    1.8948        0.9474             False
+     10healthy vs significant_fibrosis           cexact    1.7989        0.8995             False
+     10healthy vs cirrhosis                          c0    3.2585        1.6293              True
+     10healthy vs cirrhosis                      cexact    3.2658        1.6329              True
+     10significant_fibrosis vs cirrhosis             c0    1.3637        0.6819             False
+     10significant_fibrosis vs cirrhosis         cexact    1.4669        0.7335             False
+     15healthy vs significant_fibrosis               c0    2.8422        1.4211              True
+     15healthy vs significant_fibrosis           cexact    2.6984        1.3492              True
+     15healthy vs cirrhosis                          c0    4.8878        2.4439              True
+     15healthy vs cirrhosis                      cexact    4.8988        2.4494              True
+     15significant_fibrosis vs cirrhosis             c0    2.0456        1.0228              True
+     15significant_fibrosis vs cirrhosis         cexact    2.2004        1.1002              True
+     20healthy vs significant_fibrosis               c0    3.7896        1.8948              True
+     20healthy vs significant_fibrosis           cexact    3.5979        1.7989              True
+     20healthy vs cirrhosis                          c0    6.5171        3.2585              True
+     20healthy vs cirrhosis                      cexact    6.5317        3.2658              True
+     20significant_fibrosis vs cirrhosis             c0    2.7274        1.3637              True
+     20significant_fibrosis vs cirrhosis         cexact    2.9338        1.4669              True
+
+Saved: <REPO_ROOT>/audit_fixes/lane1/table3_arrival_time_sensitivity.csv
+
+Worst-case (smallest) gap across all distances/pairs/models: significant_fibrosis vs cirrhosis at d=5mm, c0 model, 0.3409 samples (0.6819 ms) -- NOT separable at fs=500Hz.
+14/30 (distance, class-pair, model) combinations fall below 1 sample (2ms) gap and are NOT reliably separable after quantisation to 2ms samples.

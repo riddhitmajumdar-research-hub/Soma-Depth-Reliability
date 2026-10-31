@@ -1,0 +1,4 @@
+comparison,cohens_d,n_paired_diffs,statistical_power_normal_approx
+cnn_vs_baseline,1.5420182586919002,75,1.0
+resnet1d_vs_baseline,2.7634927113739707,75,1.0
+resnet1d_vs_cnn,0.5925070717048228,75,0.999241202547889

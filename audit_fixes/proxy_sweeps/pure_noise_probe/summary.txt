@@ -1,0 +1,110 @@
+====================================================================================================
+RANDOM FOREST  (seeds 101-108, real model only; shares of predictions)
+
+[pure_noise]  300 pulse-free noise windows per seed
+  seed 101   n=300   cirr  34.0%  healthy  66.0%  fibr   0.0%   [counts 102/198/0]
+  seed 102   n=300   cirr  29.7%  healthy  70.3%  fibr   0.0%   [counts 89/211/0]
+  seed 103   n=300   cirr  29.3%  healthy  70.7%  fibr   0.0%   [counts 88/212/0]
+  seed 104   n=300   cirr  37.3%  healthy  62.7%  fibr   0.0%   [counts 112/188/0]
+  seed 105   n=300   cirr  35.3%  healthy  64.3%  fibr   0.3%   [counts 106/193/1]
+  seed 106   n=300   cirr  37.0%  healthy  63.0%  fibr   0.0%   [counts 111/189/0]
+  seed 107   n=300   cirr  28.3%  healthy  71.3%  fibr   0.3%   [counts 85/214/1]
+  seed 108   n=300   cirr  36.3%  healthy  63.3%  fibr   0.3%   [counts 109/190/1]
+  POOLED     n=2400  cirr  33.4%  healthy  66.5%  fibr   0.1%   [counts 802/1595/3]
+
+[depth_6.50_6.5000cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  39.0%  healthy  32.0%  fibr  29.0%   [counts 351/288/261]
+  seed 102   n=900   cirr  34.9%  healthy  33.2%  fibr  31.9%   [counts 314/299/287]
+  seed 103   n=900   cirr  37.7%  healthy  32.0%  fibr  30.3%   [counts 339/288/273]
+  seed 104   n=900   cirr  35.4%  healthy  31.6%  fibr  33.0%   [counts 319/284/297]
+  seed 105   n=900   cirr  41.3%  healthy  31.3%  fibr  27.3%   [counts 372/282/246]
+  seed 106   n=900   cirr  37.6%  healthy  32.8%  fibr  29.7%   [counts 338/295/267]
+  seed 107   n=900   cirr  37.3%  healthy  33.3%  fibr  29.3%   [counts 336/300/264]
+  seed 108   n=900   cirr  36.8%  healthy  32.2%  fibr  31.0%   [counts 331/290/279]
+  POOLED     n=7200  cirr  37.5%  healthy  32.3%  fibr  30.2%   [counts 2700/2326/2174]
+     recall healthy               pooled  91.3%   per seed:  93  91  92  91  88  92  92  91
+     recall cirrhosis             pooled  88.6%   per seed:  92  86  89  89  91  90  87  84
+     recall significant_fibrosis  pooled  83.5%   per seed:  81  89  83  91  78  85  82  81
+
+[depth_median_floor_12.2727cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  37.0%  healthy  58.3%  fibr   4.7%   [counts 333/525/42]
+  seed 102   n=900   cirr  38.0%  healthy  58.2%  fibr   3.8%   [counts 342/524/34]
+  seed 103   n=900   cirr  34.0%  healthy  62.6%  fibr   3.4%   [counts 306/563/31]
+  seed 104   n=900   cirr  46.2%  healthy  50.1%  fibr   3.7%   [counts 416/451/33]
+  seed 105   n=900   cirr  37.3%  healthy  60.4%  fibr   2.2%   [counts 336/544/20]
+  seed 106   n=900   cirr  42.0%  healthy  56.1%  fibr   1.9%   [counts 378/505/17]
+  seed 107   n=900   cirr  36.8%  healthy  60.8%  fibr   2.4%   [counts 331/547/22]
+  seed 108   n=900   cirr  31.0%  healthy  64.2%  fibr   4.8%   [counts 279/578/43]
+  POOLED     n=7200  cirr  37.8%  healthy  58.8%  fibr   3.4%   [counts 2721/4237/242]
+     recall healthy               pooled  69.2%   per seed:  70  73  71  62  68  67  70  74
+     recall cirrhosis             pooled  36.9%   per seed:  34  39  30  50  33  44  35  28
+     recall significant_fibrosis  pooled   9.8%   per seed:  14  11  10  11   7   5   7  14
+
+[depth_15.00_15.0000cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  34.7%  healthy  64.6%  fibr   0.8%   [counts 312/581/7]
+  seed 102   n=900   cirr  30.2%  healthy  69.0%  fibr   0.8%   [counts 272/621/7]
+  seed 103   n=900   cirr  31.3%  healthy  67.8%  fibr   0.9%   [counts 282/610/8]
+  seed 104   n=900   cirr  41.3%  healthy  57.8%  fibr   0.9%   [counts 372/520/8]
+  seed 105   n=900   cirr  36.6%  healthy  62.6%  fibr   0.9%   [counts 329/563/8]
+  seed 106   n=900   cirr  39.7%  healthy  60.0%  fibr   0.3%   [counts 357/540/3]
+  seed 107   n=900   cirr  31.8%  healthy  68.0%  fibr   0.2%   [counts 286/612/2]
+  seed 108   n=900   cirr  30.0%  healthy  69.4%  fibr   0.6%   [counts 270/625/5]
+  POOLED     n=7200  cirr  34.4%  healthy  64.9%  fibr   0.7%   [counts 2480/4672/48]
+     recall healthy               pooled  68.8%   per seed:  71  71  72  62  64  67  70  74
+     recall cirrhosis             pooled  32.9%   per seed:  33  26  31  37  34  41  31  31
+     recall significant_fibrosis  pooled   1.8%   per seed:   2   2   2   2   3   1   1   1
+====================================================================================================
+RESNET1D  (seeds 101-108, real model only; shares of predictions)
+
+[pure_noise]  300 pulse-free noise windows per seed
+  seed 101   n=300   cirr  91.3%  healthy   8.7%  fibr   0.0%   [counts 274/26/0]
+  seed 102   n=300   cirr  14.7%  healthy  83.3%  fibr   2.0%   [counts 44/250/6]
+  seed 103   n=300   cirr   2.3%  healthy  49.7%  fibr  48.0%   [counts 7/149/144]
+  seed 104   n=300   cirr  62.3%  healthy  28.0%  fibr   9.7%   [counts 187/84/29]
+  seed 105   n=300   cirr   8.7%  healthy  91.3%  fibr   0.0%   [counts 26/274/0]
+  seed 106   n=300   cirr  63.3%  healthy  10.3%  fibr  26.3%   [counts 190/31/79]
+  seed 107   n=300   cirr   4.0%  healthy  94.0%  fibr   2.0%   [counts 12/282/6]
+  seed 108   n=300   cirr  38.0%  healthy  47.3%  fibr  14.7%   [counts 114/142/44]
+  POOLED     n=2400  cirr  35.6%  healthy  51.6%  fibr  12.8%   [counts 854/1238/308]
+
+[depth_6.50_6.5000cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  79.9%  healthy   9.1%  fibr  11.0%   [counts 719/82/99]
+  seed 102   n=900   cirr  17.6%  healthy  63.3%  fibr  19.1%   [counts 158/570/172]
+  seed 103   n=900   cirr   1.1%  healthy  31.6%  fibr  67.3%   [counts 10/284/606]
+  seed 104   n=900   cirr  47.7%  healthy  22.8%  fibr  29.6%   [counts 429/205/266]
+  seed 105   n=900   cirr   7.3%  healthy  78.0%  fibr  14.7%   [counts 66/702/132]
+  seed 106   n=900   cirr  40.9%  healthy   6.6%  fibr  52.6%   [counts 368/59/473]
+  seed 107   n=900   cirr   9.4%  healthy  55.1%  fibr  35.4%   [counts 85/496/319]
+  seed 108   n=900   cirr  29.2%  healthy  35.3%  fibr  35.4%   [counts 263/318/319]
+  POOLED     n=7200  cirr  29.1%  healthy  37.7%  fibr  33.1%   [counts 2098/2716/2386]
+     recall healthy               pooled  52.3%   per seed:   8  82  49  36  93  10  90  50
+     recall cirrhosis             pooled  36.6%   per seed:  91  20   2  63   6  56  17  39
+     recall significant_fibrosis  pooled  62.3%   per seed:  30  46  91  58  41  80  82  70
+
+[depth_median_floor_10.9091cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  87.8%  healthy  10.7%  fibr   1.6%   [counts 790/96/14]
+  seed 102   n=900   cirr  16.3%  healthy  78.9%  fibr   4.8%   [counts 147/710/43]
+  seed 103   n=900   cirr   1.4%  healthy  43.7%  fibr  54.9%   [counts 13/393/494]
+  seed 104   n=900   cirr  55.9%  healthy  29.6%  fibr  14.6%   [counts 503/266/131]
+  seed 105   n=900   cirr   6.6%  healthy  91.2%  fibr   2.2%   [counts 59/821/20]
+  seed 106   n=900   cirr  57.2%  healthy   7.3%  fibr  35.4%   [counts 515/66/319]
+  seed 107   n=900   cirr   9.4%  healthy  81.0%  fibr   9.6%   [counts 85/729/86]
+  seed 108   n=900   cirr  34.1%  healthy  47.6%  fibr  18.3%   [counts 307/428/165]
+  POOLED     n=7200  cirr  33.6%  healthy  48.7%  fibr  17.7%   [counts 2419/3509/1272]
+     recall healthy               pooled  51.5%   per seed:   8  83  48  34  93   7  87  52
+     recall cirrhosis             pooled  34.8%   per seed:  87  17   2  58   7  61   8  38
+     recall significant_fibrosis  pooled  26.2%   per seed:   4   9  69  23   4  45  22  33
+
+[depth_15.00_15.0000cm]  300 windows per true class per seed (900 per seed)
+  seed 101   n=900   cirr  90.8%  healthy   9.1%  fibr   0.1%   [counts 817/82/1]
+  seed 102   n=900   cirr  15.2%  healthy  81.1%  fibr   3.7%   [counts 137/730/33]
+  seed 103   n=900   cirr   1.0%  healthy  52.4%  fibr  46.6%   [counts 9/472/419]
+  seed 104   n=900   cirr  56.9%  healthy  34.2%  fibr   8.9%   [counts 512/308/80]
+  seed 105   n=900   cirr   6.6%  healthy  92.9%  fibr   0.6%   [counts 59/836/5]
+  seed 106   n=900   cirr  59.7%  healthy   8.6%  fibr  31.8%   [counts 537/77/286]
+  seed 107   n=900   cirr   6.3%  healthy  90.4%  fibr   3.2%   [counts 57/814/29]
+  seed 108   n=900   cirr  34.9%  healthy  51.6%  fibr  13.6%   [counts 314/464/122]
+  POOLED     n=7200  cirr  33.9%  healthy  52.5%  fibr  13.5%   [counts 2442/3783/975]
+     recall healthy               pooled  52.6%   per seed:  10  82  54  33  94   9  90  50
+     recall cirrhosis             pooled  33.4%   per seed:  89  16   1  52   5  61   7  35
+     recall significant_fibrosis  pooled  14.4%   per seed:   0   5  49  10   1  32   3  15

@@ -1,0 +1,37 @@
+==============================================================================
+Q9 -- seed-121 ResNet1D, standard grid (100Hz, 27.05dB), accuracy by k=0 vs k>=1
+==============================================================================
+Checkpoint: Source/seed_weights_resnet/degradation_aware_resnet_seed121.pt
+FREQ=100Hz, SENSOR_SNR_DB=27.05dB, N_SAMPLES_PER_CELL=300
+EVAL_DEPTHS_CM (23 depths): ['0.00', '1.36', '2.73', '3.50', '4.00', '4.09', '4.30', '4.50', '5.00', '5.45', '5.50', '6.00', '6.50', '6.82', '7.00', '7.50', '8.00', '8.18', '9.55', '10.91', '12.27', '13.64', '15.00']
+  depth=  0.00cm  k=0: n=  75 acc=93.3333%   k>=1: n= 225 acc=73.7778%
+  depth=  1.36cm  k=0: n=  75 acc=73.3333%   k>=1: n= 225 acc=62.2222%
+  depth=  2.73cm  k=0: n=  76 acc=64.4737%   k>=1: n= 224 acc=57.5893%
+  depth=  3.50cm  k=0: n=  76 acc=52.6316%   k>=1: n= 224 acc=54.4643%
+  depth=  4.00cm  k=0: n=  75 acc=52.0000%   k>=1: n= 225 acc=52.8889%
+  depth=  4.09cm  k=0: n=  75 acc=58.6667%   k>=1: n= 225 acc=51.1111%
+  depth=  4.30cm  k=0: n=  77 acc=54.5455%   k>=1: n= 223 acc=53.3632%
+  depth=  4.50cm  k=0: n=  75 acc=58.6667%   k>=1: n= 225 acc=54.6667%
+  depth=  5.00cm  k=0: n=  75 acc=61.3333%   k>=1: n= 225 acc=50.6667%
+  depth=  5.45cm  k=0: n=  75 acc=46.6667%   k>=1: n= 225 acc=55.1111%
+  depth=  5.50cm  k=0: n=  75 acc=46.6667%   k>=1: n= 225 acc=49.3333%
+  depth=  6.00cm  k=0: n=  75 acc=64.0000%   k>=1: n= 225 acc=47.1111%
+  depth=  6.50cm  k=0: n=  75 acc=49.3333%   k>=1: n= 225 acc=54.6667%
+  depth=  6.82cm  k=0: n=  75 acc=45.3333%   k>=1: n= 225 acc=48.8889%
+  depth=  7.00cm  k=0: n=  75 acc=50.6667%   k>=1: n= 225 acc=51.1111%
+  depth=  7.50cm  k=0: n=  75 acc=38.6667%   k>=1: n= 225 acc=44.0000%
+  depth=  8.00cm  k=0: n=  76 acc=46.0526%   k>=1: n= 224 acc=45.9821%
+  depth=  8.18cm  k=0: n=  75 acc=52.0000%   k>=1: n= 225 acc=40.0000%
+  depth=  9.55cm  k=0: n=  75 acc=30.6667%   k>=1: n= 225 acc=40.4444%
+  depth= 10.91cm  k=0: n=  75 acc=42.6667%   k>=1: n= 225 acc=39.1111%
+  depth= 12.27cm  k=0: n=  75 acc=34.6667%   k>=1: n= 225 acc=33.3333%
+  depth= 13.64cm  k=0: n=  75 acc=34.6667%   k>=1: n= 225 acc=32.4444%
+  depth= 15.00cm  k=0: n=  75 acc=29.3333%   k>=1: n= 225 acc=32.0000%
+
+==============================================================================
+Pooled across all depths:
+  k=0   : n= 1730  accuracy=51.3295%
+  k>=1  : n= 5170  accuracy=48.8781%
+  total : n= 6900
+
+NOTE: only seed 121 is covered here. Seeds 122-124 do not exist yet -- Lane 5's 24-seed sweep (pid 7429) has not finished; only seeds 101-120 are in logs/degradation_aware_resnet_final_results.csv, and the log shows seed 121 as the most recently started. Repeating this analysis for all seeds is pending until that run completes and seeds 122-124's weight files exist.

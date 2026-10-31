@@ -1,0 +1,171 @@
+bash: <HOME>/soma_status.sh: No such file or directory
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=107 control_batch=42/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=108 control_batch=145/200
+Heartbeat age: 3s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=109 eval_depth=15.0
+Heartbeat age: 63s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=111 control_batch=89/200
+Heartbeat age: 2s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=112 control_batch=185/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=114 control_batch=35/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=115 control_batch=141/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=116 eval_depth=15.0
+Heartbeat age: 56s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=118 control_batch=86/200
+Heartbeat age: 0s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=119 control_batch=191/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=121 control_batch=41/200
+Heartbeat age: 2s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: RUNNING (PID1 7429 )
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=122 control_batch=143/200
+Heartbeat age: 1s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: RUNNING (PID1 34468 )
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: NOT RUNNING
+
+=== Lane 5 liveness check ===
+PID 34468: ALIVE
+Heartbeat: seed=123 eval_depth=15.0
+Heartbeat age: 31s
+OK: heartbeat is recent.
+=== SOMA status ===
+Lane 5 harness: NOT RUNNING
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: NOT RUNNING
+
+=== Lane 5 liveness check ===
+PID: NOT FOUND (no 'python3 lane5_harness.py' process running)
+Heartbeat: seed=124 eval_depth=15.0
+Heartbeat age: 517s
+NOTE: heartbeat is over 2 minutes old -- normal only if mid-control-batch on a slow depth; check again shortly.
+=== SOMA status ===
+Lane 5 harness: NOT RUNNING
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: NOT RUNNING
+
+=== Lane 5 liveness check ===
+PID: NOT FOUND (no 'python3 lane5_harness.py' process running)
+Heartbeat: seed=124 eval_depth=15.0
+Heartbeat age: 1418s
+WARNING: heartbeat is over 10 minutes old -- the run may be dead or hung.
+=== SOMA status ===
+Lane 5 harness: NOT RUNNING
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: NOT RUNNING
+
+=== Lane 5 liveness check ===
+PID: NOT FOUND (no 'python3 lane5_harness.py' process running)
+Heartbeat: seed=124 eval_depth=15.0
+Heartbeat age: 2318s
+WARNING: heartbeat is over 10 minutes old -- the run may be dead or hung.
+=== SOMA status ===
+Lane 5 harness: NOT RUNNING
+Lane 5 chain runner: RUNNING (PID1 34993 )
+ResNet final sweep: NOT RUNNING
+
+=== Lane 5 liveness check ===
+PID: NOT FOUND (no 'python3 lane5_harness.py' process running)
+Heartbeat: seed=124 eval_depth=15.0
+Heartbeat age: 3218s
+WARNING: heartbeat is over 10 minutes old -- the run may be dead or hung.

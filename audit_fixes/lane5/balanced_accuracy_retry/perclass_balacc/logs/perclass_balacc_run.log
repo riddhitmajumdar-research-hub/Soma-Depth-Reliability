@@ -1,0 +1,52 @@
+Verified: constant predictor -> balanced_acc=0.5 for every class (PREREG_perclass.md section 2).
+Verified: constant predictor -> balanced_acc=0.5 for every class (PREREG_perclass.md section 2).
+Polling for seeds with complete saved weights (main run's seed_weights/, read-only)...
+--- Evaluating seed 101 (1/24) ---
+Seed 101 done in 66s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 102 (2/24) ---
+Seed 102 done in 64s. balacc floors: cirrhosis=0.0, healthy=1.3636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 103 (3/24) ---
+Seed 103 done in 61s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 104 (4/24) ---
+Seed 104 done in 66s. balacc floors: cirrhosis=1.3636363636363635, healthy=0.0, significant_fibrosis=0.0
+--- Evaluating seed 105 (5/24) ---
+Seed 105 done in 68s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 106 (6/24) ---
+Seed 106 done in 66s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 107 (7/24) ---
+Seed 107 done in 62s. balacc floors: cirrhosis=0.0, healthy=0.0, significant_fibrosis=0.0
+--- Evaluating seed 108 (8/24) ---
+Seed 108 done in 61s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 109 (9/24) ---
+Seed 109 done in 57s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 110 (10/24) ---
+Seed 110 done in 61s. balacc floors: cirrhosis=7.0, healthy=1.3636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 111 (11/24) ---
+Seed 111 done in 66s. balacc floors: cirrhosis=2.727272727272727, healthy=12.272727272727272, significant_fibrosis=0.0
+--- Evaluating seed 112 (12/24) ---
+Seed 112 done in 71s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 113 (13/24) ---
+Seed 113 done in 70s. balacc floors: cirrhosis=0.0, healthy=12.272727272727272, significant_fibrosis=0.0
+--- Evaluating seed 114 (14/24) ---
+Seed 114 done in 65s. balacc floors: cirrhosis=0.0, healthy=1.3636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 115 (15/24) ---
+Seed 115 done in 71s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 116 (16/24) ---
+Seed 116 done in 66s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 117 (17/24) ---
+Seed 117 done in 59s. balacc floors: cirrhosis=7.5, healthy=13.636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 118 (18/24) ---
+Seed 118 done in 65s. balacc floors: cirrhosis=0.0, healthy=13.636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 119 (19/24) ---
+Seed 119 done in 62s. balacc floors: cirrhosis=0.0, healthy=0.0, significant_fibrosis=0.0
+--- Evaluating seed 120 (20/24) ---
+Seed 120 done in 67s. balacc floors: cirrhosis=0.0, healthy=0.0, significant_fibrosis=0.0
+--- Evaluating seed 121 (21/24) ---
+Seed 121 done in 65s. balacc floors: cirrhosis=0.0, healthy=0.0, significant_fibrosis=0.0
+--- Evaluating seed 122 (22/24) ---
+Seed 122 done in 65s. balacc floors: cirrhosis=0.0, healthy=15.0, significant_fibrosis=0.0
+--- Evaluating seed 123 (23/24) ---
+Seed 123 done in 63s. balacc floors: cirrhosis=0.0, healthy=13.636363636363635, significant_fibrosis=0.0
+--- Evaluating seed 124 (24/24) ---
+Seed 124 done in 62s. balacc floors: cirrhosis=7.5, healthy=15.0, significant_fibrosis=0.0
+All 24 seeds processed. Done.

@@ -1,0 +1,9 @@
+setting,X_shape,finite,shape_matches_baseline,logits_shape,logits_finite,x_std,x_absmax
+baseline_off,"(450, 100)",True,True,"(450, 3)",True,0.17584412349785777,1.0710820981688332
+jitter_0.5ms,"(450, 100)",True,True,"(450, 3)",True,0.17582679204177423,1.0879208172558275
+jitter_1.0ms,"(450, 100)",True,True,"(450, 3)",True,0.17583459059609677,1.030920849034275
+jitter_2.0ms,"(450, 100)",True,True,"(450, 3)",True,0.1758816361579782,1.0271391176291726
+colored_noise_beta1,"(450, 100)",True,True,"(450, 3)",True,0.17594200241882502,1.0570128545824347
+colored_noise_beta2,"(450, 100)",True,True,"(450, 3)",True,0.17607585988099278,1.0483640710548618
+gain_0.5_1.5,"(450, 100)",True,True,"(450, 3)",True,0.1908555115378848,1.468419167162083
+all_on_j1.0_b1_gain,"(450, 100)",True,True,"(450, 3)",True,0.1747084751831089,1.425064406599321

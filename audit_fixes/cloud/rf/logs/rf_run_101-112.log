@@ -1,0 +1,26 @@
+=== wrapper start: seeds 101-112, already done [], remaining [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112] ===
+--- seed 101 starting ---
+--- seed 101 done in 486.7s. floor=13.6364cm last_sig=12.272727272727272 anomalous_recovery=False ---
+--- seed 102 starting ---
+--- seed 102 done in 484.7s. floor=13.6364cm last_sig=12.272727272727272 anomalous_recovery=False ---
+--- seed 103 starting ---
+--- seed 103 done in 491.1s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 104 starting ---
+--- seed 104 done in 513.5s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 105 starting ---
+--- seed 105 done in 505.1s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 106 starting ---
+--- seed 106 done in 491.9s. floor=12.2727cm last_sig=13.636363636363635 anomalous_recovery=True ---
+--- seed 107 starting ---
+--- seed 107 done in 474.8s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 108 starting ---
+--- seed 108 done in 473.6s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 109 starting ---
+--- seed 109 done in 473.6s. floor=13.6364cm last_sig=12.272727272727272 anomalous_recovery=False ---
+--- seed 110 starting ---
+--- seed 110 done in 474.9s. floor=15.0000cm last_sig=13.636363636363635 anomalous_recovery=False ---
+--- seed 111 starting ---
+--- seed 111 done in 473.2s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+--- seed 112 starting ---
+--- seed 112 done in 467.9s. floor=12.2727cm last_sig=10.909090909090908 anomalous_recovery=False ---
+=== wrapper finished: seeds 101-112 ===

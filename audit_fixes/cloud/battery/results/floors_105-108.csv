@@ -1,0 +1,77 @@
+seed,condition,condition_label,floor_cm,last_significant_cm,censored
+105,1_baseline,baseline,8.0,7.5,False
+105,2_amp_randomization,"amplitude randomisation g~U(0.5,1.5) linear (corrected; E[g]=1.0)",8.181818181818182,8.0,False
+105,3a_spreading_p0.5,geometric spreading p=0.5,6.5,13.636363636363635,False
+105,3b_spreading_p1.0,geometric spreading p=1.0,4.3,6.5,False
+105,4a_stiffness_cv_perclass,within-class stiffness CV per class (0.115/0.056/0.245),15.0,15.0,True
+105,4b_stiffness_cv_uniform,within-class stiffness CV=0.15 all classes,3.5,15.0,False
+105,5a_snr20,SNR sweep 20dB,8.0,7.5,False
+105,5b_snr13.58,SNR sweep 13.58dB (SENSOR_SNR_DB_WORST_CASE),7.5,12.272727272727272,False
+105,5c_snr10,SNR sweep 10dB,7.5,8.181818181818182,False
+105,5d_snr5,SNR sweep 5dB,5.0,6.5,False
+105,5e_snr0,SNR sweep 0dB,4.5,15.0,False
+105,6a_exact_atten,"exact complex-wavenumber attenuation, TOF unchanged",8.181818181818182,8.0,False
+105,6b_exact_atten_tof,exact attenuation + exact TOF via c_exact,8.0,9.545454545454545,False
+105,7a_viscosity_healthy_fibrosis_1.4x,eta healthy/fibrosis x1.4 (cirrhosis fixed 1.77),10.909090909090908,9.545454545454545,False
+105,7b_viscosity_healthy_fibrosis_1.8x,eta healthy/fibrosis x1.8 (cirrhosis fixed 1.77),10.909090909090908,15.0,False
+105,7c_viscosity_healthy_fibrosis_2.6x,eta healthy/fibrosis x2.6 (cirrhosis fixed 1.77),10.909090909090908,12.272727272727272,False
+105,7d_viscosity_cirrhosis_1.2,eta cirrhosis=1.2 (healthy/fibrosis fixed 0.5),15.0,15.0,True
+105,7e_viscosity_cirrhosis_2.18,eta cirrhosis=2.18 (healthy/fibrosis fixed 0.5),7.0,6.8181818181818175,False
+105,7f_viscosity_cirrhosis_2.5,eta cirrhosis=2.5 (healthy/fibrosis fixed 0.5),6.5,6.0,False
+106,1_baseline,baseline,9.545454545454545,13.636363636363635,False
+106,2_amp_randomization,"amplitude randomisation g~U(0.5,1.5) linear (corrected; E[g]=1.0)",10.909090909090908,9.545454545454545,False
+106,3a_spreading_p0.5,geometric spreading p=0.5,6.0,8.181818181818182,False
+106,3b_spreading_p1.0,geometric spreading p=1.0,4.0,4.5,False
+106,4a_stiffness_cv_perclass,within-class stiffness CV per class (0.115/0.056/0.245),4.0,15.0,False
+106,4b_stiffness_cv_uniform,within-class stiffness CV=0.15 all classes,0.0,,False
+106,5a_snr20,SNR sweep 20dB,7.5,7.0,False
+106,5b_snr13.58,SNR sweep 13.58dB (SENSOR_SNR_DB_WORST_CASE),6.8181818181818175,8.0,False
+106,5c_snr10,SNR sweep 10dB,6.0,6.8181818181818175,False
+106,5d_snr5,SNR sweep 5dB,5.454545454545454,13.636363636363635,False
+106,5e_snr0,SNR sweep 0dB,3.5,6.5,False
+106,6a_exact_atten,"exact complex-wavenumber attenuation, TOF unchanged",8.181818181818182,8.0,False
+106,6b_exact_atten_tof,exact attenuation + exact TOF via c_exact,9.545454545454545,8.181818181818182,False
+106,7a_viscosity_healthy_fibrosis_1.4x,eta healthy/fibrosis x1.4 (cirrhosis fixed 1.77),9.545454545454545,12.272727272727272,False
+106,7b_viscosity_healthy_fibrosis_1.8x,eta healthy/fibrosis x1.8 (cirrhosis fixed 1.77),10.909090909090908,12.272727272727272,False
+106,7c_viscosity_healthy_fibrosis_2.6x,eta healthy/fibrosis x2.6 (cirrhosis fixed 1.77),9.545454545454545,8.181818181818182,False
+106,7d_viscosity_cirrhosis_1.2,eta cirrhosis=1.2 (healthy/fibrosis fixed 0.5),15.0,15.0,True
+106,7e_viscosity_cirrhosis_2.18,eta cirrhosis=2.18 (healthy/fibrosis fixed 0.5),6.8181818181818175,6.5,False
+106,7f_viscosity_cirrhosis_2.5,eta cirrhosis=2.5 (healthy/fibrosis fixed 0.5),6.5,6.8181818181818175,False
+107,1_baseline,baseline,7.5,7.0,False
+107,2_amp_randomization,"amplitude randomisation g~U(0.5,1.5) linear (corrected; E[g]=1.0)",8.0,7.5,False
+107,3a_spreading_p0.5,geometric spreading p=0.5,1.3636363636363635,4.5,False
+107,3b_spreading_p1.0,geometric spreading p=1.0,0.0,,False
+107,4a_stiffness_cv_perclass,within-class stiffness CV per class (0.115/0.056/0.245),15.0,15.0,True
+107,4b_stiffness_cv_uniform,within-class stiffness CV=0.15 all classes,6.8181818181818175,15.0,False
+107,5a_snr20,SNR sweep 20dB,8.0,8.181818181818182,False
+107,5b_snr13.58,SNR sweep 13.58dB (SENSOR_SNR_DB_WORST_CASE),7.0,6.8181818181818175,False
+107,5c_snr10,SNR sweep 10dB,5.0,7.0,False
+107,5d_snr5,SNR sweep 5dB,4.3,6.8181818181818175,False
+107,5e_snr0,SNR sweep 0dB,3.5,6.0,False
+107,6a_exact_atten,"exact complex-wavenumber attenuation, TOF unchanged",8.0,7.5,False
+107,6b_exact_atten_tof,exact attenuation + exact TOF via c_exact,7.5,7.0,False
+107,7a_viscosity_healthy_fibrosis_1.4x,eta healthy/fibrosis x1.4 (cirrhosis fixed 1.77),6.5,6.0,False
+107,7b_viscosity_healthy_fibrosis_1.8x,eta healthy/fibrosis x1.8 (cirrhosis fixed 1.77),8.0,7.5,False
+107,7c_viscosity_healthy_fibrosis_2.6x,eta healthy/fibrosis x2.6 (cirrhosis fixed 1.77),9.545454545454545,13.636363636363635,False
+107,7d_viscosity_cirrhosis_1.2,eta cirrhosis=1.2 (healthy/fibrosis fixed 0.5),10.909090909090908,9.545454545454545,False
+107,7e_viscosity_cirrhosis_2.18,eta cirrhosis=2.18 (healthy/fibrosis fixed 0.5),6.5,6.0,False
+107,7f_viscosity_cirrhosis_2.5,eta cirrhosis=2.5 (healthy/fibrosis fixed 0.5),1.3636363636363635,5.0,False
+108,1_baseline,baseline,10.909090909090908,15.0,False
+108,2_amp_randomization,"amplitude randomisation g~U(0.5,1.5) linear (corrected; E[g]=1.0)",13.636363636363635,12.272727272727272,False
+108,3a_spreading_p0.5,geometric spreading p=0.5,15.0,13.636363636363635,False
+108,3b_spreading_p1.0,geometric spreading p=1.0,7.5,15.0,False
+108,4a_stiffness_cv_perclass,within-class stiffness CV per class (0.115/0.056/0.245),15.0,15.0,True
+108,4b_stiffness_cv_uniform,within-class stiffness CV=0.15 all classes,15.0,15.0,True
+108,5a_snr20,SNR sweep 20dB,7.5,7.0,False
+108,5b_snr13.58,SNR sweep 13.58dB (SENSOR_SNR_DB_WORST_CASE),6.8181818181818175,7.0,False
+108,5c_snr10,SNR sweep 10dB,6.0,8.181818181818182,False
+108,5d_snr5,SNR sweep 5dB,4.3,5.5,False
+108,5e_snr0,SNR sweep 0dB,3.5,7.0,False
+108,6a_exact_atten,"exact complex-wavenumber attenuation, TOF unchanged",13.636363636363635,12.272727272727272,False
+108,6b_exact_atten_tof,exact attenuation + exact TOF via c_exact,9.545454545454545,13.636363636363635,False
+108,7a_viscosity_healthy_fibrosis_1.4x,eta healthy/fibrosis x1.4 (cirrhosis fixed 1.77),13.636363636363635,12.272727272727272,False
+108,7b_viscosity_healthy_fibrosis_1.8x,eta healthy/fibrosis x1.8 (cirrhosis fixed 1.77),12.272727272727272,15.0,False
+108,7c_viscosity_healthy_fibrosis_2.6x,eta healthy/fibrosis x2.6 (cirrhosis fixed 1.77),13.636363636363635,15.0,False
+108,7d_viscosity_cirrhosis_1.2,eta cirrhosis=1.2 (healthy/fibrosis fixed 0.5),15.0,15.0,True
+108,7e_viscosity_cirrhosis_2.18,eta cirrhosis=2.18 (healthy/fibrosis fixed 0.5),7.5,13.636363636363635,False
+108,7f_viscosity_cirrhosis_2.5,eta cirrhosis=2.5 (healthy/fibrosis fixed 0.5),7.5,12.272727272727272,False

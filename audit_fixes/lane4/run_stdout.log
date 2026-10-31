@@ -1,0 +1,28 @@
+Dataset: X_raw=(360, 100) X_fft=(360, 51) classes=[np.str_('cirrhosis'), np.str_('healthy'), np.str_('significant_fibrosis')] n_groups=90
+[single-split] fold 1: svm=0.5694 (cfg={'C': 10.0, 'gamma': 0.01})  rf=0.5417 (cfg={'max_depth': 10, 'min_samples_leaf': 4})  gru=0.2222 (cfg={'lr': 0.001, 'dropout': 0.0})
+[single-split] fold 2: svm=0.4583 (cfg={'C': 10.0, 'gamma': 0.01})  rf=0.4583 (cfg={'max_depth': None, 'min_samples_leaf': 1})  gru=0.2778 (cfg={'lr': 0.001, 'dropout': 0.0})
+[single-split] fold 3: svm=0.4583 (cfg={'C': 10.0, 'gamma': 'scale'})  rf=0.4583 (cfg={'max_depth': None, 'min_samples_leaf': 4})  gru=0.1667 (cfg={'lr': 0.001, 'dropout': 0.0})
+[single-split] fold 4: svm=0.4306 (cfg={'C': 1.0, 'gamma': 'scale'})  rf=0.5417 (cfg={'max_depth': 10, 'min_samples_leaf': 1})  gru=0.1667 (cfg={'lr': 0.001, 'dropout': 0.0})
+[single-split] fold 5: svm=0.5139 (cfg={'C': 10.0, 'gamma': 'scale'})  rf=0.4722 (cfg={'max_depth': 10, 'min_samples_leaf': 1})  gru=0.2778 (cfg={'lr': 0.001, 'dropout': 0.0})
+
+[single-split summary] SVM=0.4861+-0.0556  RF=0.4944+-0.0435  GRU=0.2222+-0.0556
+rep 1/15  svm=0.4861 rf=0.4944 gru=0.2222  (elapsed 286s)
+rep 2/15  svm=0.4806 rf=0.5167 gru=0.2444  (elapsed 423s)
+rep 3/15  svm=0.4944 rf=0.4972 gru=0.2778  (elapsed 552s)
+rep 4/15  svm=0.4806 rf=0.4500 gru=0.2444  (elapsed 682s)
+rep 5/15  svm=0.4611 rf=0.4611 gru=0.2444  (elapsed 813s)
+rep 6/15  svm=0.4917 rf=0.4972 gru=0.2333  (elapsed 916s)
+rep 7/15  svm=0.4944 rf=0.5139 gru=0.2667  (elapsed 1021s)
+rep 8/15  svm=0.4694 rf=0.4722 gru=0.2111  (elapsed 1134s)
+rep 9/15  svm=0.4972 rf=0.4833 gru=0.2667  (elapsed 1247s)
+rep 10/15  svm=0.4639 rf=0.4778 gru=0.2222  (elapsed 1359s)
+rep 11/15  svm=0.4694 rf=0.4639 gru=0.2000  (elapsed 1470s)
+rep 12/15  svm=0.4806 rf=0.4667 gru=0.2333  (elapsed 1605s)
+rep 13/15  svm=0.4694 rf=0.5028 gru=0.2444  (elapsed 1736s)
+rep 14/15  svm=0.4750 rf=0.4861 gru=0.2444  (elapsed 1868s)
+rep 15/15  svm=0.4833 rf=0.4778 gru=0.2667  (elapsed 1999s)
+
+[15x-repeated summary, n=75 paired diffs] SVM=0.4798+-0.0455  RF=0.4841+-0.0445  GRU=0.2415+-0.0470
+
+Total runtime: 1999s
+Saved audit_fixes/lane4/lane4_single_split.csv and audit_fixes/lane4/lane4_repeated_grouped_cv_raw.csv

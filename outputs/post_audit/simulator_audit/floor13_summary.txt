@@ -1,0 +1,63 @@
+A. Floors by condition (8 seeds). C = censored at the 15 cm grid maximum, Z = floor 0.00
+condition                   101    102    103    104    105    106    107    108  nC nZ  median
+base                       9.5    5.5    8.2   10.9    8.0    8.0    8.0    8.2    0  0  8.09
+cv4a_lookup               15.0C  15.0C   7.5    0.0   15.0C   4.0   15.0C  15.0C   5  1  15.00
+cv4b_lookup               15.0C  15.0C   2.7    0.0   15.0C   3.5    5.5   15.0C   4  1  10.23
+cv4a_stage                12.3    6.5   15.0C   7.5    9.5   15.0C   8.0   12.3    2  0  10.91
+cv4b_stage                12.3    6.5   13.6    9.5    9.5   10.9    7.5   13.6    0  0  10.23
+range_lookup_trbase       15.0C   4.0    6.0    0.0   15.0C   0.0   15.0C   7.5    3  2  6.75
+range_stage_trbase        13.6    6.0   12.3    8.0    8.0   10.9    7.5   12.3    0  0  9.45
+range_lookup_trrange      15.0C  15.0C   7.0    6.5    7.5   15.0C  15.0C  15.0C   5  0  15.00
+range_stage_trrange       10.9   10.9   10.9    9.5    6.5    6.8    8.2    7.5    0  0  8.86
+
+B. Real accuracy at 15 cm and at 0 cm (mean over seeds) per condition
+base                     acc0=0.775 acc15=0.331 n_sig_mean=16.5
+cv4a_lookup              acc0=0.743 acc15=0.549 n_sig_mean=18.5
+cv4b_lookup              acc0=0.720 acc15=0.580 n_sig_mean=16.6
+cv4a_stage               acc0=0.735 acc15=0.347 n_sig_mean=19.1
+cv4b_stage               acc0=0.705 acc15=0.337 n_sig_mean=18.2
+range_lookup_trbase      acc0=0.698 acc15=0.583 n_sig_mean=15.6
+range_stage_trbase       acc0=0.705 acc15=0.337 n_sig_mean=18.0
+range_lookup_trrange     acc0=0.725 acc15=0.610 n_sig_mean=22.1
+range_stage_trrange      acc0=0.734 acc15=0.336 n_sig_mean=17.5
+
+C. Floor-0 cases and the BH tie condition (depth rows per seed/condition)
+  seed 104 cv4a_lookup: acc0=0.677 p0=0.0050 adj0=0.0572 n_at_min_p=2 n_sig=0 p_min=0.00498
+  seed 104 cv4b_lookup: acc0=0.740 p0=0.0050 adj0=0.0572 n_at_min_p=2 n_sig=0 p_min=0.00498
+  seed 104 range_lookup_trbase: acc0=0.690 p0=0.0050 adj0=0.0572 n_at_min_p=2 n_sig=0 p_min=0.00498
+  seed 106 range_lookup_trbase: acc0=0.717 p0=0.0050 adj0=0.0572 n_at_min_p=2 n_sig=0 p_min=0.00498
+  seeds x conditions with depth 0 non-significant: 4 of 72
+
+D. Null (shuffled-label control) accuracy distribution at depth 0, condition 'base' (200 controls per seed)
+  seed 101: min 0.000 median 0.333 max 0.787 | frac<=0.40: 0.655 | frac 0.40-0.60: 0.285 | frac>=0.60: 0.060 | frac >=0.80: 0.000 | exactly 1/3: 0.190
+  seed 102: min 0.043 median 0.333 max 0.673 | frac<=0.40: 0.750 | frac 0.40-0.60: 0.220 | frac>=0.60: 0.030 | frac >=0.80: 0.000 | exactly 1/3: 0.265
+  seed 103: min 0.000 median 0.333 max 0.790 | frac<=0.40: 0.780 | frac 0.40-0.60: 0.185 | frac>=0.60: 0.035 | frac >=0.80: 0.000 | exactly 1/3: 0.275
+  seed 104: min 0.000 median 0.333 max 0.643 | frac<=0.40: 0.690 | frac 0.40-0.60: 0.280 | frac>=0.60: 0.030 | frac >=0.80: 0.000 | exactly 1/3: 0.190
+  seed 105: min 0.000 median 0.333 max 0.703 | frac<=0.40: 0.705 | frac 0.40-0.60: 0.235 | frac>=0.60: 0.060 | frac >=0.80: 0.000 | exactly 1/3: 0.250
+  seed 106: min 0.000 median 0.333 max 0.737 | frac<=0.40: 0.695 | frac 0.40-0.60: 0.245 | frac>=0.60: 0.060 | frac >=0.80: 0.000 | exactly 1/3: 0.285
+  seed 107: min 0.000 median 0.333 max 0.733 | frac<=0.40: 0.700 | frac 0.40-0.60: 0.260 | frac>=0.60: 0.040 | frac >=0.80: 0.000 | exactly 1/3: 0.245
+  seed 108: min 0.017 median 0.333 max 0.837 | frac<=0.40: 0.750 | frac 0.40-0.60: 0.220 | frac>=0.60: 0.030 | frac >=0.80: 0.005 | exactly 1/3: 0.265
+
+E. Real model predicted-class fractions and recall, trained on continuous stiffness (range_stage_trrange), depth 0 and 6.5 cm, mean over seeds
+  range_stage_trrange    d= 0.0: acc=0.734 recall cirr/heal/fibr=0.71/0.70/0.79 pred_frac(cirr,heal,fibr)=0.30/0.26/0.44
+  range_stage_trrange    d= 6.5: acc=0.603 recall cirr/heal/fibr=0.49/0.95/0.36 pred_frac(cirr,heal,fibr)=0.28/0.59/0.12
+  range_stage_trrange    d=15.0: acc=0.336 recall cirr/heal/fibr=0.04/0.97/0.00 pred_frac(cirr,heal,fibr)=0.06/0.94/0.00
+  range_lookup_trrange   d= 0.0: acc=0.725 recall cirr/heal/fibr=0.71/0.67/0.79 pred_frac(cirr,heal,fibr)=0.30/0.24/0.46
+  range_lookup_trrange   d= 6.5: acc=0.692 recall cirr/heal/fibr=0.72/0.96/0.39 pred_frac(cirr,heal,fibr)=0.36/0.42/0.22
+  range_lookup_trrange   d=15.0: acc=0.610 recall cirr/heal/fibr=0.86/0.97/0.00 pred_frac(cirr,heal,fibr)=0.34/0.66/0.00
+  range_stage_trbase     d= 0.0: acc=0.705 recall cirr/heal/fibr=0.63/0.68/0.81 pred_frac(cirr,heal,fibr)=0.27/0.25/0.48
+  range_stage_trbase     d= 6.5: acc=0.612 recall cirr/heal/fibr=0.55/0.88/0.41 pred_frac(cirr,heal,fibr)=0.33/0.54/0.14
+  range_stage_trbase     d=15.0: acc=0.337 recall cirr/heal/fibr=0.16/0.85/0.00 pred_frac(cirr,heal,fibr)=0.19/0.81/0.00
+
+F. Simulator collapse checks for continuous mu in the stage ranges (no model), 400 records per stage per depth, eta_by_stage on
+  cirrhosis             d= 0.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.2900 mu[9.08,14.98] tof_ms[4.61,5.92] median peak/noise=21.60
+  cirrhosis             d= 6.5 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0483 mu[9.03,14.98] tof_ms[4.61,5.93] median peak/noise=1.24
+  cirrhosis             d=15.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0437 mu[9.11,14.94] tof_ms[4.61,5.91] median peak/noise=0.02
+  healthy               d= 0.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.2899 mu[3.01,5.98] tof_ms[7.29,10.27] median peak/noise=21.64
+  healthy               d= 6.5 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0457 mu[3.06,6.00] tof_ms[7.28,10.19] median peak/noise=0.57
+  healthy               d=15.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0442 mu[3.03,5.99] tof_ms[7.28,10.25] median peak/noise=0.00
+  significant_fibrosis  d= 0.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.2904 mu[6.03,8.99] tof_ms[5.95,7.26] median peak/noise=21.52
+  significant_fibrosis  d= 6.5 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0702 mu[6.01,8.95] tof_ms[5.96,7.27] median peak/noise=3.91
+  significant_fibrosis  d=15.0 windows=(400, 100) finite=True all_zero_windows=0 mean_window_std=0.0448 mu[6.03,8.96] tof_ms[5.96,7.26] median peak/noise=0.45
+  TOF ranges by stage at the interval edges (10 mm / c): healthy: 10.30 to 7.28 ms, significant_fibrosis: 7.28 to 5.94 ms, cirrhosis: 5.94 to 4.60 ms
+  Stage intervals abut at 6.0 and 9.0 kPa, so TOF at the border is identical for the two neighbouring labels.

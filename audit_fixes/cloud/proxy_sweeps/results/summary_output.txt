@@ -1,0 +1,29 @@
+condition           n   mean     SD median censored at 0.00  floors by seed
+0_baseline          8   8.44   1.73   8.52        0       0  9.55 5.50 10.91 7.50 7.50 9.55 7.50 9.55
+1_epochs_600        8  14.83   0.48  15.00        3       0  15.00 15.00 15.00 15.00 15.00 15.00 13.64 15.00
+2_jitter_0.5        8   5.78   2.94   6.50        0       0  8.00 7.00 1.36 9.55 6.00 1.36 6.50 6.50
+2_jitter_1.0        8   0.17   0.48   0.00        0       7  1.36 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+3_carrier_50        8  15.00   0.00  15.00        8       0  15.00 15.00 15.00 15.00 15.00 15.00 15.00 15.00
+3_carrier_150       8   3.22   2.24   3.50        0       2  6.00 5.00 0.00 2.73 3.50 5.00 0.00 3.50
+4_track_5           8   3.44   1.80   2.73        0       0  2.73 6.00 2.73 6.50 2.73 1.36 2.73 2.73
+4_track_15          8  10.06   1.92  10.23        0       0  10.91 8.18 10.91 13.64 8.18 9.55 10.91 8.18
+4_track_20          8  10.91   1.03  10.91        0       0  12.27 9.55 10.91 10.91 9.55 10.91 10.91 12.27
+5_window_50         8   9.16   1.80   9.55        0       0  9.55 10.91 7.00 6.50 10.91 8.00 10.91 9.55
+5_window_150        8   8.18   2.94   8.00        0       0  10.91 6.00 8.00 2.73 8.00 8.00 9.55 12.27
+6_stiffness_alt     8   8.11   3.13   9.55        0       0  9.55 9.55 9.55 2.73 3.50 10.91 9.55 9.55
+7_clean_only        8   8.52   5.64   7.52        2       1  0.00 15.00 4.00 13.64 5.45 5.50 15.00 9.55
+
+Primary: Wilcoxon rank-sum (Mann-Whitney U), two-sided, unpaired, 7_clean_only (n=8) against 0_baseline (n=8): U = 30.0, p = 0.873
+Secondary: paired signed-rank over 8 seeds: W = 14.0, p = 1.000
+
+Consistency checks (declared before any result; reported, never used to adjust anything).
+Control draws and platform differ from the reference runs, so identical floors are not expected.
+(a) 0_baseline against the robustness battery, condition 1_baseline: seeds 101-108 (n=8)
+  per-seed difference (this run - reference): 101:+0.00 102:-0.50 103:+2.73 104:-0.50 105:-0.50 106:+0.00 107:+0.00 108:-1.36
+  mean difference -0.02, SD of differences 1.20, correlation 0.74
+(b) 0_baseline against the certified sweep, naive_floor_cm: seeds 101-108 (n=8)
+  per-seed difference (this run - reference): 101:+0.00 102:+0.00 103:+1.36 104:-0.50 105:-0.50 106:+1.55 107:+0.00 108:+0.00
+  mean difference +0.24, SD of differences 0.78, correlation 0.90
+(c) 7_clean_only against the clean-trained sweep, agg_floor_cm: seeds 101-108 (n=8)
+  per-seed difference (this run - reference): 101:-2.73 102:+0.00 103:+0.00 104:+2.73 105:+0.45 106:-0.50 107:+0.00 108:-1.36
+  mean difference -0.18, SD of differences 1.56, correlation 0.97

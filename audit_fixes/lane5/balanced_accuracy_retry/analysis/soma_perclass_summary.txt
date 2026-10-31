@@ -1,0 +1,55 @@
+seeds found: 24 | example depths: [0.0, 1.36, 2.73, 3.5, 4.0, 4.09] ...
+confusion matrix sum (windows per test set): 300.0 | row sums: [100.0, 100.0, 100.0]
+assumed class order: cirrhosis, healthy, significant_fibrosis (alphabetical)
+
+=== A. CERTIFIED-CNN REPLICATE: floor by three nulls (on the per-class-eval test sets) ===
+seed  perm_floor  binom_n  binom_n/4
+ 101       9.55     9.55       9.55
+ 102       6.00     7.50       7.50
+ 103      10.91    10.91       9.55
+ 104       8.00     9.55       9.55
+ 105       8.00     9.55       8.18
+ 106       9.55     9.55       9.55
+ 107       7.50     9.55       8.18
+ 108      13.64    10.91       9.55
+ 109       9.55     9.55       9.55
+ 110       8.00     9.55       8.00
+ 111       5.45     7.50       6.82
+ 112      12.27     9.55       9.55
+ 113       6.82     9.55       8.00
+ 114       7.50     8.00       7.50
+ 115      12.27    10.91       9.55
+ 116      10.91    10.91       9.55
+ 117       8.00    10.91       8.00
+ 118       6.50     7.50       7.50
+ 119       7.50     9.55       8.00
+ 120       7.50     9.55       8.18
+ 121       9.55     9.55       9.55
+ 122      10.91    10.91       9.55
+ 123       8.00     9.55       8.00
+ 124        nan     9.55       9.55
+median floors: perm=8.00 binom_n=9.55 binom_n/4=8.87 | mean perm=8.86 | seeds below 6.5: perm=2 binom_n=0
+
+=== B. PER-CLASS RECALL vs DEPTH across seeds (median [min,max]) ===
+depth    cirrhosis                  healthy                    fibrosis                
+  0.00   0.64 [0.37,1.00]           0.83 [0.64,1.00]           0.83 [0.35,1.00]        
+  3.50   0.94 [0.72,1.00]           0.99 [0.93,1.00]           0.82 [0.40,0.93]        
+  5.00   0.96 [0.62,1.00]           0.99 [0.96,1.00]           0.72 [0.33,0.90]        
+  6.50   0.62 [0.11,0.85]           0.98 [0.64,1.00]           0.55 [0.02,0.76]        
+  7.50   0.42 [0.00,0.81]           0.96 [0.57,1.00]           0.27 [0.00,0.46]        
+  8.18   0.31 [0.01,0.81]           0.96 [0.47,1.00]           0.11 [0.00,0.27]        
+ 10.91   0.11 [0.00,0.63]           0.95 [0.44,1.00]           0.00 [0.00,0.01]        
+ 15.00   0.09 [0.00,0.57]           0.91 [0.40,1.00]           0.00 [0.00,0.00]        
+
+=== C. FIRST DEPTH WHERE CLASS RECALL < 0.45 (across seeds) ===
+cirrhosis  median=7.50  min=0.00  seeds crossing before 6.50 cm: 3/24  before 8.48 cm: 20/24  never: 1
+healthy    median=10.91  min=10.91  seeds crossing before 6.50 cm: 0/24  before 8.48 cm: 0/24  never: 23
+fibrosis   median=6.82  min=0.00  seeds crossing before 6.50 cm: 4/24  before 8.48 cm: 24/24  never: 0
+
+=== D. WHERE WINDOWS GO AT DEPTH: share predicted healthy (all true classes pooled), median [min,max] ===
+depth  6.50: predicted-healthy share median=0.52 [0.30,0.74]  (chance level 0.33)
+depth  8.18: predicted-healthy share median=0.68 [0.35,0.86]  (chance level 0.33)
+depth 10.91: predicted-healthy share median=0.82 [0.40,0.98]  (chance level 0.33)
+depth 15.00: predicted-healthy share median=0.90 [0.42,1.00]  (chance level 0.33)
+
+DONE

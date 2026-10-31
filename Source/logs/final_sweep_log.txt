@@ -1,0 +1,107 @@
+
+--- Seed 101 starting ---
+Seed 101: naive_floor=9.55cm  last_sig=8.181818181818182  anomalous_recovery=False  (363s)
+
+--- Seed 102 starting ---
+Seed 102: naive_floor=5.50cm  last_sig=5.454545454545454  anomalous_recovery=False  (372s)
+
+--- Seed 103 starting ---
+Seed 103: naive_floor=9.55cm  last_sig=13.636363636363635  anomalous_recovery=True  (361s)
+
+--- Seed 104 starting ---
+Seed 104: naive_floor=8.00cm  last_sig=7.5  anomalous_recovery=False  (363s)
+
+--- Seed 105 starting ---
+Seed 105: naive_floor=8.00cm  last_sig=13.636363636363635  anomalous_recovery=True  (366s)
+
+--- Seed 106 starting ---
+Seed 106: naive_floor=8.00cm  last_sig=10.909090909090908  anomalous_recovery=True  (365s)
+
+--- Seed 107 starting ---
+Seed 107: naive_floor=7.50cm  last_sig=7.0  anomalous_recovery=False  (365s)
+
+--- Seed 108 starting ---
+Seed 108: naive_floor=9.55cm  last_sig=13.636363636363635  anomalous_recovery=True  (374s)
+
+--- Seed 109 starting ---
+Seed 109: naive_floor=9.55cm  last_sig=12.272727272727272  anomalous_recovery=True  (380s)
+
+--- Seed 110 starting ---
+Seed 110: naive_floor=7.00cm  last_sig=6.8181818181818175  anomalous_recovery=False  (364s)
+
+--- Seed 111 starting ---
+Seed 111: naive_floor=5.45cm  last_sig=5.0  anomalous_recovery=False  (366s)
+
+--- Seed 112 starting ---
+Seed 112: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  (362s)
+
+--- Seed 113 starting ---
+Seed 113: naive_floor=6.50cm  last_sig=6.0  anomalous_recovery=False  (369s)
+
+--- Seed 114 starting ---
+Seed 114: naive_floor=7.50cm  last_sig=7.0  anomalous_recovery=False  (367s)
+
+--- Seed 115 starting ---
+Seed 115: naive_floor=9.55cm  last_sig=15.0  anomalous_recovery=True  (365s)
+
+--- Seed 116 starting ---
+Seed 116: naive_floor=10.91cm  last_sig=15.0  anomalous_recovery=True  (362s)
+
+--- Seed 117 starting ---
+Seed 117: naive_floor=8.00cm  last_sig=12.272727272727272  anomalous_recovery=True  (364s)
+
+--- Seed 118 starting ---
+Seed 118: naive_floor=6.50cm  last_sig=6.0  anomalous_recovery=False  (362s)
+
+--- Seed 119 starting ---
+Seed 119: naive_floor=7.50cm  last_sig=7.0  anomalous_recovery=False  (365s)
+
+--- Seed 120 starting ---
+Seed 120: naive_floor=7.50cm  last_sig=7.0  anomalous_recovery=False  (362s)
+
+--- Seed 121 starting ---
+Seed 121: naive_floor=8.18cm  last_sig=8.0  anomalous_recovery=False  (360s)
+
+--- Seed 122 starting ---
+Seed 122: naive_floor=12.27cm  last_sig=10.909090909090908  anomalous_recovery=False  (366s)
+
+--- Seed 123 starting ---
+Seed 123: naive_floor=9.55cm  last_sig=10.909090909090908  anomalous_recovery=True  (367s)
+
+--- Seed 124 starting ---
+Seed 124: naive_floor=9.55cm  last_sig=12.272727272727272  anomalous_recovery=True  (367s)
+
+======================================================================
+FINAL SUMMARY -- 24 seeds, N_SAMPLES_PER_CELL=300
+======================================================================
+  seed= 101  naive_floor= 9.55cm  last_sig= 8.18cm  anomalous=False
+  seed= 102  naive_floor= 5.50cm  last_sig= 5.45cm  anomalous=False
+  seed= 103  naive_floor= 9.55cm  last_sig=13.64cm  anomalous=True
+  seed= 104  naive_floor= 8.00cm  last_sig= 7.50cm  anomalous=False
+  seed= 105  naive_floor= 8.00cm  last_sig=13.64cm  anomalous=True
+  seed= 106  naive_floor= 8.00cm  last_sig=10.91cm  anomalous=True
+  seed= 107  naive_floor= 7.50cm  last_sig= 7.00cm  anomalous=False
+  seed= 108  naive_floor= 9.55cm  last_sig=13.64cm  anomalous=True
+  seed= 109  naive_floor= 9.55cm  last_sig=12.27cm  anomalous=True
+  seed= 110  naive_floor= 7.00cm  last_sig= 6.82cm  anomalous=False
+  seed= 111  naive_floor= 5.45cm  last_sig= 5.00cm  anomalous=False
+  seed= 112  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False
+  seed= 113  naive_floor= 6.50cm  last_sig= 6.00cm  anomalous=False
+  seed= 114  naive_floor= 7.50cm  last_sig= 7.00cm  anomalous=False
+  seed= 115  naive_floor= 9.55cm  last_sig=15.00cm  anomalous=True
+  seed= 116  naive_floor=10.91cm  last_sig=15.00cm  anomalous=True
+  seed= 117  naive_floor= 8.00cm  last_sig=12.27cm  anomalous=True
+  seed= 118  naive_floor= 6.50cm  last_sig= 6.00cm  anomalous=False
+  seed= 119  naive_floor= 7.50cm  last_sig= 7.00cm  anomalous=False
+  seed= 120  naive_floor= 7.50cm  last_sig= 7.00cm  anomalous=False
+  seed= 121  naive_floor= 8.18cm  last_sig= 8.00cm  anomalous=False
+  seed= 122  naive_floor=12.27cm  last_sig=10.91cm  anomalous=False
+  seed= 123  naive_floor= 9.55cm  last_sig=10.91cm  anomalous=True
+  seed= 124  naive_floor= 9.55cm  last_sig=12.27cm  anomalous=True
+
+  mean=8.48cm  median=8.00cm  std=1.77cm  min=5.45cm  max=12.27cm
+  seeds with anomalous late recovery: 10/24
+
+  RECOMMENDED REPORTABLE RANGE: 6.7cm - 10.2cm (mean +/- 1 std)
+
+All done. Full data in degradation_aware_final_results.csv

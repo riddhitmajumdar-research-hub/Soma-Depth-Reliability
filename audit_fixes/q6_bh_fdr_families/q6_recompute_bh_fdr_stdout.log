@@ -1,0 +1,71 @@
+==============================================================================
+Q6 -- BH-FDR recomputation, three families
+==============================================================================
+SENSOR_SNR_DB (constants.py) = 27.05
+Closest SNR level actually present in the clean-CNN CSV: 27.05  [MATCH]
+NOMINAL_FREQ_HZ (constants.py) = 100
+
+Family A -- pooled 82-cell (floor_characterization_cnn.py, all 4 freqs, one BH pass over all 82):
+  rejected: 23/82
+  floor by freq (cm): {'20': None, '100': 4.3, '250': 0.75, '500': 0.3}
+
+Family B -- 100Hz-only (24 cells, BH pass restricted to the 100Hz subset):
+  rejected: 0/24
+  floor: 0.0 cm
+
+Family C -- 23-depth per-SNR (clean-CNN crosscheck CSV, snr=27.05, 100Hz fixed):
+  rejected: 0/23
+  floor: 0.0 cm
+  recomputed vs CSV's own saved fdr_significant column: MATCH
+
+Per-depth p-values and BH outcome, Family C (23-depth, snr=27.0500):
+  depth= 0.0000cm  p=0.004975  reject(recomputed)=False  orig_csv_flag=False
+  depth= 1.3636cm  p=0.004975  reject(recomputed)=False  orig_csv_flag=False
+  depth= 2.7273cm  p=0.009950  reject(recomputed)=False  orig_csv_flag=False
+  depth= 3.5000cm  p=0.019900  reject(recomputed)=False  orig_csv_flag=False
+  depth= 4.0000cm  p=0.019900  reject(recomputed)=False  orig_csv_flag=False
+  depth= 4.0909cm  p=0.029851  reject(recomputed)=False  orig_csv_flag=False
+  depth= 4.3000cm  p=0.089552  reject(recomputed)=False  orig_csv_flag=False
+  depth= 4.5000cm  p=0.069652  reject(recomputed)=False  orig_csv_flag=False
+  depth= 5.0000cm  p=0.084577  reject(recomputed)=False  orig_csv_flag=False
+  depth= 5.4545cm  p=0.194030  reject(recomputed)=False  orig_csv_flag=False
+  depth= 5.5000cm  p=0.149254  reject(recomputed)=False  orig_csv_flag=False
+  depth= 6.0000cm  p=0.189055  reject(recomputed)=False  orig_csv_flag=False
+  depth= 6.5000cm  p=0.746269  reject(recomputed)=False  orig_csv_flag=False
+  depth= 6.8182cm  p=0.751244  reject(recomputed)=False  orig_csv_flag=False
+  depth= 7.0000cm  p=0.756219  reject(recomputed)=False  orig_csv_flag=False
+  depth= 7.5000cm  p=0.820896  reject(recomputed)=False  orig_csv_flag=False
+  depth= 8.0000cm  p=0.830846  reject(recomputed)=False  orig_csv_flag=False
+  depth= 8.1818cm  p=0.830846  reject(recomputed)=False  orig_csv_flag=False
+  depth= 9.5455cm  p=0.885572  reject(recomputed)=False  orig_csv_flag=False
+  depth=10.9091cm  p=0.900498  reject(recomputed)=False  orig_csv_flag=False
+  depth=12.2727cm  p=0.900498  reject(recomputed)=False  orig_csv_flag=False
+  depth=13.6364cm  p=0.875622  reject(recomputed)=False  orig_csv_flag=False
+  depth=15.0000cm  p=0.945274  reject(recomputed)=False  orig_csv_flag=False
+
+BH ranked table (ascending p), Family C:
+  rank= 1  depth= 0.0000cm  p=0.004975  threshold=(k/n)*alpha=0.002174  p<=threshold=False
+  rank= 2  depth= 1.3636cm  p=0.004975  threshold=(k/n)*alpha=0.004348  p<=threshold=False
+  rank= 3  depth= 2.7273cm  p=0.009950  threshold=(k/n)*alpha=0.006522  p<=threshold=False
+  rank= 4  depth= 3.5000cm  p=0.019900  threshold=(k/n)*alpha=0.008696  p<=threshold=False
+  rank= 5  depth= 4.0000cm  p=0.019900  threshold=(k/n)*alpha=0.010870  p<=threshold=False
+  rank= 6  depth= 4.0909cm  p=0.029851  threshold=(k/n)*alpha=0.013043  p<=threshold=False
+  rank= 7  depth= 4.5000cm  p=0.069652  threshold=(k/n)*alpha=0.015217  p<=threshold=False
+  rank= 8  depth= 5.0000cm  p=0.084577  threshold=(k/n)*alpha=0.017391  p<=threshold=False
+  rank= 9  depth= 4.3000cm  p=0.089552  threshold=(k/n)*alpha=0.019565  p<=threshold=False
+  rank=10  depth= 5.5000cm  p=0.149254  threshold=(k/n)*alpha=0.021739  p<=threshold=False
+  rank=11  depth= 6.0000cm  p=0.189055  threshold=(k/n)*alpha=0.023913  p<=threshold=False
+  rank=12  depth= 5.4545cm  p=0.194030  threshold=(k/n)*alpha=0.026087  p<=threshold=False
+  rank=13  depth= 6.5000cm  p=0.746269  threshold=(k/n)*alpha=0.028261  p<=threshold=False
+  rank=14  depth= 6.8182cm  p=0.751244  threshold=(k/n)*alpha=0.030435  p<=threshold=False
+  rank=15  depth= 7.0000cm  p=0.756219  threshold=(k/n)*alpha=0.032609  p<=threshold=False
+  rank=16  depth= 7.5000cm  p=0.820896  threshold=(k/n)*alpha=0.034783  p<=threshold=False
+  rank=17  depth= 8.0000cm  p=0.830846  threshold=(k/n)*alpha=0.036957  p<=threshold=False
+  rank=18  depth= 8.1818cm  p=0.830846  threshold=(k/n)*alpha=0.039130  p<=threshold=False
+  rank=19  depth=13.6364cm  p=0.875622  threshold=(k/n)*alpha=0.041304  p<=threshold=False
+  rank=20  depth= 9.5455cm  p=0.885572  threshold=(k/n)*alpha=0.043478  p<=threshold=False
+  rank=21  depth=10.9091cm  p=0.900498  threshold=(k/n)*alpha=0.045652  p<=threshold=False
+  rank=22  depth=12.2727cm  p=0.900498  threshold=(k/n)*alpha=0.047826  p<=threshold=False
+  rank=23  depth=15.0000cm  p=0.945274  threshold=(k/n)*alpha=0.050000  p<=threshold=False
+
+Wrote: audit_fixes/q6_bh_fdr_families/q6_bh_fdr_results.json

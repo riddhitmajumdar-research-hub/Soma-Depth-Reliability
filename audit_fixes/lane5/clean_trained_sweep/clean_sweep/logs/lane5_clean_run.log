@@ -1,0 +1,49 @@
+--- [clean] Seed 101 starting (1/24) ---
+[clean] Seed 101 done in 354s. floor=2.73cm. ETA for remaining 23 seeds: 135.7 min
+--- [clean] Seed 102 starting (2/24) ---
+[clean] Seed 102 done in 344s. floor=15.00cm. ETA for remaining 22 seeds: 126.1 min
+--- [clean] Seed 103 starting (3/24) ---
+[clean] Seed 103 done in 345s. floor=4.00cm. ETA for remaining 21 seeds: 120.9 min
+--- [clean] Seed 104 starting (4/24) ---
+[clean] Seed 104 done in 347s. floor=10.91cm. ETA for remaining 20 seeds: 115.5 min
+--- [clean] Seed 105 starting (5/24) ---
+[clean] Seed 105 done in 350s. floor=5.00cm. ETA for remaining 19 seeds: 110.8 min
+--- [clean] Seed 106 starting (6/24) ---
+[clean] Seed 106 done in 357s. floor=6.00cm. ETA for remaining 18 seeds: 107.1 min
+--- [clean] Seed 107 starting (7/24) ---
+[clean] Seed 107 done in 528s. floor=15.00cm. ETA for remaining 17 seeds: 149.5 min
+--- [clean] Seed 108 starting (8/24) ---
+[clean] Seed 108 done in 654s. floor=10.91cm. ETA for remaining 16 seeds: 174.5 min
+--- [clean] Seed 109 starting (9/24) ---
+[clean] Seed 109 done in 604s. floor=5.00cm. ETA for remaining 15 seeds: 151.0 min
+--- [clean] Seed 110 starting (10/24) ---
+[clean] Seed 110 done in 367s. floor=3.50cm. ETA for remaining 14 seeds: 85.6 min
+--- [clean] Seed 111 starting (11/24) ---
+[clean] Seed 111 done in 354s. floor=0.00cm. ETA for remaining 13 seeds: 76.8 min
+--- [clean] Seed 112 starting (12/24) ---
+[clean] Seed 112 done in 363s. floor=9.55cm. ETA for remaining 12 seeds: 72.6 min
+--- [clean] Seed 113 starting (13/24) ---
+[clean] Seed 113 done in 354s. floor=5.45cm. ETA for remaining 11 seeds: 65.0 min
+--- [clean] Seed 114 starting (14/24) ---
+[clean] Seed 114 done in 353s. floor=13.64cm. ETA for remaining 10 seeds: 58.8 min
+--- [clean] Seed 115 starting (15/24) ---
+[clean] Seed 115 done in 351s. floor=9.55cm. ETA for remaining 9 seeds: 52.6 min
+--- [clean] Seed 116 starting (16/24) ---
+[clean] Seed 116 done in 355s. floor=4.50cm. ETA for remaining 8 seeds: 47.3 min
+--- [clean] Seed 117 starting (17/24) ---
+[clean] Seed 117 done in 349s. floor=9.55cm. ETA for remaining 7 seeds: 40.7 min
+--- [clean] Seed 118 starting (18/24) ---
+[clean] Seed 118 done in 349s. floor=15.00cm. ETA for remaining 6 seeds: 34.9 min
+--- [clean] Seed 119 starting (19/24) ---
+[clean] Seed 119 done in 349s. floor=3.50cm. ETA for remaining 5 seeds: 29.1 min
+--- [clean] Seed 120 starting (20/24) ---
+[clean] Seed 120 done in 349s. floor=13.64cm. ETA for remaining 4 seeds: 23.3 min
+--- [clean] Seed 121 starting (21/24) ---
+[clean] Seed 121 done in 352s. floor=15.00cm. ETA for remaining 3 seeds: 17.6 min
+--- [clean] Seed 122 starting (22/24) ---
+[clean] Seed 122 done in 350s. floor=15.00cm. ETA for remaining 2 seeds: 11.7 min
+--- [clean] Seed 123 starting (23/24) ---
+[clean] Seed 123 done in 348s. floor=5.00cm. ETA for remaining 1 seeds: 5.8 min
+--- [clean] Seed 124 starting (24/24) ---
+[clean] Seed 124 done in 354s. floor=15.00cm. ETA for remaining 0 seeds: 0.0 min
+All done. Full data in <REPO_ROOT>/audit_fixes/lane5/clean_sweep/logs/lane5_clean_per_class_results.csv

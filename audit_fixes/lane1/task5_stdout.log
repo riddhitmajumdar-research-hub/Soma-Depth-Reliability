@@ -1,0 +1,12 @@
+Nominal alpha_exact (healthy, 100Hz, eta=0.5, rho=1060.0): 53.8456 /m
+Reference depth x_ref = 8.48 cm (24-seed mean certified floor)
+Sampling ranges reused from Source/joint_uncertainty.py: VISCOSITY_RANGE=(0.5, 1.77), DENSITY_RANGE=(975.20, 1144.80), N_SAMPLES=5000, seed=42
+
+MC distribution of x_eq (cm), N=5000:
+  mean = 4.6269 cm
+  SD (ddof=1) = 1.4173 cm
+  5th percentile = 3.1378 cm
+  95th percentile = 7.6126 cm
+
+Saved: <REPO_ROOT>/audit_fixes/lane1/task5_monte_carlo_samples.csv
+Saved: <REPO_ROOT>/audit_fixes/lane1/task5_monte_carlo_summary.csv
